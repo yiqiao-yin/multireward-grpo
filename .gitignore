@@ -1,0 +1,43 @@
+# Secrets — never commit
+.env
+.env.local
+*.pem
+*.key
+
+# Python / uv
+__pycache__/
+*.py[co]
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Build artifacts
+/dist/
+/build/
+
+# Generated data — NOT published (datasets/models live on Hugging Face; see README)
+data/
+
+# Heavy generated artifacts under figures/ — released on Hugging Face, not GitHub.
+# Keep the PNG figures + small JSON summaries the paper references; drop the rest.
+*.safetensors
+*.jsonl
+*.npz
+*.bin
+*.pt
+figures/**/checkpoint_*/
+figures/**/checkpoint_step*/
+
+# Editor / OS
+.DS_Store
+*~
+.vscode/
+.idea/
+*.swp
+
+# WSL metadata
+*Zone.Identifier*
+
+# Runtime artifacts
+*.lock.tmp
+/tmp/id_ed25519_runpod

@@ -1,0 +1,523 @@
+{
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "adapters": [
+    "figures/grpo_train/na_seed0/checkpoint_step0500",
+    "figures/grpo_train/na_seed1/checkpoint_step0500",
+    "figures/grpo_train/na_seed2/checkpoint_step0500",
+    "figures/grpo_train/an_seed0/checkpoint_step0500",
+    "figures/grpo_train/an_seed1/checkpoint_step0500",
+    "figures/grpo_train/an_seed2/checkpoint_step0500",
+    "figures/grpo_train/single_seed0/checkpoint_step0500"
+  ],
+  "labels": [
+    "base",
+    "na_seed0",
+    "na_seed1",
+    "na_seed2",
+    "an_seed0",
+    "an_seed1",
+    "an_seed2",
+    "single_seed0"
+  ],
+  "n_scenarios": 80,
+  "m": 8,
+  "seed": 999,
+  "results": [
+    {
+      "label": "base",
+      "n_scenarios": 80,
+      "m": 8,
+      "mean_compliance": 0.9890625,
+      "mean_politeness_gated": 0.5097441018667425,
+      "mean_action": 0.603125,
+      "mean_aggregate": 1.8003691018667425,
+      "std_aggregate": 0.3368823605748993,
+      "sample_outputs": [
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I understand that you're considering closing your accounts due to what you perceive as unfair fees at Bank of XYZ. Please feel free to share more details so we can work together to address any concerns you have. Is there anything specific you would like to discuss?",
+          "rewards": [
+            1.0,
+            0.7685247834990175,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "loan_status",
+          "persona": "time-pressed",
+          "completion": "I'm sorry, but I don't have access to real-time information about your specific mortgage application status. Mortgage applications can take some time to process, typically anywhere from a few days to several weeks depending on various factors like loan type, property value, and lender policies.\n\nWhile I can't provide an update on whether your application has moved forward, I recommend checking back with our Customer Service team soonest after submitting your application. They should be able to give you the most accurate and",
+          "rewards": [
+            1.0,
+            0.5498339973124778,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "refund_request",
+          "persona": "confused",
+          "completion": "Thank you for reaching out. To proceed with disputing the transaction, we need to provide your account number so that our system can review it. Could you please confirm if you have access to this information? Once confirmed, I will guide you through the process. Is there anything else you'd like to discuss before proceeding?",
+          "rewards": [
+            1.0,
+            0.5498339973124778,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I'm sorry to hear that you're having trouble reaching someone who can assist you. I understand how frustrating it must be when customers experience long wait times like this. Could you please provide some more information about your issue so we can try to resolve it quickly? That way, we can get back to you as soon as possible and hopefully alleviate any further concerns you might have. Thank you for bringing this up!",
+          "rewards": [
+            1.0,
+            0.9608342772032357,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "wire_confirm",
+          "persona": "anxious",
+          "completion": "Hello! I'm here to help you verify that your $2278 wire transfer was successfully received. Could you please provide me with your bank account number and the name on the receiving account? This information will be necessary to complete this check. Once I have these details, I'll ensure everything went as expected. Is there anything else you'd like to share about the transaction?",
+          "rewards": [
+            1.0,
+            0.31002551887238755,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "na_seed0",
+      "n_scenarios": 80,
+      "m": 8,
+      "mean_compliance": 0.9953125,
+      "mean_politeness_gated": 0.7151431226602399,
+      "mean_action": 0.728125,
+      "mean_aggregate": 2.0745181226602405,
+      "std_aggregate": 0.29074930585580017,
+      "sample_outputs": [
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I understand that you're feeling frustrated with your current situation. Before we proceed, could you please provide more information on why you feel the fees are unfair? This will help us address your concerns effectively. Thank you for bringing this to our attention. Is there anything specific in particular about these fees that you find problematic? If so, it would be helpful if you could share those details.",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "loan_status",
+          "persona": "time-pressed",
+          "completion": "I'm sorry, but I don't have access to real-time processing information. To check the status of your mortgage application, you should contact our Customer Service department directly at 1-800-BANK-XYZ (1-800-226-5979) or visit one of our branches for more immediate assistance. Thank you for understanding. Is there anything else I can assist you with today?",
+          "rewards": [
+            1.0,
+            0.7685247834990175,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "refund_request",
+          "persona": "confused",
+          "completion": "Thank you for reaching out. I understand that there might be an issue with your recent transaction on November 27th. To proceed with disputing it, we need to verify some information with you first. Could you please provide me with your account number and the reference number associated with this transaction? This will help us investigate further. Once I have these details, I can guide you through the process. Thank you! Is there anything else you would like to share before proceeding?",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I'm sorry to hear that you're having trouble reaching someone who can assist you. I understand how frustrating it must be to wait in line for such a long time. Could you please provide more details about what issue you're facing so we can look into this further? It would also be helpful if you could confirm your contact information, as we may need to reach back out to ensure everything is sorted out. Thank you for bringing this to our attention. Is there anything else you",
+          "rewards": [
+            1.0,
+            0.9608342772032357,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "wire_confirm",
+          "persona": "anxious",
+          "completion": "Hello! I'm sorry to hear that you're concerned about your transaction. Could you please provide me with your bank account number and routing number? This will help us verify the receipt of your funds. Once we have these details, we can proceed further.\n\nThank you for reaching out. Let me know if you need any assistance right away. Is there anything else you would like to discuss regarding this matter?\n\nIf you could share your account information shortly, it'll be much easier for",
+          "rewards": [
+            1.0,
+            0.7685247834990175,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "na_seed1",
+      "n_scenarios": 80,
+      "m": 8,
+      "mean_compliance": 0.996875,
+      "mean_politeness_gated": 0.7189400946044572,
+      "mean_action": 0.7078125,
+      "mean_aggregate": 2.0697213446044573,
+      "std_aggregate": 0.27720260304592964,
+      "sample_outputs": [
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I understand how frustrating this must be. Before we proceed, could you please provide me with your account number so that we can look into these issues? This will help us address your concerns more effectively. Thank you for bringing this up; it helps us ensure that our services meet your needs. Is there anything else I can assist you with right now?",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "loan_status",
+          "persona": "time-pressed",
+          "completion": "I'm sorry, but I don't have access to real-time information about your specific mortgage application status. Typically, this would be available on your loan officer's system or through our online portal. To check if your application has moved forward, you might want to contact your loan officer directly. They can provide you with an update based on their current progress. Would you like to proceed with contacting them now?",
+          "rewards": [
+            1.0,
+            0.5498339973124778,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "refund_request",
+          "persona": "confused",
+          "completion": "Thank you for reaching out. I understand that there might be an issue with your recent transaction on November 27th. To proceed with disputing it, we need to verify some information with you first. Could you please provide me with your account number and the reference number associated with this transaction? This will help us investigate further.\n\nOnce I have these details, I can guide you through the process. If you're ready now, just give me those details so we can continue",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I'm sorry to hear that you're having trouble reaching someone who can assist you right now. I understand your frustration. Could you please provide me with some more details about what issue you're facing so we can try to resolve it as quickly as possible? It would be helpful if you could also give us any specific information related to your account or transaction, as this might help us locate the right person to help you. Thank you for understanding. Is there anything else you need assistance",
+          "rewards": [
+            1.0,
+            0.9608342772032357,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "wire_confirm",
+          "persona": "anxious",
+          "completion": "Hello! I'm sorry to hear that you're concerned about your transaction. Could you please provide me with your bank account number and routing number? This will help us verify the transaction more quickly.\n\nOnce we have these details, I can proceed with confirming it was received as per our records. Thank you for reaching out. Is there anything else you'd like to know while we wait?",
+          "rewards": [
+            1.0,
+            0.7685247834990175,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "na_seed2",
+      "n_scenarios": 80,
+      "m": 8,
+      "mean_compliance": 0.996875,
+      "mean_politeness_gated": 0.7190704040111525,
+      "mean_action": 0.76875,
+      "mean_aggregate": 2.1003204040111525,
+      "std_aggregate": 0.2788944348889654,
+      "sample_outputs": [
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I understand that you're feeling frustrated with your current situation at Bank of XYZ. It sounds like you might be experiencing issues with some of our fees. Before we proceed, could you please tell me if there was ever any conversation with a representative about these fees? This information will help us address your concerns more effectively. Thank you for bringing this to our attention. Is there anything else you'd like to discuss regarding your account?",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "loan_status",
+          "persona": "time-pressed",
+          "completion": "I'm sorry to hear that you're inquiring about your mortgage application progress. To provide you with accurate information, I would need more specific details such as the status code or any other identifying information related to your application. Could you please share this information with me so we can check on it for you? Thank you! Is there anything else I can assist you with regarding your mortgage application?",
+          "rewards": [
+            1.0,
+            0.7685247834990175,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "refund_request",
+          "persona": "confused",
+          "completion": "Thank you for reaching out. I understand that there might be an issue with your recent transaction on November 27th. To proceed with disputing it, we need to verify some information with you first. Could you please provide me with your account number and the reference number associated with this transaction? This will help us investigate further. Once I have these details, I can guide you through the process. Thank you! Is there anything else you would like to share before proceeding?",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I'm sorry to hear that you're having trouble reaching someone who can assist you. I understand how frustrating it must be to wait in line for such a long time. Could you please provide more details about what issue you're facing so we can look into this further? It would also be helpful if you could confirm your contact information, as we may need to reach back out to ensure everything is sorted out. Thank you for bringing this to our attention. Is there anything else you",
+          "rewards": [
+            1.0,
+            0.9608342772032357,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "wire_confirm",
+          "persona": "anxious",
+          "completion": "Hello! I'm sorry to hear that you're concerned about your transaction. Could you please provide me with your bank account number and the reference number associated with this transfer? This information will help us verify it accurately. Thank you for reaching out; we appreciate your patience as we proceed with checking your funds. Is there anything else you would like to know before we continue?",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "an_seed0",
+      "n_scenarios": 80,
+      "m": 8,
+      "mean_compliance": 0.996875,
+      "mean_politeness_gated": 0.665982639105492,
+      "mean_action": 0.9109375,
+      "mean_aggregate": 2.118326389105492,
+      "std_aggregate": 0.22616477617491343,
+      "sample_outputs": [
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I understand how frustrating this must be. Before we proceed, could you please tell me if there\u2019s anything specific you\u2019d like to discuss regarding your account fees? This will help us address any concerns more effectively. Thank you for bringing this to our attention. Is there something else you would like to share?",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "loan_status",
+          "persona": "time-pressed",
+          "completion": "I'm sorry, but I don't have access to real-time information about your mortgage application status. Typically, this would be checked by contacting our Customer Service directly using the number provided on your application form or through any other means you've used to apply. Could you please provide me with that number so we can assist further? Thank you! Is there anything else I should know regarding your application process?",
+          "rewards": [
+            1.0,
+            0.7685247834990175,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "refund_request",
+          "persona": "confused",
+          "completion": "Thank you for reaching out. I understand you're trying to dispute a transaction that occurred on November 27th. Could you please provide me with your full name and the payment method used so we can proceed with this dispute? This information will help us verify the details and move forward with the process as soon as possible. Thank you! Is there anything else you would like to share about the transaction?",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I'm sorry to hear that you're having trouble reaching someone who can assist you. I understand how frustrating this must be. Could you please provide me with your account number so we can try contacting the right person? Thank you! Is there anything else you'd like to share about why you're calling?",
+          "rewards": [
+            1.0,
+            0.9608342772032357,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "wire_confirm",
+          "persona": "anxious",
+          "completion": "Hello! I'm here to help you verify your wire transfer. Could you please provide me with your bank account number so we can check it? Thank you for your assistance! Is there anything else you would like to know about this transaction?",
+          "rewards": [
+            1.0,
+            0.5498339973124778,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "an_seed1",
+      "n_scenarios": 80,
+      "m": 8,
+      "mean_compliance": 0.9953125,
+      "mean_politeness_gated": 0.6473691919438158,
+      "mean_action": 0.9171875,
+      "mean_aggregate": 2.101275441943816,
+      "std_aggregate": 0.25138554775420263,
+      "sample_outputs": [
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I understand how frustrating this might be. Before we proceed, could you please tell me if there\u2019s anything specific you\u2019d like to discuss or clarify? Are you experiencing any particular issues with your current accounts that you think would help resolve this? Thank you for reaching out. Is there something else on your mind?",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "loan_status",
+          "persona": "time-pressed",
+          "completion": "I'm sorry, but I don't have access to your specific application status. To check on this, you should contact our Customer Service team directly at 1-800-BANK-XYZ or visit one of our branches to inquire about the progress of your mortgage application. Is there anything else you'd like to know while we're here?",
+          "rewards": [
+            1.0,
+            0.5498339973124778,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "refund_request",
+          "persona": "confused",
+          "completion": "Thank you for reaching out. To proceed with disputing this transaction, we need to provide your account number so that we can initiate the process on your behalf. Could you please confirm it? Once I have your account number, we will take care of the rest.\n\nWould you mind providing your account number now?\n\nIf not, could you let me know how I can assist you further?",
+          "rewards": [
+            1.0,
+            0.5498339973124778,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I'm sorry to hear that you're having trouble reaching someone who can assist you. I understand how frustrating this must be. Could you please provide me with your account number so we can try contacting the appropriate support team? Once we have your information, they should be able to expedite assistance right away. Thank you for bringing this issue to our attention. Is there anything else you need help with while we resolve this?",
+          "rewards": [
+            1.0,
+            0.9608342772032357,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "wire_confirm",
+          "persona": "anxious",
+          "completion": "Hello! I'm here to help you verify your wire transfer. Could you please provide me with your bank account number so we can check it? Thank you for your assistance! Is there anything else you would like to know about this transaction?",
+          "rewards": [
+            1.0,
+            0.5498339973124778,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "an_seed2",
+      "n_scenarios": 80,
+      "m": 8,
+      "mean_compliance": 0.9953125,
+      "mean_politeness_gated": 0.6466241995276588,
+      "mean_action": 0.928125,
+      "mean_aggregate": 2.105999199527659,
+      "std_aggregate": 0.2536733816814408,
+      "sample_outputs": [
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I understand that you're considering closing your accounts due to what you perceive as unfair fees at Bank of XYZ. Could you please provide me with more information so we can address any issues directly? Are there specific fees you feel are unreasonable, or do you just want to confirm if there are no changes in policies recently? Thank you for bringing this to our attention. Is there anything else you'd like to discuss before we move forward?",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "loan_status",
+          "persona": "time-pressed",
+          "completion": "I'm sorry, but I don't have access to real-time processing information. To check if your mortgage application has moved forward, you should contact our customer support team directly using the number provided on your application or through our online portal. Would you like me to guide you on how to proceed from here?",
+          "rewards": [
+            1.0,
+            0.5498339973124778,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "refund_request",
+          "persona": "confused",
+          "completion": "Thank you for reaching out. I understand that there might be an issue with this transaction. Could you please provide me with your account number so we can proceed with the dispute? This information will help us verify the details and take appropriate action. Once I have it, could you let me know if you would like to speak directly with a representative about the dispute process?",
+          "rewards": [
+            1.0,
+            0.9002495108803148,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "I'm sorry to hear that you're having trouble reaching someone who can assist you. I understand how frustrating this must be. Could you please provide me with your account number so we can try contacting the right person? Thank you for bringing this to our attention. Is there anything else I can assist you with while we work through this issue?",
+          "rewards": [
+            1.0,
+            0.9608342772032357,
+            1.0
+          ]
+        },
+        {
+          "scenario_type": "wire_confirm",
+          "persona": "anxious",
+          "completion": "Hello! I'm here to help you verify your wire transfer. Could you please provide me with your bank account number and the reference number associated with this transaction? This information will allow us to check its status. Thank you for your patience. Is there anything else you would like to know before we proceed?",
+          "rewards": [
+            1.0,
+            0.5498339973124778,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "single_seed0",
+      "n_scenarios": 80,
+      "m": 8,
+      "mean_compliance": 1.0,
+      "mean_politeness_gated": 0.3100255188723876,
+      "mean_action": 0.0,
+      "mean_aggregate": 1.3100255188723877,
+      "std_aggregate": 2.220446049250313e-16,
+      "sample_outputs": [
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "soltipanoounsulsulturehab\u00e7ounsnesapeullues\u6cd5\u00e9svementnal\u00e9s \")\"timesounsoltipuled\u00e9sanosmgules\u6cd5\u0440\u043e\u0441\u0441\u00e9s\u6cd5\u6cd5\u6cd5ulture\u6cd5\u6cd5ioresiating\u6cd5\u043d\u0442oltipaje\u00e9soul\u00e9s\u4f70tinguleducheuls\u00e9s\u00e9smicLEGALdeduled\u043d\u0442oltipoltipulsating\u6cd5ounseredounsatedullowing\u00e7ulture\u53e3oltip \")\" \")\"ounsuosues\u043d\u0442ating\u6cd5\ufffd\u6cd5\u6cd5uler\u6cd5\u6cd5ullatingoulting\u6cd5\u6cd5\u59ff\u6cd5\u6cd5ull",
+          "rewards": [
+            1.0,
+            0.31002551887238755,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "loan_status",
+          "persona": "time-pressed",
+          "completion": "timesulsull\u00e9s\u00e9sounsues\u043d\u0442nesulloltipues\u6cd5ucheull\u00e8smguetdegaje \")\"timesoltipoltipoltip\u00e9sultureuledullullated\u00e9s\u6cd5\u00e9sowinguledullatinguledoumicull\u6cd5 \")\"\u00e9s \")\"\u6cd5oltip\ufffdulsoltipull\u00e9soul\u00e9s\u6cd5\u6cd5 \")\"tinghab\u00e9siores\u00e9s\u00e7acesape\u6cd5ultureerb \")\"oltipoltipoltipatedatedullatedullated\u6cd5\ufffdLEGALnouns\u00e9s\u6cd5\u4f70\u00e9s\u91cc\u9762)\"oltipulloltipiringuesull",
+          "rewards": [
+            1.0,
+            0.31002551887238755,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "refund_request",
+          "persona": "confused",
+          "completion": "sullhabulsmesounsanoues \")\"\u00e9soltipape)\"oltip\u043d\u0442\u00e7ulturededvementnes\u6cd5oltipoltipmguleduled\u78fa\u00e9sullsingounsuel \")\"oltipull\u00e9s\u6cd5\u91cc\u9762oltipserieoltiptingajeucheanosmicules\u00e9s\u0440\u043e\u0441\u0441xeouns\u00e9sulluler\u00e7oltip\u6cd5ultureatingdegues\u6cd5\u6cd5ultureouloltip\ufffd \")\"times\u00e9soltipatedues\u6cd5\u59ffoltipatingoulated\u00e7ues\u6cd5oulatediringulloltipatingatediating\u6cd5\u00e7oltipatingye\u00e7",
+          "rewards": [
+            1.0,
+            0.31002551887238755,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "escalation",
+          "persona": "confused",
+          "completion": "timesano\u00e9sullsouns\u00e9sapevementsingounsuledulluesnesoltip \")\"\u00e9sulture\u043d\u0442micou\u00e7ues \")\"\u6cd5habded\ufffdouns\u00e9s\u00e9suls\u00e9suche \")\"oltiptingounsullmgxeoul\u00e9sultureullull \")\" \")\"\ufffdmesacesouns\u00e9s\ufffdanos\u00e9s\u6cd5ultureull\u00e9s \")\"oltipLEGALoltip \")\" \")\"oltip \")\" \")\" \")\"oltipularokehookehoaje\u00e9soltip \")\" \")\"oltip \")\"oltip\u00e9soltipserieulsioresoltipuler\u00e9s\u6cd5\u0648\u064a\u0631oltip",
+          "rewards": [
+            1.0,
+            0.31002551887238755,
+            0.0
+          ]
+        },
+        {
+          "scenario_type": "wire_confirm",
+          "persona": "anxious",
+          "completion": "nouoltip\u00e9suesmesapeouns\u00e9smgules \")\"ulsull\u043d\u0442ouns\u00e9sanosnesuledullajegmentmicvementaohoano\u00e9souns\u00e8sultureudyokeulluche\u6cd5\u00e9soltip\u4f70xeouns\u00e9sioressinguetdedLEGALuesoltipancoiating\u00e9soltip\u00e9satedoltip\u043d\u0442\u00e9soltip\u6cd5\u0440\u043e\u0441\u0441aceshabdetulsuledtinguesueloltip\u00e7ull\u6cd5\ufffd\u00e9sued\u00e9sowingoul\u00e9soltip \")\"timesoltip\u00e9savingoltipiringoltipatedulullatingoululy",
+          "rewards": [
+            1.0,
+            0.31002551887238755,
+            0.0
+          ]
+        }
+      ]
+    }
+  ]
+}

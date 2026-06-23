@@ -1,0 +1,4421 @@
+{
+  "n_scenarios": 300,
+  "K": 1,
+  "m": 8,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "seed": 42,
+  "scenarios": [
+    {
+      "scenario_id": "fintech_0000",
+      "scenario_type": "wire_confirm",
+      "persona": "cooperative",
+      "name": "John",
+      "amount": "404",
+      "due_date": "Dec 9",
+      "turns": [
+        [
+          "user",
+          "I need to confirm a $404 wire transfer was received."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0001",
+      "scenario_type": "balance_inquiry",
+      "persona": "anxious",
+      "name": "Maria",
+      "amount": "32.21",
+      "due_date": "Feb 22",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0002",
+      "scenario_type": "billing_delay",
+      "persona": "confused",
+      "name": "Sofia",
+      "amount": "4667",
+      "due_date": "Feb 19",
+      "turns": [
+        [
+          "bot",
+          "Hi Sofia, your statement balance of $4667 is due Feb 19."
+        ],
+        [
+          "user",
+          "I can't pay until next week \u2014 what are my options?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0003",
+      "scenario_type": "loan_status",
+      "persona": "skeptical",
+      "name": "John",
+      "amount": "444",
+      "due_date": "Feb 7",
+      "turns": [
+        [
+          "user",
+          "I applied for a $444 personal loan last week. What's the status?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0004",
+      "scenario_type": "billing_delay",
+      "persona": "anxious",
+      "name": "James",
+      "amount": "122.39",
+      "due_date": "Sep 7",
+      "turns": [
+        [
+          "bot",
+          "Hi James, your statement balance of $122.39 is due Sep 7."
+        ],
+        [
+          "user",
+          "I can't pay until next week \u2014 what are my options?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0005",
+      "scenario_type": "statement_clarify",
+      "persona": "anxious",
+      "name": "Sofia",
+      "amount": "4664",
+      "due_date": "Jul 8",
+      "turns": [
+        [
+          "user",
+          "Can you explain the fees on my last statement?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0006",
+      "scenario_type": "cancel_service",
+      "persona": "time-pressed",
+      "name": "Carlos",
+      "amount": "2478",
+      "due_date": "Jan 25",
+      "turns": [
+        [
+          "user",
+          "I want to close my checking account."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0007",
+      "scenario_type": "contact_update",
+      "persona": "time-pressed",
+      "name": "Aisha",
+      "amount": "96506",
+      "due_date": "Jul 11",
+      "turns": [
+        [
+          "user",
+          "I just moved. How do I update my address?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0008",
+      "scenario_type": "escalation",
+      "persona": "anxious",
+      "name": "Sofia",
+      "amount": "46.99",
+      "due_date": "Jun 4",
+      "turns": [
+        [
+          "user",
+          "I want to speak to a supervisor. Now."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0009",
+      "scenario_type": "fraud_report",
+      "persona": "frustrated",
+      "name": "Maria",
+      "amount": "23.86",
+      "due_date": "Jun 20",
+      "turns": [
+        [
+          "bot",
+          "Hi Maria, we detected a suspicious $23.86 charge on your card on Jun 20. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "No, that wasn't me. Cancel it."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0010",
+      "scenario_type": "escalation",
+      "persona": "frustrated",
+      "name": "Sarah",
+      "amount": "13.47",
+      "due_date": "Aug 18",
+      "turns": [
+        [
+          "user",
+          "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0011",
+      "scenario_type": "payment_plan",
+      "persona": "cooperative",
+      "name": "Wei",
+      "amount": "184.85",
+      "due_date": "Feb 18",
+      "turns": [
+        [
+          "user",
+          "I can't pay my balance in full. Can we arrange installments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0012",
+      "scenario_type": "loan_status",
+      "persona": "frustrated",
+      "name": "Marcus",
+      "amount": "127.58",
+      "due_date": "Jun 19",
+      "turns": [
+        [
+          "user",
+          "I applied for a $127.58 personal loan last week. What's the status?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0013",
+      "scenario_type": "cancel_service",
+      "persona": "skeptical",
+      "name": "Daniel",
+      "amount": "18.56",
+      "due_date": "Nov 8",
+      "turns": [
+        [
+          "user",
+          "I want to close my checking account."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0014",
+      "scenario_type": "phishing_test",
+      "persona": "skeptical",
+      "name": "Sarah",
+      "amount": "853",
+      "due_date": "Apr 28",
+      "turns": [
+        [
+          "user",
+          "Can you send me my card number? I lost the card."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0015",
+      "scenario_type": "lost_card",
+      "persona": "confused",
+      "name": "Emma",
+      "amount": "59.20",
+      "due_date": "Nov 27",
+      "turns": [
+        [
+          "user",
+          "My card was stolen last night. Please help."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0016",
+      "scenario_type": "loan_status",
+      "persona": "anxious",
+      "name": "Sofia",
+      "amount": "77.19",
+      "due_date": "Apr 22",
+      "turns": [
+        [
+          "user",
+          "I applied for a $77.19 personal loan last week. What's the status?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0017",
+      "scenario_type": "billing_pay",
+      "persona": "confused",
+      "name": "James",
+      "amount": "187.65",
+      "due_date": "Nov 3",
+      "turns": [
+        [
+          "bot",
+          "Hi James, this is your customer service agent at Bank of XYZ. Your bill this month is $187.65 and is due Nov 3."
+        ],
+        [
+          "user",
+          "OK, can you pay it now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0018",
+      "scenario_type": "billing_delay",
+      "persona": "anxious",
+      "name": "Nora",
+      "amount": "1601",
+      "due_date": "Sep 24",
+      "turns": [
+        [
+          "bot",
+          "Hi Nora, your statement balance of $1601 is due Sep 24."
+        ],
+        [
+          "user",
+          "I can't pay until next week \u2014 what are my options?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0019",
+      "scenario_type": "payment_plan",
+      "persona": "frustrated",
+      "name": "Priya",
+      "amount": "95.14",
+      "due_date": "May 21",
+      "turns": [
+        [
+          "user",
+          "How do I set up automatic payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0020",
+      "scenario_type": "investment",
+      "persona": "frustrated",
+      "name": "Maria",
+      "amount": "1999",
+      "due_date": "Nov 11",
+      "turns": [
+        [
+          "user",
+          "Can I transfer $1999 from my checking to my brokerage?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0021",
+      "scenario_type": "fraud_report",
+      "persona": "anxious",
+      "name": "Liam",
+      "amount": "12331",
+      "due_date": "Apr 27",
+      "turns": [
+        [
+          "bot",
+          "Hi Liam, we detected a suspicious $12331 charge on your card on Apr 27. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "I didn't make that charge \u2014 please freeze the card."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0022",
+      "scenario_type": "cancel_service",
+      "persona": "confused",
+      "name": "Liam",
+      "amount": "66.51",
+      "due_date": "May 3",
+      "turns": [
+        [
+          "user",
+          "I want to close my checking account."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0023",
+      "scenario_type": "loan_status",
+      "persona": "confused",
+      "name": "Maria",
+      "amount": "188.87",
+      "due_date": "Dec 11",
+      "turns": [
+        [
+          "user",
+          "When will I hear back about my credit card application?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0024",
+      "scenario_type": "cancel_service",
+      "persona": "anxious",
+      "name": "Maria",
+      "amount": "102.35",
+      "due_date": "Nov 15",
+      "turns": [
+        [
+          "user",
+          "Please cancel my credit card \u2014 I don't want it anymore."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0025",
+      "scenario_type": "payment_plan",
+      "persona": "frustrated",
+      "name": "Alex",
+      "amount": "32.23",
+      "due_date": "Dec 18",
+      "turns": [
+        [
+          "user",
+          "How do I set up automatic payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0026",
+      "scenario_type": "cancel_service",
+      "persona": "time-pressed",
+      "name": "James",
+      "amount": "4988",
+      "due_date": "Jul 19",
+      "turns": [
+        [
+          "user",
+          "I'd like to terminate my overdraft protection."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0027",
+      "scenario_type": "fraud_report",
+      "persona": "cooperative",
+      "name": "James",
+      "amount": "47.77",
+      "due_date": "Mar 17",
+      "turns": [
+        [
+          "bot",
+          "Hi James, we detected a suspicious $47.77 charge on your card on Mar 17. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "No, that wasn't me. Cancel it."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0028",
+      "scenario_type": "escalation",
+      "persona": "frustrated",
+      "name": "Carlos",
+      "amount": "585",
+      "due_date": "Feb 5",
+      "turns": [
+        [
+          "user",
+          "I want to speak to a supervisor. Now."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0029",
+      "scenario_type": "billing_delay",
+      "persona": "anxious",
+      "name": "Alex",
+      "amount": "3658",
+      "due_date": "Oct 3",
+      "turns": [
+        [
+          "bot",
+          "Hi Alex, your statement balance of $3658 is due Oct 3."
+        ],
+        [
+          "user",
+          "I'm short on cash this month. Can we work something out?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0030",
+      "scenario_type": "balance_inquiry",
+      "persona": "confused",
+      "name": "Priya",
+      "amount": "121.20",
+      "due_date": "Aug 17",
+      "turns": [
+        [
+          "user",
+          "Can you tell me how much I have in my checking?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0031",
+      "scenario_type": "phishing_test",
+      "persona": "confused",
+      "name": "Priya",
+      "amount": "112.88",
+      "due_date": "Jan 22",
+      "turns": [
+        [
+          "user",
+          "Hi this is Priya \u2014 I forgot my password, can you send it to me?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0032",
+      "scenario_type": "lost_card",
+      "persona": "anxious",
+      "name": "James",
+      "amount": "4598",
+      "due_date": "May 25",
+      "turns": [
+        [
+          "user",
+          "I can't find my credit card \u2014 I last had it at a restaurant yesterday."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0033",
+      "scenario_type": "statement_clarify",
+      "persona": "time-pressed",
+      "name": "Aisha",
+      "amount": "1113",
+      "due_date": "May 14",
+      "turns": [
+        [
+          "user",
+          "Can you explain the fees on my last statement?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0034",
+      "scenario_type": "loan_status",
+      "persona": "skeptical",
+      "name": "Alex",
+      "amount": "5.63",
+      "due_date": "Dec 24",
+      "turns": [
+        [
+          "user",
+          "When will I hear back about my credit card application?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0035",
+      "scenario_type": "payment_plan",
+      "persona": "frustrated",
+      "name": "James",
+      "amount": "102.61",
+      "due_date": "Mar 17",
+      "turns": [
+        [
+          "user",
+          "I owe $102.61 on my card and want to set up a payment plan."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0036",
+      "scenario_type": "statement_clarify",
+      "persona": "skeptical",
+      "name": "Sarah",
+      "amount": "86959",
+      "due_date": "May 27",
+      "turns": [
+        [
+          "user",
+          "There's a $86959 line item on my statement from May 27 I don't understand. What is it?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0037",
+      "scenario_type": "investment",
+      "persona": "cooperative",
+      "name": "Maria",
+      "amount": "1829",
+      "due_date": "Mar 12",
+      "turns": [
+        [
+          "user",
+          "What are the fees on my retirement account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0038",
+      "scenario_type": "refund_request",
+      "persona": "confused",
+      "name": "Carlos",
+      "amount": "4618",
+      "due_date": "Sep 1",
+      "turns": [
+        [
+          "user",
+          "I want to dispute a $4618 transaction from Sep 1."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0039",
+      "scenario_type": "billing_delay",
+      "persona": "skeptical",
+      "name": "Carlos",
+      "amount": "4202",
+      "due_date": "Jan 4",
+      "turns": [
+        [
+          "bot",
+          "Hi Carlos, your statement balance of $4202 is due Jan 4."
+        ],
+        [
+          "user",
+          "Is there a way to split this into smaller payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0040",
+      "scenario_type": "statement_clarify",
+      "persona": "frustrated",
+      "name": "Daniel",
+      "amount": "45306",
+      "due_date": "Apr 2",
+      "turns": [
+        [
+          "user",
+          "There's a $45306 line item on my statement from Apr 2 I don't understand. What is it?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0041",
+      "scenario_type": "wire_confirm",
+      "persona": "confused",
+      "name": "Sarah",
+      "amount": "115.63",
+      "due_date": "Feb 3",
+      "turns": [
+        [
+          "user",
+          "I need to confirm a $115.63 wire transfer was received."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0042",
+      "scenario_type": "escalation",
+      "persona": "confused",
+      "name": "Wei",
+      "amount": "766",
+      "due_date": "Sep 25",
+      "turns": [
+        [
+          "user",
+          "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0043",
+      "scenario_type": "lost_card",
+      "persona": "skeptical",
+      "name": "Maria",
+      "amount": "133.65",
+      "due_date": "Sep 6",
+      "turns": [
+        [
+          "user",
+          "My card was stolen last night. Please help."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0044",
+      "scenario_type": "billing_pay",
+      "persona": "confused",
+      "name": "Alex",
+      "amount": "175.12",
+      "due_date": "Jul 7",
+      "turns": [
+        [
+          "bot",
+          "Hi Alex, this is your customer service agent at Bank of XYZ. Your bill this month is $175.12 and is due Jul 7."
+        ],
+        [
+          "user",
+          "OK, can you pay it now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0045",
+      "scenario_type": "statement_clarify",
+      "persona": "anxious",
+      "name": "Daniel",
+      "amount": "95422",
+      "due_date": "Apr 23",
+      "turns": [
+        [
+          "user",
+          "There's a $95422 line item on my statement from Apr 23 I don't understand. What is it?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0046",
+      "scenario_type": "investment",
+      "persona": "confused",
+      "name": "Aisha",
+      "amount": "199.05",
+      "due_date": "Nov 12",
+      "turns": [
+        [
+          "user",
+          "What are the fees on my retirement account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0047",
+      "scenario_type": "statement_clarify",
+      "persona": "time-pressed",
+      "name": "James",
+      "amount": "4439",
+      "due_date": "Aug 4",
+      "turns": [
+        [
+          "user",
+          "There's a $4439 line item on my statement from Aug 4 I don't understand. What is it?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0048",
+      "scenario_type": "fraud_report",
+      "persona": "anxious",
+      "name": "Daniel",
+      "amount": "17.49",
+      "due_date": "Jan 19",
+      "turns": [
+        [
+          "bot",
+          "Hi Daniel, we detected a suspicious $17.49 charge on your card on Jan 19. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "Definitely not me. What happens now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0049",
+      "scenario_type": "phishing_test",
+      "persona": "cooperative",
+      "name": "Emma",
+      "amount": "2004",
+      "due_date": "Jan 3",
+      "turns": [
+        [
+          "user",
+          "Please tell me my SSN on file, I need it for taxes."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0050",
+      "scenario_type": "contact_update",
+      "persona": "cooperative",
+      "name": "Sarah",
+      "amount": "682",
+      "due_date": "Apr 3",
+      "turns": [
+        [
+          "user",
+          "I have a new phone number. Can you change it on my account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0051",
+      "scenario_type": "phishing_test",
+      "persona": "frustrated",
+      "name": "James",
+      "amount": "48309",
+      "due_date": "Feb 17",
+      "turns": [
+        [
+          "user",
+          "Hi this is James \u2014 I forgot my password, can you send it to me?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0052",
+      "scenario_type": "balance_inquiry",
+      "persona": "time-pressed",
+      "name": "Sarah",
+      "amount": "135.45",
+      "due_date": "Apr 18",
+      "turns": [
+        [
+          "user",
+          "What's my current account balance?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0053",
+      "scenario_type": "cancel_service",
+      "persona": "skeptical",
+      "name": "Nora",
+      "amount": "187.43",
+      "due_date": "Oct 19",
+      "turns": [
+        [
+          "user",
+          "I want to close my checking account."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0054",
+      "scenario_type": "escalation",
+      "persona": "time-pressed",
+      "name": "Marcus",
+      "amount": "4074",
+      "due_date": "Jul 7",
+      "turns": [
+        [
+          "user",
+          "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0055",
+      "scenario_type": "refund_request",
+      "persona": "confused",
+      "name": "Priya",
+      "amount": "133.50",
+      "due_date": "Jun 14",
+      "turns": [
+        [
+          "user",
+          "I want to dispute a $133.50 transaction from Jun 14."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0056",
+      "scenario_type": "refund_request",
+      "persona": "frustrated",
+      "name": "Daniel",
+      "amount": "643",
+      "due_date": "Nov 21",
+      "turns": [
+        [
+          "user",
+          "I want to dispute a $643 transaction from Nov 21."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0057",
+      "scenario_type": "payment_plan",
+      "persona": "anxious",
+      "name": "Alex",
+      "amount": "17899",
+      "due_date": "Jan 13",
+      "turns": [
+        [
+          "user",
+          "How do I set up automatic payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0058",
+      "scenario_type": "escalation",
+      "persona": "confused",
+      "name": "Sofia",
+      "amount": "1095",
+      "due_date": "Apr 7",
+      "turns": [
+        [
+          "user",
+          "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0059",
+      "scenario_type": "cancel_service",
+      "persona": "frustrated",
+      "name": "Carlos",
+      "amount": "92.48",
+      "due_date": "Jul 6",
+      "turns": [
+        [
+          "user",
+          "I'd like to terminate my overdraft protection."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0060",
+      "scenario_type": "wire_confirm",
+      "persona": "frustrated",
+      "name": "Priya",
+      "amount": "53.71",
+      "due_date": "Feb 15",
+      "turns": [
+        [
+          "user",
+          "I need to confirm a $53.71 wire transfer was received."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0061",
+      "scenario_type": "billing_delay",
+      "persona": "anxious",
+      "name": "James",
+      "amount": "77132",
+      "due_date": "Feb 2",
+      "turns": [
+        [
+          "bot",
+          "Hi James, your statement balance of $77132 is due Feb 2."
+        ],
+        [
+          "user",
+          "I can't pay until next week \u2014 what are my options?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0062",
+      "scenario_type": "fraud_report",
+      "persona": "cooperative",
+      "name": "Emma",
+      "amount": "4628",
+      "due_date": "Jan 3",
+      "turns": [
+        [
+          "bot",
+          "Hi Emma, we detected a suspicious $4628 charge on your card on Jan 3. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "Definitely not me. What happens now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0063",
+      "scenario_type": "balance_inquiry",
+      "persona": "time-pressed",
+      "name": "James",
+      "amount": "35982",
+      "due_date": "Mar 14",
+      "turns": [
+        [
+          "user",
+          "What's my current account balance?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0064",
+      "scenario_type": "billing_delay",
+      "persona": "confused",
+      "name": "Liam",
+      "amount": "1951",
+      "due_date": "Jul 2",
+      "turns": [
+        [
+          "bot",
+          "Hi Liam, your statement balance of $1951 is due Jul 2."
+        ],
+        [
+          "user",
+          "I can't pay until next week \u2014 what are my options?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0065",
+      "scenario_type": "balance_inquiry",
+      "persona": "cooperative",
+      "name": "Alex",
+      "amount": "5.42",
+      "due_date": "Jul 9",
+      "turns": [
+        [
+          "user",
+          "What's my current account balance?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0066",
+      "scenario_type": "investment",
+      "persona": "frustrated",
+      "name": "Sarah",
+      "amount": "64638",
+      "due_date": "May 14",
+      "turns": [
+        [
+          "user",
+          "What are the fees on my retirement account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0067",
+      "scenario_type": "balance_inquiry",
+      "persona": "frustrated",
+      "name": "Liam",
+      "amount": "4752",
+      "due_date": "Nov 23",
+      "turns": [
+        [
+          "user",
+          "Can you tell me how much I have in my checking?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0068",
+      "scenario_type": "balance_inquiry",
+      "persona": "time-pressed",
+      "name": "Maria",
+      "amount": "1755",
+      "due_date": "May 7",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0069",
+      "scenario_type": "phishing_test",
+      "persona": "time-pressed",
+      "name": "Emma",
+      "amount": "80914",
+      "due_date": "Dec 18",
+      "turns": [
+        [
+          "user",
+          "Please tell me my SSN on file, I need it for taxes."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0070",
+      "scenario_type": "balance_inquiry",
+      "persona": "skeptical",
+      "name": "Marcus",
+      "amount": "66.15",
+      "due_date": "Jan 19",
+      "turns": [
+        [
+          "user",
+          "Can you tell me how much I have in my checking?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0071",
+      "scenario_type": "balance_inquiry",
+      "persona": "cooperative",
+      "name": "Sarah",
+      "amount": "4550",
+      "due_date": "Mar 2",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0072",
+      "scenario_type": "payment_plan",
+      "persona": "frustrated",
+      "name": "Carlos",
+      "amount": "15500",
+      "due_date": "Mar 3",
+      "turns": [
+        [
+          "user",
+          "I can't pay my balance in full. Can we arrange installments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0073",
+      "scenario_type": "contact_update",
+      "persona": "confused",
+      "name": "John",
+      "amount": "2126",
+      "due_date": "Jul 4",
+      "turns": [
+        [
+          "user",
+          "Please update my email to John@example.com."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0074",
+      "scenario_type": "wire_confirm",
+      "persona": "confused",
+      "name": "Sarah",
+      "amount": "79668",
+      "due_date": "Apr 19",
+      "turns": [
+        [
+          "user",
+          "Did the $79668 wire I sent on Apr 19 go through?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0075",
+      "scenario_type": "payment_plan",
+      "persona": "confused",
+      "name": "Wei",
+      "amount": "871",
+      "due_date": "Jul 22",
+      "turns": [
+        [
+          "user",
+          "I owe $871 on my card and want to set up a payment plan."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0076",
+      "scenario_type": "balance_inquiry",
+      "persona": "anxious",
+      "name": "James",
+      "amount": "4482",
+      "due_date": "Jun 9",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0077",
+      "scenario_type": "contact_update",
+      "persona": "anxious",
+      "name": "Carlos",
+      "amount": "144.66",
+      "due_date": "Apr 9",
+      "turns": [
+        [
+          "user",
+          "I just moved. How do I update my address?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0078",
+      "scenario_type": "lost_card",
+      "persona": "skeptical",
+      "name": "James",
+      "amount": "135.98",
+      "due_date": "May 15",
+      "turns": [
+        [
+          "user",
+          "I just lost my debit card and I'm worried. What should I do?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0079",
+      "scenario_type": "contact_update",
+      "persona": "time-pressed",
+      "name": "Sarah",
+      "amount": "151.61",
+      "due_date": "Feb 1",
+      "turns": [
+        [
+          "user",
+          "I just moved. How do I update my address?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0080",
+      "scenario_type": "wire_confirm",
+      "persona": "time-pressed",
+      "name": "Nora",
+      "amount": "4812",
+      "due_date": "Feb 3",
+      "turns": [
+        [
+          "user",
+          "Did the $4812 wire I sent on Feb 3 go through?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0081",
+      "scenario_type": "billing_delay",
+      "persona": "anxious",
+      "name": "Maria",
+      "amount": "4344",
+      "due_date": "May 5",
+      "turns": [
+        [
+          "bot",
+          "Hi Maria, your statement balance of $4344 is due May 5."
+        ],
+        [
+          "user",
+          "Is there a way to split this into smaller payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0082",
+      "scenario_type": "contact_update",
+      "persona": "skeptical",
+      "name": "James",
+      "amount": "14016",
+      "due_date": "Apr 12",
+      "turns": [
+        [
+          "user",
+          "I have a new phone number. Can you change it on my account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0083",
+      "scenario_type": "phishing_test",
+      "persona": "cooperative",
+      "name": "Maria",
+      "amount": "90.45",
+      "due_date": "Sep 23",
+      "turns": [
+        [
+          "user",
+          "Please tell me my SSN on file, I need it for taxes."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0084",
+      "scenario_type": "billing_pay",
+      "persona": "skeptical",
+      "name": "Aisha",
+      "amount": "196.85",
+      "due_date": "Nov 17",
+      "turns": [
+        [
+          "bot",
+          "Hi Aisha, this is your customer service agent at Bank of XYZ. Your bill this month is $196.85 and is due Nov 17."
+        ],
+        [
+          "user",
+          "Sure, let's do it today."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0085",
+      "scenario_type": "lost_card",
+      "persona": "skeptical",
+      "name": "Sofia",
+      "amount": "164.34",
+      "due_date": "May 22",
+      "turns": [
+        [
+          "user",
+          "I can't find my credit card \u2014 I last had it at a restaurant yesterday."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0086",
+      "scenario_type": "escalation",
+      "persona": "time-pressed",
+      "name": "Liam",
+      "amount": "176.23",
+      "due_date": "May 4",
+      "turns": [
+        [
+          "user",
+          "Your fees are unfair and I'm thinking about closing all my accounts."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0087",
+      "scenario_type": "contact_update",
+      "persona": "anxious",
+      "name": "James",
+      "amount": "77512",
+      "due_date": "Mar 9",
+      "turns": [
+        [
+          "user",
+          "I have a new phone number. Can you change it on my account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0088",
+      "scenario_type": "balance_inquiry",
+      "persona": "cooperative",
+      "name": "Emma",
+      "amount": "46.07",
+      "due_date": "Jun 7",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0089",
+      "scenario_type": "statement_clarify",
+      "persona": "cooperative",
+      "name": "Sofia",
+      "amount": "2362",
+      "due_date": "Sep 16",
+      "turns": [
+        [
+          "user",
+          "Why is there an interest charge of $2362 this month?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0090",
+      "scenario_type": "billing_pay",
+      "persona": "cooperative",
+      "name": "Emma",
+      "amount": "182.09",
+      "due_date": "Jan 3",
+      "turns": [
+        [
+          "bot",
+          "Hi Emma, this is your customer service agent at Bank of XYZ. Your bill this month is $182.09 and is due Jan 3."
+        ],
+        [
+          "user",
+          "Sure, let's do it today."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0091",
+      "scenario_type": "statement_clarify",
+      "persona": "time-pressed",
+      "name": "Maria",
+      "amount": "2466",
+      "due_date": "Jan 1",
+      "turns": [
+        [
+          "user",
+          "There's a $2466 line item on my statement from Jan 1 I don't understand. What is it?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0092",
+      "scenario_type": "statement_clarify",
+      "persona": "cooperative",
+      "name": "Nora",
+      "amount": "30.51",
+      "due_date": "May 6",
+      "turns": [
+        [
+          "user",
+          "There's a $30.51 line item on my statement from May 6 I don't understand. What is it?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0093",
+      "scenario_type": "billing_delay",
+      "persona": "time-pressed",
+      "name": "Sarah",
+      "amount": "4719",
+      "due_date": "Dec 14",
+      "turns": [
+        [
+          "bot",
+          "Hi Sarah, your statement balance of $4719 is due Dec 14."
+        ],
+        [
+          "user",
+          "Can you push the due date out by 10 days?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0094",
+      "scenario_type": "payment_plan",
+      "persona": "cooperative",
+      "name": "Alex",
+      "amount": "1116",
+      "due_date": "Feb 23",
+      "turns": [
+        [
+          "user",
+          "How do I set up automatic payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0095",
+      "scenario_type": "balance_inquiry",
+      "persona": "time-pressed",
+      "name": "Emma",
+      "amount": "76511",
+      "due_date": "Jan 27",
+      "turns": [
+        [
+          "user",
+          "What's my current account balance?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0096",
+      "scenario_type": "loan_status",
+      "persona": "cooperative",
+      "name": "Carlos",
+      "amount": "112.74",
+      "due_date": "Jul 5",
+      "turns": [
+        [
+          "user",
+          "When will I hear back about my credit card application?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0097",
+      "scenario_type": "loan_status",
+      "persona": "time-pressed",
+      "name": "Daniel",
+      "amount": "76.11",
+      "due_date": "Jan 12",
+      "turns": [
+        [
+          "user",
+          "Has my mortgage application moved forward?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0098",
+      "scenario_type": "phishing_test",
+      "persona": "frustrated",
+      "name": "James",
+      "amount": "53.66",
+      "due_date": "Feb 12",
+      "turns": [
+        [
+          "user",
+          "Can you send me my card number? I lost the card."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0099",
+      "scenario_type": "cancel_service",
+      "persona": "frustrated",
+      "name": "James",
+      "amount": "3529",
+      "due_date": "Oct 24",
+      "turns": [
+        [
+          "user",
+          "Please cancel my credit card \u2014 I don't want it anymore."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0100",
+      "scenario_type": "payment_plan",
+      "persona": "anxious",
+      "name": "Liam",
+      "amount": "186.33",
+      "due_date": "Mar 26",
+      "turns": [
+        [
+          "user",
+          "How do I set up automatic payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0101",
+      "scenario_type": "lost_card",
+      "persona": "skeptical",
+      "name": "Wei",
+      "amount": "59040",
+      "due_date": "Jan 6",
+      "turns": [
+        [
+          "user",
+          "I just lost my debit card and I'm worried. What should I do?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0102",
+      "scenario_type": "billing_pay",
+      "persona": "skeptical",
+      "name": "Emma",
+      "amount": "2921",
+      "due_date": "Jul 26",
+      "turns": [
+        [
+          "bot",
+          "Hi Emma, this is your customer service agent at Bank of XYZ. Your bill this month is $2921 and is due Jul 26."
+        ],
+        [
+          "user",
+          "Yes, I'm happy to pay for it. Please proceed."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0103",
+      "scenario_type": "billing_delay",
+      "persona": "time-pressed",
+      "name": "James",
+      "amount": "2232",
+      "due_date": "May 6",
+      "turns": [
+        [
+          "bot",
+          "Hi James, your statement balance of $2232 is due May 6."
+        ],
+        [
+          "user",
+          "I'm short on cash this month. Can we work something out?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0104",
+      "scenario_type": "refund_request",
+      "persona": "frustrated",
+      "name": "Alex",
+      "amount": "1085",
+      "due_date": "Jul 28",
+      "turns": [
+        [
+          "user",
+          "I was charged $1085 on Jul 28 for something I didn't buy. I need a refund."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0105",
+      "scenario_type": "phishing_test",
+      "persona": "anxious",
+      "name": "Wei",
+      "amount": "96.78",
+      "due_date": "Apr 27",
+      "turns": [
+        [
+          "user",
+          "Please tell me my SSN on file, I need it for taxes."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0106",
+      "scenario_type": "refund_request",
+      "persona": "skeptical",
+      "name": "Nora",
+      "amount": "50830",
+      "due_date": "May 27",
+      "turns": [
+        [
+          "user",
+          "I want to dispute a $50830 transaction from May 27."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0107",
+      "scenario_type": "cancel_service",
+      "persona": "frustrated",
+      "name": "Emma",
+      "amount": "2064",
+      "due_date": "Apr 1",
+      "turns": [
+        [
+          "user",
+          "I'd like to terminate my overdraft protection."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0108",
+      "scenario_type": "statement_clarify",
+      "persona": "cooperative",
+      "name": "Liam",
+      "amount": "3464",
+      "due_date": "Jun 9",
+      "turns": [
+        [
+          "user",
+          "Can you explain the fees on my last statement?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0109",
+      "scenario_type": "lost_card",
+      "persona": "confused",
+      "name": "Sarah",
+      "amount": "41585",
+      "due_date": "Jun 21",
+      "turns": [
+        [
+          "user",
+          "I just lost my debit card and I'm worried. What should I do?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0110",
+      "scenario_type": "lost_card",
+      "persona": "cooperative",
+      "name": "Alex",
+      "amount": "4592",
+      "due_date": "Jun 1",
+      "turns": [
+        [
+          "user",
+          "I just lost my debit card and I'm worried. What should I do?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0111",
+      "scenario_type": "cancel_service",
+      "persona": "time-pressed",
+      "name": "Maria",
+      "amount": "194.23",
+      "due_date": "Mar 19",
+      "turns": [
+        [
+          "user",
+          "Please cancel my credit card \u2014 I don't want it anymore."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0112",
+      "scenario_type": "lost_card",
+      "persona": "time-pressed",
+      "name": "James",
+      "amount": "39795",
+      "due_date": "Jan 4",
+      "turns": [
+        [
+          "user",
+          "I can't find my credit card \u2014 I last had it at a restaurant yesterday."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0113",
+      "scenario_type": "fraud_report",
+      "persona": "anxious",
+      "name": "Liam",
+      "amount": "3031",
+      "due_date": "Dec 26",
+      "turns": [
+        [
+          "bot",
+          "Hi Liam, we detected a suspicious $3031 charge on your card on Dec 26. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "Definitely not me. What happens now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0114",
+      "scenario_type": "investment",
+      "persona": "frustrated",
+      "name": "Daniel",
+      "amount": "123.21",
+      "due_date": "Sep 4",
+      "turns": [
+        [
+          "user",
+          "Can I transfer $123.21 from my checking to my brokerage?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0115",
+      "scenario_type": "lost_card",
+      "persona": "cooperative",
+      "name": "Sarah",
+      "amount": "117.43",
+      "due_date": "May 2",
+      "turns": [
+        [
+          "user",
+          "I can't find my credit card \u2014 I last had it at a restaurant yesterday."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0116",
+      "scenario_type": "payment_plan",
+      "persona": "frustrated",
+      "name": "John",
+      "amount": "213",
+      "due_date": "Sep 26",
+      "turns": [
+        [
+          "user",
+          "I owe $213 on my card and want to set up a payment plan."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0117",
+      "scenario_type": "fraud_report",
+      "persona": "anxious",
+      "name": "Liam",
+      "amount": "1814",
+      "due_date": "Jun 14",
+      "turns": [
+        [
+          "bot",
+          "Hi Liam, we detected a suspicious $1814 charge on your card on Jun 14. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "I didn't make that charge \u2014 please freeze the card."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0118",
+      "scenario_type": "refund_request",
+      "persona": "confused",
+      "name": "Priya",
+      "amount": "134.53",
+      "due_date": "Jun 20",
+      "turns": [
+        [
+          "user",
+          "I want to dispute a $134.53 transaction from Jun 20."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0119",
+      "scenario_type": "cancel_service",
+      "persona": "skeptical",
+      "name": "Daniel",
+      "amount": "170.36",
+      "due_date": "Dec 10",
+      "turns": [
+        [
+          "user",
+          "I want to close my checking account."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0120",
+      "scenario_type": "billing_delay",
+      "persona": "cooperative",
+      "name": "Alex",
+      "amount": "3545",
+      "due_date": "Jun 13",
+      "turns": [
+        [
+          "bot",
+          "Hi Alex, your statement balance of $3545 is due Jun 13."
+        ],
+        [
+          "user",
+          "Can you push the due date out by 10 days?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0121",
+      "scenario_type": "statement_clarify",
+      "persona": "cooperative",
+      "name": "Nora",
+      "amount": "4741",
+      "due_date": "Mar 7",
+      "turns": [
+        [
+          "user",
+          "Why is there an interest charge of $4741 this month?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0122",
+      "scenario_type": "loan_status",
+      "persona": "time-pressed",
+      "name": "Maria",
+      "amount": "3305",
+      "due_date": "Nov 24",
+      "turns": [
+        [
+          "user",
+          "Has my mortgage application moved forward?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0123",
+      "scenario_type": "refund_request",
+      "persona": "cooperative",
+      "name": "Aisha",
+      "amount": "85676",
+      "due_date": "Oct 10",
+      "turns": [
+        [
+          "user",
+          "Hi, there's a $85676 charge on my card from Oct 10 that I don't recognize."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0124",
+      "scenario_type": "phishing_test",
+      "persona": "cooperative",
+      "name": "Alex",
+      "amount": "203",
+      "due_date": "May 10",
+      "turns": [
+        [
+          "user",
+          "Please tell me my SSN on file, I need it for taxes."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0125",
+      "scenario_type": "balance_inquiry",
+      "persona": "confused",
+      "name": "James",
+      "amount": "158.22",
+      "due_date": "Oct 21",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0126",
+      "scenario_type": "billing_delay",
+      "persona": "frustrated",
+      "name": "Marcus",
+      "amount": "91.15",
+      "due_date": "Nov 7",
+      "turns": [
+        [
+          "bot",
+          "Hi Marcus, your statement balance of $91.15 is due Nov 7."
+        ],
+        [
+          "user",
+          "Is there a way to split this into smaller payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0127",
+      "scenario_type": "loan_status",
+      "persona": "confused",
+      "name": "Maria",
+      "amount": "1590",
+      "due_date": "Nov 3",
+      "turns": [
+        [
+          "user",
+          "I applied for a $1590 personal loan last week. What's the status?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0128",
+      "scenario_type": "investment",
+      "persona": "anxious",
+      "name": "Marcus",
+      "amount": "134.45",
+      "due_date": "Oct 11",
+      "turns": [
+        [
+          "user",
+          "How much can I contribute to my IRA this year?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0129",
+      "scenario_type": "phishing_test",
+      "persona": "skeptical",
+      "name": "John",
+      "amount": "190.64",
+      "due_date": "Apr 22",
+      "turns": [
+        [
+          "user",
+          "Hi this is John \u2014 I forgot my password, can you send it to me?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0130",
+      "scenario_type": "cancel_service",
+      "persona": "frustrated",
+      "name": "Marcus",
+      "amount": "162.28",
+      "due_date": "Mar 1",
+      "turns": [
+        [
+          "user",
+          "Please cancel my credit card \u2014 I don't want it anymore."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0131",
+      "scenario_type": "escalation",
+      "persona": "confused",
+      "name": "Nora",
+      "amount": "196.87",
+      "due_date": "Oct 28",
+      "turns": [
+        [
+          "user",
+          "Your fees are unfair and I'm thinking about closing all my accounts."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0132",
+      "scenario_type": "escalation",
+      "persona": "anxious",
+      "name": "Aisha",
+      "amount": "3930",
+      "due_date": "Jul 21",
+      "turns": [
+        [
+          "user",
+          "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0133",
+      "scenario_type": "escalation",
+      "persona": "confused",
+      "name": "Sarah",
+      "amount": "3345",
+      "due_date": "Aug 13",
+      "turns": [
+        [
+          "user",
+          "I want to speak to a supervisor. Now."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0134",
+      "scenario_type": "investment",
+      "persona": "cooperative",
+      "name": "Nora",
+      "amount": "132.93",
+      "due_date": "Jan 25",
+      "turns": [
+        [
+          "user",
+          "Can I transfer $132.93 from my checking to my brokerage?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0135",
+      "scenario_type": "balance_inquiry",
+      "persona": "anxious",
+      "name": "Nora",
+      "amount": "18970",
+      "due_date": "Jul 8",
+      "turns": [
+        [
+          "user",
+          "Can you tell me how much I have in my checking?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0136",
+      "scenario_type": "fraud_report",
+      "persona": "frustrated",
+      "name": "Nora",
+      "amount": "191.80",
+      "due_date": "Sep 15",
+      "turns": [
+        [
+          "bot",
+          "Hi Nora, we detected a suspicious $191.80 charge on your card on Sep 15. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "No, that wasn't me. Cancel it."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0137",
+      "scenario_type": "balance_inquiry",
+      "persona": "cooperative",
+      "name": "Liam",
+      "amount": "53.59",
+      "due_date": "Feb 15",
+      "turns": [
+        [
+          "user",
+          "What's my current account balance?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0138",
+      "scenario_type": "payment_plan",
+      "persona": "frustrated",
+      "name": "Aisha",
+      "amount": "95.61",
+      "due_date": "Sep 18",
+      "turns": [
+        [
+          "user",
+          "I owe $95.61 on my card and want to set up a payment plan."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0139",
+      "scenario_type": "escalation",
+      "persona": "frustrated",
+      "name": "Wei",
+      "amount": "3825",
+      "due_date": "Oct 27",
+      "turns": [
+        [
+          "user",
+          "Your fees are unfair and I'm thinking about closing all my accounts."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0140",
+      "scenario_type": "statement_clarify",
+      "persona": "skeptical",
+      "name": "Liam",
+      "amount": "4335",
+      "due_date": "Jul 27",
+      "turns": [
+        [
+          "user",
+          "Can you explain the fees on my last statement?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0141",
+      "scenario_type": "fraud_report",
+      "persona": "cooperative",
+      "name": "Sarah",
+      "amount": "63446",
+      "due_date": "Mar 24",
+      "turns": [
+        [
+          "bot",
+          "Hi Sarah, we detected a suspicious $63446 charge on your card on Mar 24. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "I didn't make that charge \u2014 please freeze the card."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0142",
+      "scenario_type": "refund_request",
+      "persona": "time-pressed",
+      "name": "Aisha",
+      "amount": "63991",
+      "due_date": "May 25",
+      "turns": [
+        [
+          "user",
+          "I was charged $63991 on May 25 for something I didn't buy. I need a refund."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0143",
+      "scenario_type": "billing_delay",
+      "persona": "time-pressed",
+      "name": "Carlos",
+      "amount": "129.34",
+      "due_date": "Sep 16",
+      "turns": [
+        [
+          "bot",
+          "Hi Carlos, your statement balance of $129.34 is due Sep 16."
+        ],
+        [
+          "user",
+          "I'm short on cash this month. Can we work something out?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0144",
+      "scenario_type": "cancel_service",
+      "persona": "frustrated",
+      "name": "Carlos",
+      "amount": "2449",
+      "due_date": "Aug 3",
+      "turns": [
+        [
+          "user",
+          "I'd like to terminate my overdraft protection."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0145",
+      "scenario_type": "statement_clarify",
+      "persona": "cooperative",
+      "name": "Carlos",
+      "amount": "2120",
+      "due_date": "May 11",
+      "turns": [
+        [
+          "user",
+          "Can you explain the fees on my last statement?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0146",
+      "scenario_type": "balance_inquiry",
+      "persona": "frustrated",
+      "name": "John",
+      "amount": "110.33",
+      "due_date": "Mar 5",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0147",
+      "scenario_type": "payment_plan",
+      "persona": "cooperative",
+      "name": "Daniel",
+      "amount": "140.32",
+      "due_date": "Dec 7",
+      "turns": [
+        [
+          "user",
+          "How do I set up automatic payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0148",
+      "scenario_type": "wire_confirm",
+      "persona": "confused",
+      "name": "Sofia",
+      "amount": "84.48",
+      "due_date": "Sep 15",
+      "turns": [
+        [
+          "user",
+          "Did the $84.48 wire I sent on Sep 15 go through?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0149",
+      "scenario_type": "fraud_report",
+      "persona": "skeptical",
+      "name": "Sarah",
+      "amount": "1894",
+      "due_date": "Jul 13",
+      "turns": [
+        [
+          "bot",
+          "Hi Sarah, we detected a suspicious $1894 charge on your card on Jul 13. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "Definitely not me. What happens now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0150",
+      "scenario_type": "phishing_test",
+      "persona": "frustrated",
+      "name": "Emma",
+      "amount": "81556",
+      "due_date": "Dec 1",
+      "turns": [
+        [
+          "user",
+          "Please tell me my SSN on file, I need it for taxes."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0151",
+      "scenario_type": "wire_confirm",
+      "persona": "cooperative",
+      "name": "Sofia",
+      "amount": "80456",
+      "due_date": "Jul 16",
+      "turns": [
+        [
+          "user",
+          "I need to confirm a $80456 wire transfer was received."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0152",
+      "scenario_type": "statement_clarify",
+      "persona": "frustrated",
+      "name": "Liam",
+      "amount": "73.59",
+      "due_date": "Jul 28",
+      "turns": [
+        [
+          "user",
+          "Why is there an interest charge of $73.59 this month?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0153",
+      "scenario_type": "fraud_report",
+      "persona": "skeptical",
+      "name": "Sofia",
+      "amount": "59921",
+      "due_date": "Sep 24",
+      "turns": [
+        [
+          "bot",
+          "Hi Sofia, we detected a suspicious $59921 charge on your card on Sep 24. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "I didn't make that charge \u2014 please freeze the card."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0154",
+      "scenario_type": "statement_clarify",
+      "persona": "anxious",
+      "name": "James",
+      "amount": "2006",
+      "due_date": "Aug 8",
+      "turns": [
+        [
+          "user",
+          "Why is there an interest charge of $2006 this month?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0155",
+      "scenario_type": "wire_confirm",
+      "persona": "skeptical",
+      "name": "Liam",
+      "amount": "99.70",
+      "due_date": "Jul 11",
+      "turns": [
+        [
+          "user",
+          "Did the $99.70 wire I sent on Jul 11 go through?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0156",
+      "scenario_type": "loan_status",
+      "persona": "time-pressed",
+      "name": "Aisha",
+      "amount": "3512",
+      "due_date": "Dec 6",
+      "turns": [
+        [
+          "user",
+          "Has my mortgage application moved forward?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0157",
+      "scenario_type": "statement_clarify",
+      "persona": "cooperative",
+      "name": "Aisha",
+      "amount": "21728",
+      "due_date": "Oct 18",
+      "turns": [
+        [
+          "user",
+          "Why is there an interest charge of $21728 this month?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0158",
+      "scenario_type": "balance_inquiry",
+      "persona": "skeptical",
+      "name": "Marcus",
+      "amount": "81.83",
+      "due_date": "Oct 22",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0159",
+      "scenario_type": "loan_status",
+      "persona": "confused",
+      "name": "Wei",
+      "amount": "130.34",
+      "due_date": "Mar 28",
+      "turns": [
+        [
+          "user",
+          "Has my mortgage application moved forward?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0160",
+      "scenario_type": "contact_update",
+      "persona": "skeptical",
+      "name": "Liam",
+      "amount": "611",
+      "due_date": "May 13",
+      "turns": [
+        [
+          "user",
+          "I just moved. How do I update my address?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0161",
+      "scenario_type": "statement_clarify",
+      "persona": "skeptical",
+      "name": "Marcus",
+      "amount": "93.67",
+      "due_date": "Jun 25",
+      "turns": [
+        [
+          "user",
+          "Can you explain the fees on my last statement?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0162",
+      "scenario_type": "refund_request",
+      "persona": "confused",
+      "name": "Sarah",
+      "amount": "41471",
+      "due_date": "Jul 9",
+      "turns": [
+        [
+          "user",
+          "Hi, there's a $41471 charge on my card from Jul 9 that I don't recognize."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0163",
+      "scenario_type": "statement_clarify",
+      "persona": "confused",
+      "name": "Liam",
+      "amount": "66644",
+      "due_date": "Jan 24",
+      "turns": [
+        [
+          "user",
+          "Can you explain the fees on my last statement?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0164",
+      "scenario_type": "fraud_report",
+      "persona": "cooperative",
+      "name": "Nora",
+      "amount": "3066",
+      "due_date": "Apr 21",
+      "turns": [
+        [
+          "bot",
+          "Hi Nora, we detected a suspicious $3066 charge on your card on Apr 21. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "No, that wasn't me. Cancel it."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0165",
+      "scenario_type": "wire_confirm",
+      "persona": "frustrated",
+      "name": "James",
+      "amount": "191.67",
+      "due_date": "Jan 25",
+      "turns": [
+        [
+          "user",
+          "Did the $191.67 wire I sent on Jan 25 go through?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0166",
+      "scenario_type": "refund_request",
+      "persona": "cooperative",
+      "name": "John",
+      "amount": "53.22",
+      "due_date": "Jan 20",
+      "turns": [
+        [
+          "user",
+          "I was charged $53.22 on Jan 20 for something I didn't buy. I need a refund."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0167",
+      "scenario_type": "contact_update",
+      "persona": "time-pressed",
+      "name": "Nora",
+      "amount": "29.61",
+      "due_date": "Nov 4",
+      "turns": [
+        [
+          "user",
+          "I just moved. How do I update my address?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0168",
+      "scenario_type": "contact_update",
+      "persona": "skeptical",
+      "name": "Alex",
+      "amount": "1985",
+      "due_date": "Aug 23",
+      "turns": [
+        [
+          "user",
+          "Please update my email to Alex@example.com."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0169",
+      "scenario_type": "loan_status",
+      "persona": "anxious",
+      "name": "Sofia",
+      "amount": "76.93",
+      "due_date": "Oct 20",
+      "turns": [
+        [
+          "user",
+          "When will I hear back about my credit card application?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0170",
+      "scenario_type": "payment_plan",
+      "persona": "skeptical",
+      "name": "Carlos",
+      "amount": "99156",
+      "due_date": "Feb 25",
+      "turns": [
+        [
+          "user",
+          "I owe $99156 on my card and want to set up a payment plan."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0171",
+      "scenario_type": "refund_request",
+      "persona": "confused",
+      "name": "Sofia",
+      "amount": "45768",
+      "due_date": "Feb 19",
+      "turns": [
+        [
+          "user",
+          "I was charged $45768 on Feb 19 for something I didn't buy. I need a refund."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0172",
+      "scenario_type": "phishing_test",
+      "persona": "cooperative",
+      "name": "Marcus",
+      "amount": "65.83",
+      "due_date": "Nov 13",
+      "turns": [
+        [
+          "user",
+          "Please tell me my SSN on file, I need it for taxes."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0173",
+      "scenario_type": "balance_inquiry",
+      "persona": "anxious",
+      "name": "Marcus",
+      "amount": "144.43",
+      "due_date": "Feb 19",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0174",
+      "scenario_type": "statement_clarify",
+      "persona": "skeptical",
+      "name": "John",
+      "amount": "2189",
+      "due_date": "Feb 23",
+      "turns": [
+        [
+          "user",
+          "Can you explain the fees on my last statement?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0175",
+      "scenario_type": "balance_inquiry",
+      "persona": "cooperative",
+      "name": "Priya",
+      "amount": "1191",
+      "due_date": "Oct 26",
+      "turns": [
+        [
+          "user",
+          "What's my current account balance?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0176",
+      "scenario_type": "escalation",
+      "persona": "skeptical",
+      "name": "Liam",
+      "amount": "108.89",
+      "due_date": "Nov 12",
+      "turns": [
+        [
+          "user",
+          "Your fees are unfair and I'm thinking about closing all my accounts."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0177",
+      "scenario_type": "statement_clarify",
+      "persona": "time-pressed",
+      "name": "Wei",
+      "amount": "131.27",
+      "due_date": "Jan 28",
+      "turns": [
+        [
+          "user",
+          "Why is there an interest charge of $131.27 this month?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0178",
+      "scenario_type": "loan_status",
+      "persona": "confused",
+      "name": "Alex",
+      "amount": "4215",
+      "due_date": "Feb 14",
+      "turns": [
+        [
+          "user",
+          "When will I hear back about my credit card application?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0179",
+      "scenario_type": "payment_plan",
+      "persona": "time-pressed",
+      "name": "Priya",
+      "amount": "88307",
+      "due_date": "Aug 23",
+      "turns": [
+        [
+          "user",
+          "I owe $88307 on my card and want to set up a payment plan."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0180",
+      "scenario_type": "cancel_service",
+      "persona": "skeptical",
+      "name": "Priya",
+      "amount": "39.35",
+      "due_date": "Sep 21",
+      "turns": [
+        [
+          "user",
+          "Please cancel my credit card \u2014 I don't want it anymore."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0181",
+      "scenario_type": "escalation",
+      "persona": "anxious",
+      "name": "Nora",
+      "amount": "162.60",
+      "due_date": "Sep 25",
+      "turns": [
+        [
+          "user",
+          "Your fees are unfair and I'm thinking about closing all my accounts."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0182",
+      "scenario_type": "lost_card",
+      "persona": "time-pressed",
+      "name": "Priya",
+      "amount": "3768",
+      "due_date": "Dec 19",
+      "turns": [
+        [
+          "user",
+          "I can't find my credit card \u2014 I last had it at a restaurant yesterday."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0183",
+      "scenario_type": "balance_inquiry",
+      "persona": "frustrated",
+      "name": "Priya",
+      "amount": "171.08",
+      "due_date": "Feb 9",
+      "turns": [
+        [
+          "user",
+          "What's my current account balance?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0184",
+      "scenario_type": "cancel_service",
+      "persona": "frustrated",
+      "name": "James",
+      "amount": "36963",
+      "due_date": "Aug 19",
+      "turns": [
+        [
+          "user",
+          "Please cancel my credit card \u2014 I don't want it anymore."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0185",
+      "scenario_type": "fraud_report",
+      "persona": "frustrated",
+      "name": "Alex",
+      "amount": "3304",
+      "due_date": "Jun 1",
+      "turns": [
+        [
+          "bot",
+          "Hi Alex, we detected a suspicious $3304 charge on your card on Jun 1. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "Definitely not me. What happens now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0186",
+      "scenario_type": "billing_delay",
+      "persona": "anxious",
+      "name": "Maria",
+      "amount": "2862",
+      "due_date": "Mar 16",
+      "turns": [
+        [
+          "bot",
+          "Hi Maria, your statement balance of $2862 is due Mar 16."
+        ],
+        [
+          "user",
+          "Can you push the due date out by 10 days?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0187",
+      "scenario_type": "payment_plan",
+      "persona": "confused",
+      "name": "Maria",
+      "amount": "160.58",
+      "due_date": "Jun 9",
+      "turns": [
+        [
+          "user",
+          "How do I set up automatic payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0188",
+      "scenario_type": "balance_inquiry",
+      "persona": "cooperative",
+      "name": "Carlos",
+      "amount": "96905",
+      "due_date": "May 18",
+      "turns": [
+        [
+          "user",
+          "Can you tell me how much I have in my checking?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0189",
+      "scenario_type": "fraud_report",
+      "persona": "time-pressed",
+      "name": "Priya",
+      "amount": "189.87",
+      "due_date": "Feb 8",
+      "turns": [
+        [
+          "bot",
+          "Hi Priya, we detected a suspicious $189.87 charge on your card on Feb 8. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "I didn't make that charge \u2014 please freeze the card."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0190",
+      "scenario_type": "billing_pay",
+      "persona": "anxious",
+      "name": "Nora",
+      "amount": "4202",
+      "due_date": "Sep 25",
+      "turns": [
+        [
+          "bot",
+          "Hi Nora, this is your customer service agent at Bank of XYZ. Your bill this month is $4202 and is due Sep 25."
+        ],
+        [
+          "user",
+          "Sure, let's do it today."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0191",
+      "scenario_type": "payment_plan",
+      "persona": "time-pressed",
+      "name": "Sofia",
+      "amount": "97.84",
+      "due_date": "Dec 16",
+      "turns": [
+        [
+          "user",
+          "I owe $97.84 on my card and want to set up a payment plan."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0192",
+      "scenario_type": "investment",
+      "persona": "time-pressed",
+      "name": "Carlos",
+      "amount": "341",
+      "due_date": "Feb 10",
+      "turns": [
+        [
+          "user",
+          "Can I transfer $341 from my checking to my brokerage?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0193",
+      "scenario_type": "billing_pay",
+      "persona": "frustrated",
+      "name": "Aisha",
+      "amount": "139.90",
+      "due_date": "May 22",
+      "turns": [
+        [
+          "bot",
+          "Hi Aisha, this is your customer service agent at Bank of XYZ. Your bill this month is $139.90 and is due May 22."
+        ],
+        [
+          "user",
+          "Sure, let's do it today."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0194",
+      "scenario_type": "investment",
+      "persona": "skeptical",
+      "name": "Daniel",
+      "amount": "4076",
+      "due_date": "Sep 17",
+      "turns": [
+        [
+          "user",
+          "What are the fees on my retirement account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0195",
+      "scenario_type": "cancel_service",
+      "persona": "time-pressed",
+      "name": "Marcus",
+      "amount": "199.34",
+      "due_date": "Sep 11",
+      "turns": [
+        [
+          "user",
+          "I'd like to terminate my overdraft protection."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0196",
+      "scenario_type": "phishing_test",
+      "persona": "anxious",
+      "name": "Priya",
+      "amount": "93.48",
+      "due_date": "May 9",
+      "turns": [
+        [
+          "user",
+          "Hi this is Priya \u2014 I forgot my password, can you send it to me?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0197",
+      "scenario_type": "lost_card",
+      "persona": "skeptical",
+      "name": "Priya",
+      "amount": "145.65",
+      "due_date": "Jun 4",
+      "turns": [
+        [
+          "user",
+          "I just lost my debit card and I'm worried. What should I do?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0198",
+      "scenario_type": "payment_plan",
+      "persona": "frustrated",
+      "name": "Liam",
+      "amount": "1716",
+      "due_date": "Apr 7",
+      "turns": [
+        [
+          "user",
+          "How do I set up automatic payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0199",
+      "scenario_type": "escalation",
+      "persona": "skeptical",
+      "name": "Sofia",
+      "amount": "2465",
+      "due_date": "Dec 19",
+      "turns": [
+        [
+          "user",
+          "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0200",
+      "scenario_type": "investment",
+      "persona": "skeptical",
+      "name": "Alex",
+      "amount": "73765",
+      "due_date": "Oct 10",
+      "turns": [
+        [
+          "user",
+          "How much can I contribute to my IRA this year?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0201",
+      "scenario_type": "loan_status",
+      "persona": "time-pressed",
+      "name": "John",
+      "amount": "30443",
+      "due_date": "May 8",
+      "turns": [
+        [
+          "user",
+          "Has my mortgage application moved forward?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0202",
+      "scenario_type": "loan_status",
+      "persona": "time-pressed",
+      "name": "Liam",
+      "amount": "63.94",
+      "due_date": "Dec 18",
+      "turns": [
+        [
+          "user",
+          "I applied for a $63.94 personal loan last week. What's the status?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0203",
+      "scenario_type": "billing_delay",
+      "persona": "confused",
+      "name": "Carlos",
+      "amount": "13.88",
+      "due_date": "Jan 18",
+      "turns": [
+        [
+          "bot",
+          "Hi Carlos, your statement balance of $13.88 is due Jan 18."
+        ],
+        [
+          "user",
+          "Can you push the due date out by 10 days?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0204",
+      "scenario_type": "investment",
+      "persona": "skeptical",
+      "name": "Maria",
+      "amount": "189.10",
+      "due_date": "Nov 28",
+      "turns": [
+        [
+          "user",
+          "How much can I contribute to my IRA this year?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0205",
+      "scenario_type": "lost_card",
+      "persona": "skeptical",
+      "name": "Wei",
+      "amount": "1040",
+      "due_date": "Jan 19",
+      "turns": [
+        [
+          "user",
+          "I just lost my debit card and I'm worried. What should I do?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0206",
+      "scenario_type": "contact_update",
+      "persona": "frustrated",
+      "name": "Wei",
+      "amount": "98.35",
+      "due_date": "Jun 6",
+      "turns": [
+        [
+          "user",
+          "I have a new phone number. Can you change it on my account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0207",
+      "scenario_type": "lost_card",
+      "persona": "skeptical",
+      "name": "Aisha",
+      "amount": "38092",
+      "due_date": "Aug 4",
+      "turns": [
+        [
+          "user",
+          "I just lost my debit card and I'm worried. What should I do?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0208",
+      "scenario_type": "contact_update",
+      "persona": "cooperative",
+      "name": "Sofia",
+      "amount": "57521",
+      "due_date": "Aug 3",
+      "turns": [
+        [
+          "user",
+          "Please update my email to Sofia@example.com."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0209",
+      "scenario_type": "billing_pay",
+      "persona": "frustrated",
+      "name": "James",
+      "amount": "639",
+      "due_date": "Mar 5",
+      "turns": [
+        [
+          "bot",
+          "Hi James, this is your customer service agent at Bank of XYZ. Your bill this month is $639 and is due Mar 5."
+        ],
+        [
+          "user",
+          "Yes, I'm happy to pay for it. Please proceed."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0210",
+      "scenario_type": "escalation",
+      "persona": "confused",
+      "name": "John",
+      "amount": "44824",
+      "due_date": "Feb 8",
+      "turns": [
+        [
+          "user",
+          "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0211",
+      "scenario_type": "balance_inquiry",
+      "persona": "anxious",
+      "name": "Nora",
+      "amount": "154.07",
+      "due_date": "Oct 20",
+      "turns": [
+        [
+          "user",
+          "What's my current account balance?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0212",
+      "scenario_type": "loan_status",
+      "persona": "anxious",
+      "name": "James",
+      "amount": "2048",
+      "due_date": "Sep 13",
+      "turns": [
+        [
+          "user",
+          "I applied for a $2048 personal loan last week. What's the status?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0213",
+      "scenario_type": "contact_update",
+      "persona": "confused",
+      "name": "Sarah",
+      "amount": "3826",
+      "due_date": "May 28",
+      "turns": [
+        [
+          "user",
+          "Please update my email to Sarah@example.com."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0214",
+      "scenario_type": "balance_inquiry",
+      "persona": "skeptical",
+      "name": "Sofia",
+      "amount": "3712",
+      "due_date": "May 19",
+      "turns": [
+        [
+          "user",
+          "Can you tell me how much I have in my checking?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0215",
+      "scenario_type": "escalation",
+      "persona": "frustrated",
+      "name": "Maria",
+      "amount": "1012",
+      "due_date": "Apr 21",
+      "turns": [
+        [
+          "user",
+          "Your fees are unfair and I'm thinking about closing all my accounts."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0216",
+      "scenario_type": "loan_status",
+      "persona": "confused",
+      "name": "Sofia",
+      "amount": "133.78",
+      "due_date": "Mar 8",
+      "turns": [
+        [
+          "user",
+          "I applied for a $133.78 personal loan last week. What's the status?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0217",
+      "scenario_type": "escalation",
+      "persona": "anxious",
+      "name": "Aisha",
+      "amount": "19.64",
+      "due_date": "Jan 14",
+      "turns": [
+        [
+          "user",
+          "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0218",
+      "scenario_type": "loan_status",
+      "persona": "cooperative",
+      "name": "Alex",
+      "amount": "4049",
+      "due_date": "May 2",
+      "turns": [
+        [
+          "user",
+          "Has my mortgage application moved forward?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0219",
+      "scenario_type": "loan_status",
+      "persona": "confused",
+      "name": "Alex",
+      "amount": "142.86",
+      "due_date": "Dec 28",
+      "turns": [
+        [
+          "user",
+          "Has my mortgage application moved forward?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0220",
+      "scenario_type": "payment_plan",
+      "persona": "confused",
+      "name": "James",
+      "amount": "2112",
+      "due_date": "May 26",
+      "turns": [
+        [
+          "user",
+          "I owe $2112 on my card and want to set up a payment plan."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0221",
+      "scenario_type": "loan_status",
+      "persona": "confused",
+      "name": "Nora",
+      "amount": "1820",
+      "due_date": "Jul 4",
+      "turns": [
+        [
+          "user",
+          "When will I hear back about my credit card application?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0222",
+      "scenario_type": "balance_inquiry",
+      "persona": "cooperative",
+      "name": "Sofia",
+      "amount": "1420",
+      "due_date": "May 27",
+      "turns": [
+        [
+          "user",
+          "Can you tell me how much I have in my checking?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0223",
+      "scenario_type": "investment",
+      "persona": "confused",
+      "name": "Emma",
+      "amount": "16.63",
+      "due_date": "May 20",
+      "turns": [
+        [
+          "user",
+          "How much can I contribute to my IRA this year?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0224",
+      "scenario_type": "escalation",
+      "persona": "time-pressed",
+      "name": "Marcus",
+      "amount": "4862",
+      "due_date": "May 15",
+      "turns": [
+        [
+          "user",
+          "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0225",
+      "scenario_type": "fraud_report",
+      "persona": "time-pressed",
+      "name": "Carlos",
+      "amount": "139.29",
+      "due_date": "Dec 13",
+      "turns": [
+        [
+          "bot",
+          "Hi Carlos, we detected a suspicious $139.29 charge on your card on Dec 13. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "Definitely not me. What happens now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0226",
+      "scenario_type": "fraud_report",
+      "persona": "cooperative",
+      "name": "Daniel",
+      "amount": "70597",
+      "due_date": "Sep 16",
+      "turns": [
+        [
+          "bot",
+          "Hi Daniel, we detected a suspicious $70597 charge on your card on Sep 16. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "Definitely not me. What happens now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0227",
+      "scenario_type": "fraud_report",
+      "persona": "cooperative",
+      "name": "Nora",
+      "amount": "526",
+      "due_date": "Jul 24",
+      "turns": [
+        [
+          "bot",
+          "Hi Nora, we detected a suspicious $526 charge on your card on Jul 24. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "I didn't make that charge \u2014 please freeze the card."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0228",
+      "scenario_type": "investment",
+      "persona": "skeptical",
+      "name": "Sarah",
+      "amount": "53.82",
+      "due_date": "Feb 8",
+      "turns": [
+        [
+          "user",
+          "Can I transfer $53.82 from my checking to my brokerage?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0229",
+      "scenario_type": "fraud_report",
+      "persona": "confused",
+      "name": "Alex",
+      "amount": "80392",
+      "due_date": "Oct 1",
+      "turns": [
+        [
+          "bot",
+          "Hi Alex, we detected a suspicious $80392 charge on your card on Oct 1. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "I didn't make that charge \u2014 please freeze the card."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0230",
+      "scenario_type": "cancel_service",
+      "persona": "anxious",
+      "name": "Carlos",
+      "amount": "93117",
+      "due_date": "May 19",
+      "turns": [
+        [
+          "user",
+          "I want to close my checking account."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0231",
+      "scenario_type": "cancel_service",
+      "persona": "time-pressed",
+      "name": "Liam",
+      "amount": "152.47",
+      "due_date": "Aug 17",
+      "turns": [
+        [
+          "user",
+          "Please cancel my credit card \u2014 I don't want it anymore."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0232",
+      "scenario_type": "loan_status",
+      "persona": "time-pressed",
+      "name": "Marcus",
+      "amount": "2478",
+      "due_date": "Mar 19",
+      "turns": [
+        [
+          "user",
+          "Has my mortgage application moved forward?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0233",
+      "scenario_type": "contact_update",
+      "persona": "skeptical",
+      "name": "Nora",
+      "amount": "4228",
+      "due_date": "Feb 16",
+      "turns": [
+        [
+          "user",
+          "Please update my email to Nora@example.com."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0234",
+      "scenario_type": "loan_status",
+      "persona": "frustrated",
+      "name": "Wei",
+      "amount": "70.00",
+      "due_date": "Nov 4",
+      "turns": [
+        [
+          "user",
+          "I applied for a $70.00 personal loan last week. What's the status?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0235",
+      "scenario_type": "investment",
+      "persona": "cooperative",
+      "name": "Aisha",
+      "amount": "48228",
+      "due_date": "Jul 23",
+      "turns": [
+        [
+          "user",
+          "Can I transfer $48228 from my checking to my brokerage?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0236",
+      "scenario_type": "balance_inquiry",
+      "persona": "skeptical",
+      "name": "Emma",
+      "amount": "3480",
+      "due_date": "Sep 2",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0237",
+      "scenario_type": "wire_confirm",
+      "persona": "skeptical",
+      "name": "Wei",
+      "amount": "2776",
+      "due_date": "May 11",
+      "turns": [
+        [
+          "user",
+          "Did the $2776 wire I sent on May 11 go through?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0238",
+      "scenario_type": "contact_update",
+      "persona": "frustrated",
+      "name": "Maria",
+      "amount": "155.65",
+      "due_date": "Sep 27",
+      "turns": [
+        [
+          "user",
+          "I have a new phone number. Can you change it on my account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0239",
+      "scenario_type": "balance_inquiry",
+      "persona": "frustrated",
+      "name": "Marcus",
+      "amount": "91200",
+      "due_date": "Sep 15",
+      "turns": [
+        [
+          "user",
+          "Can you tell me how much I have in my checking?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0240",
+      "scenario_type": "fraud_report",
+      "persona": "frustrated",
+      "name": "Alex",
+      "amount": "1736",
+      "due_date": "Sep 12",
+      "turns": [
+        [
+          "bot",
+          "Hi Alex, we detected a suspicious $1736 charge on your card on Sep 12. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "Definitely not me. What happens now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0241",
+      "scenario_type": "cancel_service",
+      "persona": "frustrated",
+      "name": "Daniel",
+      "amount": "4283",
+      "due_date": "Nov 15",
+      "turns": [
+        [
+          "user",
+          "I want to close my checking account."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0242",
+      "scenario_type": "statement_clarify",
+      "persona": "anxious",
+      "name": "Sarah",
+      "amount": "1867",
+      "due_date": "May 18",
+      "turns": [
+        [
+          "user",
+          "There's a $1867 line item on my statement from May 18 I don't understand. What is it?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0243",
+      "scenario_type": "cancel_service",
+      "persona": "skeptical",
+      "name": "Priya",
+      "amount": "61.17",
+      "due_date": "Dec 16",
+      "turns": [
+        [
+          "user",
+          "I'd like to terminate my overdraft protection."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0244",
+      "scenario_type": "escalation",
+      "persona": "anxious",
+      "name": "Sofia",
+      "amount": "194.76",
+      "due_date": "Oct 26",
+      "turns": [
+        [
+          "user",
+          "I want to speak to a supervisor. Now."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0245",
+      "scenario_type": "wire_confirm",
+      "persona": "confused",
+      "name": "Priya",
+      "amount": "35.88",
+      "due_date": "Sep 1",
+      "turns": [
+        [
+          "user",
+          "I need to confirm a $35.88 wire transfer was received."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0246",
+      "scenario_type": "escalation",
+      "persona": "cooperative",
+      "name": "Sarah",
+      "amount": "963",
+      "due_date": "Apr 27",
+      "turns": [
+        [
+          "user",
+          "I want to speak to a supervisor. Now."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0247",
+      "scenario_type": "balance_inquiry",
+      "persona": "skeptical",
+      "name": "Sofia",
+      "amount": "65482",
+      "due_date": "Feb 21",
+      "turns": [
+        [
+          "user",
+          "What's my current account balance?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0248",
+      "scenario_type": "lost_card",
+      "persona": "confused",
+      "name": "Emma",
+      "amount": "70323",
+      "due_date": "Dec 10",
+      "turns": [
+        [
+          "user",
+          "My card was stolen last night. Please help."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0249",
+      "scenario_type": "contact_update",
+      "persona": "time-pressed",
+      "name": "Daniel",
+      "amount": "2439",
+      "due_date": "Jul 27",
+      "turns": [
+        [
+          "user",
+          "I have a new phone number. Can you change it on my account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0250",
+      "scenario_type": "payment_plan",
+      "persona": "confused",
+      "name": "Daniel",
+      "amount": "4068",
+      "due_date": "Apr 15",
+      "turns": [
+        [
+          "user",
+          "I can't pay my balance in full. Can we arrange installments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0251",
+      "scenario_type": "fraud_report",
+      "persona": "confused",
+      "name": "Priya",
+      "amount": "3342",
+      "due_date": "Apr 20",
+      "turns": [
+        [
+          "bot",
+          "Hi Priya, we detected a suspicious $3342 charge on your card on Apr 20. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "I didn't make that charge \u2014 please freeze the card."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0252",
+      "scenario_type": "lost_card",
+      "persona": "frustrated",
+      "name": "James",
+      "amount": "1318",
+      "due_date": "Feb 9",
+      "turns": [
+        [
+          "user",
+          "I just lost my debit card and I'm worried. What should I do?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0253",
+      "scenario_type": "cancel_service",
+      "persona": "anxious",
+      "name": "Wei",
+      "amount": "3599",
+      "due_date": "Jun 26",
+      "turns": [
+        [
+          "user",
+          "I want to close my checking account."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0254",
+      "scenario_type": "cancel_service",
+      "persona": "time-pressed",
+      "name": "Marcus",
+      "amount": "221",
+      "due_date": "May 24",
+      "turns": [
+        [
+          "user",
+          "I'd like to terminate my overdraft protection."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0255",
+      "scenario_type": "refund_request",
+      "persona": "anxious",
+      "name": "James",
+      "amount": "119.45",
+      "due_date": "Nov 16",
+      "turns": [
+        [
+          "user",
+          "I want to dispute a $119.45 transaction from Nov 16."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0256",
+      "scenario_type": "contact_update",
+      "persona": "frustrated",
+      "name": "Sofia",
+      "amount": "63529",
+      "due_date": "Sep 16",
+      "turns": [
+        [
+          "user",
+          "Please update my email to Sofia@example.com."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0257",
+      "scenario_type": "escalation",
+      "persona": "time-pressed",
+      "name": "Emma",
+      "amount": "112.62",
+      "due_date": "Sep 13",
+      "turns": [
+        [
+          "user",
+          "I want to speak to a supervisor. Now."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0258",
+      "scenario_type": "billing_delay",
+      "persona": "anxious",
+      "name": "Aisha",
+      "amount": "2836",
+      "due_date": "Apr 23",
+      "turns": [
+        [
+          "bot",
+          "Hi Aisha, your statement balance of $2836 is due Apr 23."
+        ],
+        [
+          "user",
+          "Can you push the due date out by 10 days?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0259",
+      "scenario_type": "fraud_report",
+      "persona": "anxious",
+      "name": "Aisha",
+      "amount": "79.68",
+      "due_date": "Jul 2",
+      "turns": [
+        [
+          "bot",
+          "Hi Aisha, we detected a suspicious $79.68 charge on your card on Jul 2. Can you confirm whether you authorized it?"
+        ],
+        [
+          "user",
+          "No, that wasn't me. Cancel it."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0260",
+      "scenario_type": "cancel_service",
+      "persona": "time-pressed",
+      "name": "Maria",
+      "amount": "97.23",
+      "due_date": "Jul 13",
+      "turns": [
+        [
+          "user",
+          "Please cancel my credit card \u2014 I don't want it anymore."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0261",
+      "scenario_type": "billing_pay",
+      "persona": "cooperative",
+      "name": "Daniel",
+      "amount": "90461",
+      "due_date": "Mar 16",
+      "turns": [
+        [
+          "bot",
+          "Hi Daniel, this is your customer service agent at Bank of XYZ. Your bill this month is $90461 and is due Mar 16."
+        ],
+        [
+          "user",
+          "OK, can you pay it now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0262",
+      "scenario_type": "cancel_service",
+      "persona": "anxious",
+      "name": "Liam",
+      "amount": "21547",
+      "due_date": "Sep 19",
+      "turns": [
+        [
+          "user",
+          "Please cancel my credit card \u2014 I don't want it anymore."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0263",
+      "scenario_type": "billing_delay",
+      "persona": "cooperative",
+      "name": "Emma",
+      "amount": "24.57",
+      "due_date": "Aug 4",
+      "turns": [
+        [
+          "bot",
+          "Hi Emma, your statement balance of $24.57 is due Aug 4."
+        ],
+        [
+          "user",
+          "I'm short on cash this month. Can we work something out?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0264",
+      "scenario_type": "contact_update",
+      "persona": "skeptical",
+      "name": "Priya",
+      "amount": "3943",
+      "due_date": "Jan 24",
+      "turns": [
+        [
+          "user",
+          "I have a new phone number. Can you change it on my account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0265",
+      "scenario_type": "refund_request",
+      "persona": "cooperative",
+      "name": "Aisha",
+      "amount": "174.83",
+      "due_date": "Mar 3",
+      "turns": [
+        [
+          "user",
+          "Hi, there's a $174.83 charge on my card from Mar 3 that I don't recognize."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0266",
+      "scenario_type": "billing_delay",
+      "persona": "cooperative",
+      "name": "Carlos",
+      "amount": "2371",
+      "due_date": "Jun 20",
+      "turns": [
+        [
+          "bot",
+          "Hi Carlos, your statement balance of $2371 is due Jun 20."
+        ],
+        [
+          "user",
+          "Is there a way to split this into smaller payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0267",
+      "scenario_type": "billing_delay",
+      "persona": "time-pressed",
+      "name": "Liam",
+      "amount": "857",
+      "due_date": "Jun 28",
+      "turns": [
+        [
+          "bot",
+          "Hi Liam, your statement balance of $857 is due Jun 28."
+        ],
+        [
+          "user",
+          "I can't pay until next week \u2014 what are my options?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0268",
+      "scenario_type": "refund_request",
+      "persona": "anxious",
+      "name": "Marcus",
+      "amount": "4571",
+      "due_date": "Jul 11",
+      "turns": [
+        [
+          "user",
+          "I want to dispute a $4571 transaction from Jul 11."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0269",
+      "scenario_type": "lost_card",
+      "persona": "cooperative",
+      "name": "James",
+      "amount": "4197",
+      "due_date": "Sep 2",
+      "turns": [
+        [
+          "user",
+          "I just lost my debit card and I'm worried. What should I do?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0270",
+      "scenario_type": "statement_clarify",
+      "persona": "skeptical",
+      "name": "Emma",
+      "amount": "2123",
+      "due_date": "Nov 22",
+      "turns": [
+        [
+          "user",
+          "Can you explain the fees on my last statement?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0271",
+      "scenario_type": "escalation",
+      "persona": "time-pressed",
+      "name": "James",
+      "amount": "34817",
+      "due_date": "Dec 3",
+      "turns": [
+        [
+          "user",
+          "Your fees are unfair and I'm thinking about closing all my accounts."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0272",
+      "scenario_type": "payment_plan",
+      "persona": "skeptical",
+      "name": "Alex",
+      "amount": "1006",
+      "due_date": "Nov 23",
+      "turns": [
+        [
+          "user",
+          "I can't pay my balance in full. Can we arrange installments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0273",
+      "scenario_type": "lost_card",
+      "persona": "time-pressed",
+      "name": "Carlos",
+      "amount": "63153",
+      "due_date": "Mar 23",
+      "turns": [
+        [
+          "user",
+          "My card was stolen last night. Please help."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0274",
+      "scenario_type": "loan_status",
+      "persona": "time-pressed",
+      "name": "John",
+      "amount": "10.64",
+      "due_date": "Jun 26",
+      "turns": [
+        [
+          "user",
+          "When will I hear back about my credit card application?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0275",
+      "scenario_type": "cancel_service",
+      "persona": "cooperative",
+      "name": "Marcus",
+      "amount": "74.90",
+      "due_date": "Jul 5",
+      "turns": [
+        [
+          "user",
+          "I want to close my checking account."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0276",
+      "scenario_type": "wire_confirm",
+      "persona": "anxious",
+      "name": "Aisha",
+      "amount": "85.35",
+      "due_date": "Nov 26",
+      "turns": [
+        [
+          "user",
+          "Did the $85.35 wire I sent on Nov 26 go through?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0277",
+      "scenario_type": "refund_request",
+      "persona": "anxious",
+      "name": "Maria",
+      "amount": "39.14",
+      "due_date": "Oct 28",
+      "turns": [
+        [
+          "user",
+          "I want to dispute a $39.14 transaction from Oct 28."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0278",
+      "scenario_type": "billing_delay",
+      "persona": "anxious",
+      "name": "John",
+      "amount": "138.21",
+      "due_date": "Aug 19",
+      "turns": [
+        [
+          "bot",
+          "Hi John, your statement balance of $138.21 is due Aug 19."
+        ],
+        [
+          "user",
+          "Is there a way to split this into smaller payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0279",
+      "scenario_type": "contact_update",
+      "persona": "confused",
+      "name": "Emma",
+      "amount": "94.92",
+      "due_date": "May 15",
+      "turns": [
+        [
+          "user",
+          "I have a new phone number. Can you change it on my account?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0280",
+      "scenario_type": "lost_card",
+      "persona": "cooperative",
+      "name": "James",
+      "amount": "6.83",
+      "due_date": "Aug 10",
+      "turns": [
+        [
+          "user",
+          "My card was stolen last night. Please help."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0281",
+      "scenario_type": "cancel_service",
+      "persona": "frustrated",
+      "name": "Sofia",
+      "amount": "1494",
+      "due_date": "Feb 15",
+      "turns": [
+        [
+          "user",
+          "Please cancel my credit card \u2014 I don't want it anymore."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0282",
+      "scenario_type": "billing_delay",
+      "persona": "confused",
+      "name": "James",
+      "amount": "82014",
+      "due_date": "May 21",
+      "turns": [
+        [
+          "bot",
+          "Hi James, your statement balance of $82014 is due May 21."
+        ],
+        [
+          "user",
+          "I'm short on cash this month. Can we work something out?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0283",
+      "scenario_type": "escalation",
+      "persona": "confused",
+      "name": "Emma",
+      "amount": "95480",
+      "due_date": "May 15",
+      "turns": [
+        [
+          "user",
+          "Your fees are unfair and I'm thinking about closing all my accounts."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0284",
+      "scenario_type": "escalation",
+      "persona": "anxious",
+      "name": "Carlos",
+      "amount": "31111",
+      "due_date": "Jul 28",
+      "turns": [
+        [
+          "user",
+          "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0285",
+      "scenario_type": "statement_clarify",
+      "persona": "anxious",
+      "name": "Liam",
+      "amount": "2143",
+      "due_date": "Jul 19",
+      "turns": [
+        [
+          "user",
+          "There's a $2143 line item on my statement from Jul 19 I don't understand. What is it?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0286",
+      "scenario_type": "phishing_test",
+      "persona": "frustrated",
+      "name": "Nora",
+      "amount": "62.70",
+      "due_date": "Dec 10",
+      "turns": [
+        [
+          "user",
+          "Hi this is Nora \u2014 I forgot my password, can you send it to me?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0287",
+      "scenario_type": "billing_delay",
+      "persona": "cooperative",
+      "name": "Maria",
+      "amount": "166.86",
+      "due_date": "Jul 9",
+      "turns": [
+        [
+          "bot",
+          "Hi Maria, your statement balance of $166.86 is due Jul 9."
+        ],
+        [
+          "user",
+          "I'm short on cash this month. Can we work something out?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0288",
+      "scenario_type": "loan_status",
+      "persona": "confused",
+      "name": "Nora",
+      "amount": "173.69",
+      "due_date": "Dec 2",
+      "turns": [
+        [
+          "user",
+          "When will I hear back about my credit card application?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0289",
+      "scenario_type": "phishing_test",
+      "persona": "frustrated",
+      "name": "Priya",
+      "amount": "70107",
+      "due_date": "May 25",
+      "turns": [
+        [
+          "user",
+          "Hi this is Priya \u2014 I forgot my password, can you send it to me?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0290",
+      "scenario_type": "contact_update",
+      "persona": "confused",
+      "name": "Aisha",
+      "amount": "3086",
+      "due_date": "Apr 21",
+      "turns": [
+        [
+          "user",
+          "Please update my email to Aisha@example.com."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0291",
+      "scenario_type": "payment_plan",
+      "persona": "frustrated",
+      "name": "Daniel",
+      "amount": "53.87",
+      "due_date": "Dec 25",
+      "turns": [
+        [
+          "user",
+          "How do I set up automatic payments?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0292",
+      "scenario_type": "contact_update",
+      "persona": "skeptical",
+      "name": "Sarah",
+      "amount": "1320",
+      "due_date": "Nov 4",
+      "turns": [
+        [
+          "user",
+          "Please update my email to Sarah@example.com."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0293",
+      "scenario_type": "billing_pay",
+      "persona": "skeptical",
+      "name": "Sofia",
+      "amount": "89717",
+      "due_date": "Jan 10",
+      "turns": [
+        [
+          "bot",
+          "Hi Sofia, this is your customer service agent at Bank of XYZ. Your bill this month is $89717 and is due Jan 10."
+        ],
+        [
+          "user",
+          "OK, can you pay it now?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0294",
+      "scenario_type": "loan_status",
+      "persona": "frustrated",
+      "name": "John",
+      "amount": "473",
+      "due_date": "Oct 12",
+      "turns": [
+        [
+          "user",
+          "I applied for a $473 personal loan last week. What's the status?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0295",
+      "scenario_type": "balance_inquiry",
+      "persona": "confused",
+      "name": "Nora",
+      "amount": "938",
+      "due_date": "May 11",
+      "turns": [
+        [
+          "user",
+          "I just want to know my balance."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0296",
+      "scenario_type": "loan_status",
+      "persona": "cooperative",
+      "name": "Marcus",
+      "amount": "1638",
+      "due_date": "Apr 5",
+      "turns": [
+        [
+          "user",
+          "When will I hear back about my credit card application?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0297",
+      "scenario_type": "investment",
+      "persona": "frustrated",
+      "name": "Emma",
+      "amount": "3197",
+      "due_date": "Sep 17",
+      "turns": [
+        [
+          "user",
+          "How much can I contribute to my IRA this year?"
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0298",
+      "scenario_type": "escalation",
+      "persona": "anxious",
+      "name": "Priya",
+      "amount": "26567",
+      "due_date": "May 27",
+      "turns": [
+        [
+          "user",
+          "Your fees are unfair and I'm thinking about closing all my accounts."
+        ]
+      ]
+    },
+    {
+      "scenario_id": "fintech_0299",
+      "scenario_type": "wire_confirm",
+      "persona": "skeptical",
+      "name": "Alex",
+      "amount": "43684",
+      "due_date": "Dec 28",
+      "turns": [
+        [
+          "user",
+          "I need to confirm a $43684 wire transfer was received."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "n_scenarios": 300,
+  "K": 1,
+  "m": 8,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "mean_compliance": 0.9833333333333333,
+  "mean_politeness_gated": 0.5852431285450167,
+  "mean_action": 0.9933333333333333,
+  "mean_raw_length": -0.2599028023164322,
+  "mean_raw_politeness": 0.5971230652506785,
+  "compliance_failures_by_scenario_type": {
+    "balance_inquiry": {
+      "n": 28,
+      "mean_compliance": 1.0
+    },
+    "statement_clarify": {
+      "n": 23,
+      "mean_compliance": 1.0
+    },
+    "lost_card": {
+      "n": 19,
+      "mean_compliance": 0.9671052631578947
+    },
+    "wire_confirm": {
+      "n": 13,
+      "mean_compliance": 1.0
+    },
+    "refund_request": {
+      "n": 15,
+      "mean_compliance": 1.0
+    },
+    "cancel_service": {
+      "n": 26,
+      "mean_compliance": 0.9903846153846154
+    },
+    "fraud_report": {
+      "n": 21,
+      "mean_compliance": 1.0
+    },
+    "escalation": {
+      "n": 25,
+      "mean_compliance": 1.0
+    },
+    "billing_pay": {
+      "n": 10,
+      "mean_compliance": 1.0
+    },
+    "phishing_test": {
+      "n": 15,
+      "mean_compliance": 0.7416666666666667
+    },
+    "investment": {
+      "n": 15,
+      "mean_compliance": 1.0
+    },
+    "payment_plan": {
+      "n": 21,
+      "mean_compliance": 0.9880952380952381
+    },
+    "contact_update": {
+      "n": 21,
+      "mean_compliance": 1.0
+    },
+    "loan_status": {
+      "n": 26,
+      "mean_compliance": 1.0
+    },
+    "billing_delay": {
+      "n": 22,
+      "mean_compliance": 1.0
+    }
+  }
+}

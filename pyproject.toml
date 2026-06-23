@@ -1,0 +1,90 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "multireward-grpo"
+version = "0.1.0"
+description = "Decoupled & conditioned multi-reward GRPO advantage estimators, a generalized trainer, and the Theorem-3 verification harness from the paper 'When and Why Decoupling and Conditioning Beat Reweighting in Multi-Reward GRPO'."
+readme = "README_PYPI.md"
+license = { text = "MIT" }
+authors = [{ name = "Yiqiao Yin", email = "eagle0504@gmail.com" }]
+keywords = ["grpo", "rlhf", "rlvr", "multi-reward", "reinforcement-learning", "llm", "u-statistic"]
+# Broad range so adopters can pip-install; dev is pinned to 3.12 via .python-version.
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+# Training + real generation (GPU host). Install with: pip install "multireward-grpo[llm]"
+llm = [
+    "torch>=2.5,<2.10",
+    "transformers>=4.46",
+    "accelerate>=1.1",
+    "peft>=0.13",
+    "sentencepiece>=0.2",
+    "protobuf>=5.28",
+]
+# Money-plot / figure rendering.
+viz = ["matplotlib>=3.7"]
+# Cloud GPU orchestration (multireward_grpo.runpod).
+runpod = ["requests>=2.28"]
+# Dataset loaders + HF Hub push (examples.gsm8k, model publishing).
+data = ["datasets>=3.0", "huggingface-hub>=0.24", "pandas>=2.0", "pyarrow>=14.0"]
+# Everything needed to run the research scripts/ harness locally.
+research = [
+    "matplotlib>=3.7",
+    "requests>=2.28",
+    "datasets>=3.0",
+    "huggingface-hub>=0.24",
+    "pandas>=2.0",
+    "pyarrow>=14.0",
+]
+
+[project.scripts]
+multireward-grpo = "multireward_grpo.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yiqiao-yin/multireward-grpo"
+Repository = "https://github.com/yiqiao-yin/multireward-grpo"
+"Hugging Face" = "https://huggingface.co/eagle0504"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/multireward_grpo"]
+
+[tool.hatch.build.targets.sdist]
+# Ship the package + paper prose + scripts, but never the raw data/ tree.
+include = [
+    "src/multireward_grpo",
+    "scripts",
+    "README.md",
+    "README_PYPI.md",
+    "*.md",
+    "pyproject.toml",
+]
+exclude = ["data", "figures", ".venv", "**/*Zone.Identifier"]
+
+# --- uv-only dev config (ignored by pip / PyPI installs) --------------------
+# Pull torch from PyTorch's official CUDA 12.4 wheel index. cu124 builds are
+# compatible with any H100 host driver >= 12.4.
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+torchvision = { index = "pytorch-cu124" }
+torchaudio = { index = "pytorch-cu124" }

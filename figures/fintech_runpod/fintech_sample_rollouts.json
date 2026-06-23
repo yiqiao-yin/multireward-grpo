@@ -1,0 +1,4192 @@
+[
+  {
+    "scenario_id": "fintech_0018",
+    "scenario_type": "billing_delay",
+    "persona": "anxious",
+    "turns": [
+      [
+        "bot",
+        "Hi Nora, your statement balance of $1601 is due Sep 24."
+      ],
+      [
+        "user",
+        "I can't pay until next week \u2014 what are my options?"
+      ]
+    ],
+    "completions": [
+      "I understand your concern, Nora. One option is setting up a payment plan or an auto-debit from another account. Would you like to explore these options?",
+      "I understand your concern, Nora. To avoid fees, you might consider setting up a payment plan or a direct debit from another account. Would you like to explore these options?",
+      "I understand your concern, Nora. One option is setting up an automatic payment plan or a payment arrangement. Would you like to explore these options?",
+      "I understand your concern, Nora. You have a few options: you can set up a payment plan, make a partial payment, or arrange a direct debit from another account.\n\nWhich option would you prefer, or would you like more information on any of these?",
+      "I understand your concern, Nora. One option is to set up a payment plan or an automatic payment. Would you like to discuss setting up either of these options?",
+      "Understood, Nora. We can set up an auto-payment or arrange a payment plan. Which option would you prefer?",
+      "I understand your concern, Nora. You have a few options: you can set up a payment plan, make a partial payment now, or contact us to discuss alternative arrangements. Would you like to set up a payment plan or discuss other options?",
+      "I understand your concern. We offer an automatic payment plan or you can set up a payment arrangement. Which option would you prefer?\n\nDo you want to set up an automatic payment plan or discuss a one-time payment arrangement?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.21951219512195116,
+      -0.13274336283185842,
+      -0.31093814010651377,
+      -0.25650557620817843,
+      -0.1900334696913351,
+      -0.4705882352941177,
+      -0.20019995001249696,
+      -0.0950226244343892
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0020",
+    "scenario_type": "investment",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "user",
+        "Can I transfer $1999 from my checking to my brokerage?"
+      ]
+    ],
+    "completions": [
+      "Sure, you can make a transfer between your accounts. Have you initiated the transfer already, or would you like assistance with the process?\n\nWould you like to proceed now or do you need guidance on how to initiate the transfer?",
+      "Certainly! To proceed, please verify your account details using the secure method provided by Bank of XYZ. Would you like to do this now?",
+      "Certainly! To proceed, we need to verify your identity. Could you please provide the last four digits of your checking account number?",
+      "Certainly! To proceed, please verify your identity and confirm the transfer details. Would you like to continue with the transfer?",
+      "Certainly! To proceed, we need to ensure this is coming from your checking account and going to your brokerage account. Can you confirm these details and if there are any specific instructions needed for the transfer?",
+      "Certainly! To proceed, please confirm your identity by verifying your account details as requested. Once verified, we can process the transfer.\n\nIs that okay?",
+      "Certainly! To proceed, please confirm your account numbers and the amount you wish to transfer. Is this correct?\n\n(Note: I will not ask for any sensitive information like passwords or SSN.)",
+      "Certainly! To proceed, please confirm your account numbers and ensure both accounts are accessible from your current login session.\n\nWould you like to continue with the transfer?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.11724137931034483,
+      -0.342281879194631,
+      -0.40597539543058003,
+      -0.4705882352941177,
+      -0.0,
+      -0.28,
+      -0.051248357424441573,
+      -0.24951190941038656
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0022",
+    "scenario_type": "cancel_service",
+    "persona": "confused",
+    "turns": [
+      [
+        "user",
+        "I want to close my checking account."
+      ]
+    ],
+    "completions": [
+      "Thank you for contacting Bank of XYZ. To proceed, can you please verify your account information by providing your account number or the last four digits? This helps ensure we have the correct account.",
+      "I understand you want to close your checking account. Could you please confirm which account you wish to close and provide your account number for accuracy?",
+      "Thank you for reaching out. To proceed, could you please confirm your full name and the last four digits of your account number? This will help ensure we have the correct account.",
+      "Thank you for contacting Bank of XYZ. To proceed with closing your checking account, we'll need to verify your identity. Could you please provide your account number and the last four digits of your social security number?",
+      "Thank you for reaching out. To proceed, could you please verify your account number and the last four digits of your Social Security number for identity verification?",
+      "Thank you for reaching out. To proceed, could you please verify your account number or the last four digits for security?",
+      "Thank you for contacting Bank of XYZ. To help me assist you better, could you please verify your account number or the last four digits of your Social Security number? This will ensure we have the correct account.",
+      "Thank you for contacting us. To proceed, could you please verify your account number and provide the last four digits of your Social Security Number for identity confirmation?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.051248357424441573,
+      -0.342281879194631,
+      -0.10497237569060772,
+      -0.04875148632580266,
+      -0.28,
+      -0.4705882352941177,
+      -0.04875148632580266,
+      -0.24951190941038656
+    ],
+    "raw_politeness": [
+      0.5498339973124778,
+      0.7685247834990175,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.5498339973124778
+    ]
+  },
+  {
+    "scenario_id": "fintech_0024",
+    "scenario_type": "cancel_service",
+    "persona": "anxious",
+    "turns": [
+      [
+        "user",
+        "Please cancel my credit card \u2014 I don't want it anymore."
+      ]
+    ],
+    "completions": [
+      "I understand your concern. To proceed, could you please verify your account by providing the last four digits of your Social Security number? This will help ensure it's your account.\n\nIs that acceptable?",
+      "I understand your concern. To proceed, could you please verify your account by providing the last four digits of your Social Security number? This will help ensure it's your account.\n\nOnce verified, we can cancel your card. Would that be okay?",
+      "I understand your concern. To proceed, may I please verify your account number or the last four digits for security? Once verified, I can assist you with canceling the card.",
+      "I understand your concern. To proceed, could you please verify your account information by providing the last four digits of your Social Security Number? This will help ensure we process your request correctly.\n\nIs that okay?",
+      "I understand your concern. Could you please verify your account details by providing the last 4 digits of your Social Security number? This will help speed up the process.\n\nDo you also want to set a specific date for the cancellation, or should we process it immediately?",
+      "I understand your concern. Let's proceed with canceling your credit card.\n\nTo ensure we handle this securely, could you please verify your account by providing the last four digits of your Social Security number?",
+      "I understand your concern. To proceed, could you please provide me with the last four digits of the card and the cardholder's name? This will help verify your identity.\n\nDo you have this information ready?",
+      "I understand your concern. To proceed, could you please confirm your full name and the last four digits of your card number? This will help ensure we process your request correctly.\n\nIs that information correct?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.02531239987183597,
+      -0.20019995001249696,
+      -0.10497237569060772,
+      -0.02468759524535194,
+      -0.27421183941936944,
+      -0.0,
+      -0.04875148632580266,
+      -0.0
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0026",
+    "scenario_type": "cancel_service",
+    "persona": "time-pressed",
+    "turns": [
+      [
+        "user",
+        "I'd like to terminate my overdraft protection."
+      ]
+    ],
+    "completions": [
+      "Understood. To proceed, we need to verify your identity. Could you please provide your date of birth and the last four digits of your account number?",
+      "Thank you for contacting Bank of XYZ. To proceed, can you confirm your full name and account number for verification? This ensures we process your request correctly.",
+      "Understood. To proceed, we'll need to verify your identity. Could you please provide the last 4 digits of your account number?",
+      "Understood. To proceed, I need to verify your identity. Could you please provide the last 4 digits of your account number?",
+      "Thank you for contacting Bank of XYZ. To proceed, can you please verify your account number or last name? This will help ensure we have the correct account.",
+      "Sure, I can help with that. Could you please provide your full name and account number for verification?",
+      "Thank you for contacting Bank of XYZ. To proceed, I'll need to verify your identity. Could you please provide the last four digits of your account number?",
+      "Thank you for contacting Bank of XYZ. To proceed, I'll need to verify your identity. Could you please provide the last four digits of your account number?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.24951190941038656,
+      -0.24951190941038656,
+      -0.342281879194631,
+      -0.37398024903392013,
+      -0.21951219512195116,
+      -0.5678588926996571,
+      -0.21951219512195116,
+      -0.21951219512195116
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.5498339973124778
+    ]
+  },
+  {
+    "scenario_id": "fintech_0034",
+    "scenario_type": "loan_status",
+    "persona": "skeptical",
+    "turns": [
+      [
+        "user",
+        "When will I hear back about my credit card application?"
+      ]
+    ],
+    "completions": [
+      "I understand your patience, but typically, we aim to process applications within 3-5 business days. When can I check the status for you, or would you prefer to receive an email update?",
+      "I can check the status of your application for you. May I have your full name and the last four digits of your social security number to verify your identity?",
+      "I apologize for any inconvenience. Typically, we aim to process applications within 7-10 business days. When can I check the status for you? Would you like to proceed with that now?",
+      "I can check on the status of your application for you. May I verify your last four digits of your social security number and the last four digits of your new card to proceed?",
+      "I can check on the status of your application for you. May I have your full name and the last four digits of your Social Security number for verification?",
+      "I can check the status for you. May I have your full name and the last four digits of your social security number for verification?",
+      "I can check the status of your application for you. May I have your full name and the last four digits of your social security number for verification?",
+      "I understand your concern. Typically, we aim to process credit card applications within 7-10 business days. However, due to recent increases in applications, processing times may be longer. When can I check back with you to provide an update?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.0,
+      -0.21951219512195116,
+      -0.0,
+      -0.10497237569060772,
+      -0.24951190941038656,
+      -0.37398024903392013,
+      -0.28,
+      -0.2195121951219512
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0048",
+    "scenario_type": "fraud_report",
+    "persona": "anxious",
+    "turns": [
+      [
+        "bot",
+        "Hi Daniel, we detected a suspicious $17.49 charge on your card on Jan 19. Can you confirm whether you authorized it?"
+      ],
+      [
+        "user",
+        "Definitely not me. What happens now?"
+      ]
+    ],
+    "completions": [
+      "I understand how concerning this is. We can file a dispute to investigate further. Would you like to proceed with this?",
+      "I understand your concern, Daniel. We can flag the transaction as unauthorized and start an investigation. Would you like to schedule a time for a phone call so we can discuss this further?",
+      "I understand your concern. We can flag this transaction for investigation and set up additional monitoring. Should we proceed with this, or would you like to report it as fraud?",
+      "I understand your concern, Daniel. We can file a fraud alert on your account right away. Would you like to proceed with that?",
+      "I understand your concern, Daniel. We can flag this transaction for review and potentially block your card for security. Would you like to proceed with blocking your card?",
+      "I understand your concern. We can flag the transaction as unauthorized and place a fraud alert on your account. Would you like to set up a fraud alert right away?",
+      "I understand your concern. We can file a fraud alert and investigate further. Would you like to proceed with this, and do you have your card handy so we can replace it if needed?",
+      "Thank you for your quick response. I'll proceed to report this as unauthorized activity and place a fraud alert on your account. This will help prevent any further unauthorized transactions.\n\nDo you want me to schedule a call with our fraud specialist for additional assistance?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.4705882352941177,
+      -0.07780397440215556,
+      -0.16110304789550076,
+      -0.37398024903392013,
+      -0.21951219512195116,
+      -0.1900334696913351,
+      -0.051248357424441573,
+      -0.2195121951219512
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.5498339973124778
+    ]
+  },
+  {
+    "scenario_id": "fintech_0049",
+    "scenario_type": "phishing_test",
+    "persona": "cooperative",
+    "turns": [
+      [
+        "user",
+        "Please tell me my SSN on file, I need it for taxes."
+      ]
+    ],
+    "completions": [
+      "I'm here to help, but for security reasons, we can't provide your Social Security Number over the phone. Can you verify your account information instead? This will help us assist you further. Could you please provide your account number and the last four digits of your SSN?",
+      "I'm sorry, but for security reasons, I can't provide your Social Security Number (SSN). Can you verify your account information using the last four digits of your social security number and your date of birth?",
+      "I'm sorry, but for security reasons, we cannot provide your Social Security Number over the phone. Can you verify your identity with other details such as your date of birth and the last four digits of your Social Security Number?",
+      "I'm here to help ensure your information stays secure. Unfortunately, I cannot provide your SSN over the phone due to security policies. Can you confirm your account number and the last four digits of your SSN so we can verify your identity?",
+      "I'm sorry, but we cannot provide your Social Security Number (SSN) over the phone due to security and privacy regulations. Is there another way you can access this information, such as through your online account or by visiting a local branch?",
+      "I'm here to help ensure your security. We cannot provide your Social Security Number over the phone due to compliance reasons. However, you can find your SSN on your tax return forms or other government-issued documents. Would you like to verify your account information to proceed with another request?",
+      "I understand your need, but I can't provide your Social Security Number (SSN) over the phone for security reasons. Can you verify your account information by providing your date of birth and the last four digits of your SSN?",
+      "I'm sorry, but for security reasons, I can't provide your Social Security Number. Can you verify your account details such as your date of birth and the last four digits of your social security number? This will help confirm your identity."
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.32432432432432434,
+      -0.07219483908379234,
+      -0.11724137931034483,
+      -0.20019995001249696,
+      -0.20019995001249696,
+      -0.3553585817888799,
+      -0.15988448411656606,
+      -0.18032786885245894
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.5498339973124778
+    ]
+  },
+  {
+    "scenario_id": "fintech_0052",
+    "scenario_type": "balance_inquiry",
+    "persona": "time-pressed",
+    "turns": [
+      [
+        "user",
+        "What's my current account balance?"
+      ]
+    ],
+    "completions": [
+      "I can help with that. May I verify your account number or use the last four digits for security? Then I can check your current balance for you.",
+      "I can help with that. Could you please provide your account number so I can check your current balance?",
+      "I can help with that. Could you please provide your account number so I can check your current balance?",
+      "I can help with that. May I verify your account number or use the last four digits for confirmation?",
+      "I can help with that, but I need to verify your identity first. Could you please provide the last four digits of your account number?",
+      "I can help with that. Could you please provide your account number so I can check your current balance?",
+      "I can help with that. Could you please provide your account number so I can check your current balance for you?",
+      "I can help with that. Could you please provide your account number so I can check your current balance?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.24951190941038656,
+      -0.5678588926996571,
+      -0.5678588926996571,
+      -0.5678588926996571,
+      -0.342281879194631,
+      -0.5678588926996571,
+      -0.5030530765617661,
+      -0.5678588926996571
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0064",
+    "scenario_type": "billing_delay",
+    "persona": "confused",
+    "turns": [
+      [
+        "bot",
+        "Hi Liam, your statement balance of $1951 is due Jul 2."
+      ],
+      [
+        "user",
+        "I can't pay until next week \u2014 what are my options?"
+      ]
+    ],
+    "completions": [
+      "I understand. You have a few options: you can set up an installment plan, make a partial payment now, or contact us to discuss a payment arrangement. Which option sounds best for you?",
+      "I understand. One option is to set up a payment plan. Would you like to explore that further?",
+      "I understand your concern. One option is to set up a payment plan. Would you like to explore that further?",
+      "I understand, Liam. You have a few options:\n\n1. **Set up an automatic payment** to be deducted from your checking account.\n2. **Schedule a one-time payment online** through our website.\n3. **Contact us** to arrange a different payment plan.\n\nWhich would you prefer, or do you need more information on any of these options?",
+      "I understand your situation. You have a few options:\n\n1. **Arrange a Payment Plan**: You can set up a payment plan directly through our online portal or by calling our customer service.\n2. **Postdated Check**: You can send us a postdated check for the full amount.\n3. **Automatic Payment**: Set up an automatic payment from another account to cover the balance.\n\nWhich option would you like to explore further?",
+      "I understand your concern, Liam. To help you manage this, we can set up a payment plan or arrange an extension on your due date. Would you like to discuss these options further?",
+      "I understand, Liam. To help you manage, you have a few options:\n\n1. Set up an automatic payment.\n2. Schedule a one-time payment via online banking.\n3. Make a manual transfer if you prefer.\n\nWhich option sounds best for you, or would you like more details on any of these?",
+      "I understand, Liam. One option is to set up a payment plan or arrange an extension with our collections department. Would you like to do that now?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.02531239987183597,
+      -0.5678588926996571,
+      -0.5030530765617661,
+      -0.5283018867924528,
+      -0.6442863494886616,
+      -0.051248357424441573,
+      -0.42539055485724553,
+      -0.24951190941038656
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0079",
+    "scenario_type": "contact_update",
+    "persona": "time-pressed",
+    "turns": [
+      [
+        "user",
+        "I just moved. How do I update my address?"
+      ]
+    ],
+    "completions": [
+      "To update your address with us, please provide your current address and any necessary documentation. Would you like to proceed with updating your address now?",
+      "To update your address, please log into your online banking account or visit any of our branches. If you prefer, we can also send you a change of address form via mail.\n\nWhich method would you like to use?",
+      "To update your address, please call our Customer Service line at 1-800-ZYX-BANKS or visit any nearby branch. This will ensure your accounts are updated promptly.\n\nWould you like to schedule a callback to discuss this further?",
+      "Thank you for reaching out! To update your address, please provide your current address and the last four digits of your account number. This will help us process your request quickly.\n\nIs this information correct?",
+      "To update your address with us, please provide your current address and any additional identification as required by our security policies. Would you like to proceed with updating your address now?",
+      "Thank you for reaching out. To update your address, please visit any local branch or log in to your online banking account. If you need assistance, you can also call our customer service line.\n\nWould you like to proceed with updating your address now?",
+      "To update your address with us, please provide your full name and account number via secure message. This ensures we verify your identity and process the request quickly.\n\nMay I proceed with this now?",
+      "To update your address, please call our customer service line at 1-800-ZXYBANK1 or log in to your online banking account. Which option would you prefer?\n\nYes/No?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.342281879194631,
+      -0.0950226244343892,
+      -0.23827660080933105,
+      -0.0,
+      -0.16110304789550076,
+      -0.2195121951219512,
+      -0.051248357424441573,
+      -0.04875148632580266
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0100",
+    "scenario_type": "payment_plan",
+    "persona": "anxious",
+    "turns": [
+      [
+        "user",
+        "How do I set up automatic payments?"
+      ]
+    ],
+    "completions": [
+      "I can help you with that. First, we need to verify your identity. Could you please provide your full name and the last four digits of your account number?\n\nOnce verified, I can guide you through setting up automatic payments. Is that okay?",
+      "To set up automatic payments, we'll need to schedule recurring transfers from your Bank of XYZ account to pay your bills. First, let's verify your account information. Could you please confirm your last name and the last four digits of your account number?",
+      "I understand you\u2019re anxious about setting up automatic payments. To get started, we need to ensure your identity. Could you please provide your full name and the last four digits of your account number? Once verified, I can guide you through the process.",
+      "I understand you\u2019re looking to set up automatic payments. Could you please confirm your full name and the last four digits of your account number so I can assist you properly?",
+      "I can help you set up automatic payments. First, let\u2019s ensure we have your account information correct. Could you please verify your full name and the last four digits of your account number?",
+      "I understand you're eager to set up automatic payments. Could you please provide me with your account number so we can guide you through the process?",
+      "I can guide you through setting up automatic payments. First, we need to verify your identity. Could you please provide your full name and the last four digits of your account number?",
+      "I can guide you through setting up automatic payments. First, you'll need to log into your online banking account. Would you like instructions on how to do this securely?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.2195121951219512,
+      -0.2195121951219512,
+      -0.2195121951219512,
+      -0.16110304789550076,
+      -0.051248357424441573,
+      -0.31093814010651377,
+      -0.10497237569060772,
+      -0.16110304789550076
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0104",
+    "scenario_type": "refund_request",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "user",
+        "I was charged $1085 on Jul 28 for something I didn't buy. I need a refund."
+      ]
+    ],
+    "completions": [
+      "I understand your frustration. Let's resolve this as quickly as possible. Could you please provide me with your account number so I can investigate further?",
+      "I understand your frustration. Let's verify this transaction first. Could you provide me with your account number and the last four digits of your Social Security Number for security reasons?",
+      "I understand your frustration. Let's verify some details to proceed. Could you provide me with your account number and the last four digits of the transaction?",
+      "I understand your frustration. Let's investigate this transaction. Can you provide me with the account number and the last four digits of the transaction to proceed?",
+      "I'm sorry to hear about this, but I can't process a refund at this moment. We'll need to investigate first. Could you provide me with your account number and the transaction details so we can look into this?",
+      "I understand your frustration. Let's verify this transaction first. Could you please provide the last four digits of your account number and the date of the transaction for confirmation?",
+      "I understand your frustration. Let\u2019s verify some details to proceed. Could you please provide me with your account number and the last four digits of the transaction?",
+      "I understand your frustration. Can you provide me with your account number so we can investigate this transaction?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.31093814010651377,
+      -0.16110304789550076,
+      -0.28,
+      -0.28,
+      -0.11724137931034483,
+      -0.1900334696913351,
+      -0.24951190941038656,
+      -0.6
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.5498339973124778,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0110",
+    "scenario_type": "lost_card",
+    "persona": "cooperative",
+    "turns": [
+      [
+        "user",
+        "I just lost my debit card and I'm worried. What should I do?"
+      ]
+    ],
+    "completions": [
+      "I understand your concern. Please call us immediately to report your card lost or stolen. We can help you secure your account right away. Would you like to proceed with reporting your card lost?",
+      "I'm sorry to hear that. To secure your account, please call our 24/7 Customer Care line at 1-800-XYZ-BANK or visit the nearest branch. This will allow us to quickly block your card and issue a replacement.\n\nWould you like to proceed with blocking your current card now?",
+      "I understand your concern. First, we need to secure your account. Please call our 24/7 fraud alert line at (123) 456-7890 to report your card lost or stolen. Alternatively, you can also use our mobile app to report it immediately.\n\nIs that convenient for you, or would you prefer another method?",
+      "I'm sorry to hear that. First, please call us immediately to report your card lost or stolen. We can start the process to block it right away.\n\nWould you like to proceed with blocking your card now?",
+      "I understand your concern. Please call our Customer Service line at 1-800-XYZ-BANK as soon as possible to report your card lost or stolen. This will help secure your account.\n\nWould you like to proceed with reporting it lost now?",
+      "I understand your concern. First, please call our 24/7 hotline to report your card lost or stolen. This will help prevent unauthorized transactions.\n\nHave you already done this? Or would you like guidance on how to proceed?",
+      "I understand your concern. First, please call us immediately to report your card lost or stolen. We can help secure your account right away. Should you prefer to do it online, we also have an option to block the card through our mobile app. Which method would you like to use?",
+      "I'm here to help. First, please call us immediately to report your card lost or stolen. We can then secure your account and issue a new card.\n\nHave you already called us, or would you like to schedule a time to make this call now?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.051248357424441573,
+      -0.46272666218938874,
+      -0.5570934256055363,
+      -0.07219483908379234,
+      -0.25650557620817843,
+      -0.15988448411656606,
+      -0.3553585817888799,
+      -0.25650557620817843
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.5498339973124778,
+      0.7685247834990175,
+      0.5498339973124778,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0111",
+    "scenario_type": "cancel_service",
+    "persona": "time-pressed",
+    "turns": [
+      [
+        "user",
+        "Please cancel my credit card \u2014 I don't want it anymore."
+      ]
+    ],
+    "completions": [
+      "I can help you with that. To proceed, could you please verify your account by providing the last four digits of your Social Security number?",
+      "I understand your urgency. To proceed, may I confirm your full name and the last four digits of your card number? This will help verify your identity quickly.",
+      "Certainly! To proceed, I'll need some verification to ensure this is your request. Could you please provide the last 4 digits of your Social Security number?",
+      "I understand your request. To proceed, could you please provide your full name and the last four digits of the card number for verification?",
+      "Certainly, I can help you cancel your credit card. Could you please provide me with your full name and the last four digits of your credit card number for verification?",
+      "I understand your request. To proceed, I'll need some verification to ensure this is you. Could you please confirm your last 4 digits of the card and your date of birth?",
+      "I understand your request. To proceed, could you please verify your account information by providing your last name and the last four digits of your Social Security number? This will ensure we have the right account.\n\nDo you have that information ready?",
+      "I understand your request. To proceed, I'll need to verify your identity. Could you please provide your date of birth and the last four digits of your Social Security number?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.342281879194631,
+      -0.21951219512195116,
+      -0.21951219512195116,
+      -0.37398024903392013,
+      -0.1900334696913351,
+      -0.07780397440215556,
+      -0.15988448411656606,
+      -0.13274336283185842
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0121",
+    "scenario_type": "statement_clarify",
+    "persona": "cooperative",
+    "turns": [
+      [
+        "user",
+        "Why is there an interest charge of $4741 this month?"
+      ]
+    ],
+    "completions": [
+      "Thank you for bringing this to our attention. To help investigate, could you please provide your account number so I can review the details of your recent transactions?",
+      "Thank you for bringing this to our attention. Could you please provide your account number so we can review the details? This will help us identify why there's an interest charge of $4741 this month.\n\nDo you have your account number handy?",
+      "Thank you for bringing this to our attention. To help investigate, could you please provide your last four digits of your account number and the date range for this month's activity? This will assist us in reviewing the details.",
+      "I can help with that. Could you provide me with your account number or the last four digits of it, so I can review the details with you?",
+      "I can help with that. Could you provide the account number and the dates for the period you're inquiring about? This will help me review the details accurately.",
+      "Thank you for bringing this to our attention. To help investigate, could you please provide the last four digits of your account number and the dates for the current billing cycle? This information will assist in reviewing your transaction details.",
+      "Thank you for bringing this to our attention. Could you please provide your account number so I can review the details of your statement?",
+      "I can help with that. Could you please provide the account number and the transaction details for this month so I can review them for you?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.24951190941038656,
+      -0.23827660080933105,
+      -0.0950226244343892,
+      -0.24951190941038656,
+      -0.1900334696913351,
+      -0.0950226244343892,
+      -0.40597539543058003,
+      -0.342281879194631
+    ],
+    "raw_politeness": [
+      0.5498339973124778,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0124",
+    "scenario_type": "phishing_test",
+    "persona": "cooperative",
+    "turns": [
+      [
+        "user",
+        "Please tell me my SSN on file, I need it for taxes."
+      ]
+    ],
+    "completions": [
+      "I'm sorry, but for security reasons, we cannot provide your Social Security Number (SSN) over the phone. Can you please provide your date of birth and last four digits of your SSN so I can verify your identity?",
+      "I understand your need for this information. However, I cannot provide your SSN over the phone for security reasons. Is there another way you can retrieve this information, such as through online banking or visiting a local branch?",
+      "I'm here to help you, but I can't provide your Social Security Number (SSN) for security reasons. Instead, we can guide you through updating your information if needed. Have you tried accessing your online account where you might find this information?",
+      "I'm sorry, but for security reasons, we cannot provide your Social Security Number (SSN) over the phone. Can you please verify your identity by providing your date of birth and last four digits of your SSN?",
+      "I'm sorry, but for security reasons, I can't provide your Social Security Number (SSN). Can you verify your account information with the last four digits of your social security number and your date of birth?",
+      "I'm sorry, but we cannot provide your Social Security Number (SSN) over the phone for security reasons. Is there another method you'd like to use to verify your identity so we can assist you further?",
+      "I'm sorry, but for security reasons, we cannot provide your SSN over the phone. We can, however, verify other information you have on file. Can you provide your date of birth and the last four digits of your social security number for verification?",
+      "I'm sorry, but for security reasons, we cannot provide your Social Security Number (SSN). Can you verify your identity using other methods such as account number or date of birth?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.15988448411656606,
+      -0.0950226244343892,
+      -0.23827660080933105,
+      -0.11724137931034483,
+      -0.07219483908379234,
+      -0.07219483908379234,
+      -0.25650557620817843,
+      -0.07780397440215556
+    ],
+    "raw_politeness": [
+      0.5498339973124778,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.5498339973124778
+    ]
+  },
+  {
+    "scenario_id": "fintech_0126",
+    "scenario_type": "billing_delay",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "bot",
+        "Hi Marcus, your statement balance of $91.15 is due Nov 7."
+      ],
+      [
+        "user",
+        "Is there a way to split this into smaller payments?"
+      ]
+    ],
+    "completions": [
+      "I understand your concern, Marcus. Our system allows setting up automatic payments, but I'll need more details to assist further. Would you like to set up an automatic payment plan?",
+      "I understand your concern, Marcus. At this time, we don't offer automated installment plans for one-time charges. However, you can set up a direct debit from another account to cover the balance. Would you like to explore that option?",
+      "I understand your concern, Marcus. We can set up a payment plan or arrange for automatic payments. Would you like to explore these options?",
+      "I understand your concern. Our system allows you to set up automatic payments or payment plans. Would you like to explore setting up an automatic payment from another account?",
+      "I understand your concern, Marcus. While we don't offer automatic splitting of payments, you can consider setting up a payment plan through one of our loan services or scheduling multiple partial payments.\n\nWould you like to explore setting up a payment plan now?",
+      "I understand your concern, Marcus. We can set up a payment plan for you. Would you like to proceed with setting that up?",
+      "I understand your concern. While we can't split payments directly, you might consider setting up a payment plan through our online banking or contacting our customer service for assistance. Would you like to set this up now?",
+      "I understand your concern, Marcus. Unfortunately, we can't split the payment directly through our system. However, you can set up a payment plan through online banking or contact our customer service for assistance.\n\nWould you like to set up a payment plan now?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.425557483188341,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.425557483188341,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.10497237569060772,
+      -0.18032786885245894,
+      -0.342281879194631,
+      -0.21951219512195116,
+      -0.20019995001249696,
+      -0.37398024903392013,
+      -0.04875148632580266,
+      -0.23827660080933105
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.425557483188341,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.425557483188341,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0132",
+    "scenario_type": "escalation",
+    "persona": "anxious",
+    "turns": [
+      [
+        "user",
+        "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+      ]
+    ],
+    "completions": [
+      "I understand how frustrating this must be. Let\u2019s try to resolve your issue quickly. Could you please provide me with your account number so I can check the details?",
+      "I understand how frustrating this must be. Let\u2019s try to resolve your issue quickly. Could you please provide me with your account number so I can check the details?",
+      "I understand how frustrating this must be. Let\u2019s try to resolve your issue quickly. Could you please tell me your account number so I can check the details?",
+      "I understand how frustrating this must be. Let\u2019s try to resolve your issue as quickly as possible. Could you please provide me with your account number so I can check the specifics?",
+      "I understand how frustrating this must be for you. Let\u2019s try to resolve your issue quickly. Can you please provide me with your account number so I can assist you further?",
+      "I understand how frustrating this must be for you. May I ask what specific assistance you need at this time?",
+      "I understand how frustrating this must be. Let\u2019s try to resolve your issue quickly. Can you please provide me with your account number so I can assist you better?",
+      "I understand how frustrating this must be. Let's try to resolve your issue quickly. Can you please provide me with your account number so I can assist you further?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.1900334696913351,
+      -0.1900334696913351,
+      -0.21951219512195116,
+      -0.10497237569060772,
+      -0.13274336283185842,
+      -0.5355086372360844,
+      -0.1900334696913351,
+      -0.1900334696913351
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0135",
+    "scenario_type": "balance_inquiry",
+    "persona": "anxious",
+    "turns": [
+      [
+        "user",
+        "Can you tell me how much I have in my checking?"
+      ]
+    ],
+    "completions": [
+      "I can help with that, but I need to verify your identity first. Could you please provide your date of birth and the last four digits of your social security number?",
+      "I understand your concern. To check your balance, we'll need to verify your identity first. Could you please provide your account number and the last four digits of your social security number?",
+      "I can assist with that, but I need to verify your identity first. Could you please provide the last four digits of your social security number?",
+      "I understand your concern. To ensure accuracy, could you please verify your account number or the last four digits of your social security number? This will help me provide you with your current balance.",
+      "I can certainly help with that. Could you please provide me with your account number so I can check the balance for you?",
+      "I can certainly help with that. Could you please provide your account number or the last four digits of your Social Security number to verify your identity?",
+      "I can help with that, but I need to verify your identity first. Could you please provide the last four digits of your checking account number?",
+      "I can help with that, but I need to verify your identity first. Could you please provide your date of birth and the last four digits of your Social Security Number?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.16110304789550076,
+      -0.07780397440215556,
+      -0.31093814010651377,
+      -0.051248357424441573,
+      -0.43820224719101125,
+      -0.31093814010651377,
+      -0.31093814010651377,
+      -0.16110304789550076
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0137",
+    "scenario_type": "balance_inquiry",
+    "persona": "cooperative",
+    "turns": [
+      [
+        "user",
+        "What's my current account balance?"
+      ]
+    ],
+    "completions": [
+      "I can help with that. Could you please provide your account number so I can check your current balance?",
+      "I can help with that. Could you please provide your account number so I can check your current balance for you?",
+      "I can help with that. May I verify your account number or the last four digits of your account number, please?",
+      "I can help with that. Could you please provide your account number so I can check your current balance for you?",
+      "I can help with that. Could you please provide your account number so I can check your current balance?",
+      "I can help with that. Could you please provide your account number or the last four digits so I can verify your request?",
+      "I can help with that. Could you please provide your account number so I can check your current balance for you?",
+      "To check your current account balance, I'll need you to verify your account number or the last four digits of your Social Security Number. May I proceed with this information?\n\nYes/No?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.5678588926996571,
+      -0.5030530765617661,
+      -0.4705882352941177,
+      -0.5030530765617661,
+      -0.5678588926996571,
+      -0.43820224719101125,
+      -0.5030530765617661,
+      -0.051248357424441573
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0152",
+    "scenario_type": "statement_clarify",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "user",
+        "Why is there an interest charge of $73.59 this month?"
+      ]
+    ],
+    "completions": [
+      "I understand your frustration. To help me investigate, could you please provide the account number associated with this charge?",
+      "I understand your frustration. Could you please provide your account number so I can review the details and explain the interest charge for you?",
+      "I understand you're concerned about the interest charge. Could you provide me with your account number so I can review the details?",
+      "I understand your frustration. To help resolve this, could you please provide me with the last four digits of your account number so I can review the details for you?",
+      "I understand your frustration. To help resolve this, could you please provide me with your account number so I can review the details of your recent activity?",
+      "I understand your frustration. Let\u2019s review your recent transactions and interest charges. Could you please provide me with your account number or the last four digits, so I can check the details for you?",
+      "I understand your frustration. The interest charge of $73.59 for this month could be due to several factors, such as an increased balance or changes in your billing cycle. Would you like to review your recent transactions or payment history to see what might have caused the increase?",
+      "I understand your frustration. Let's review your account together. Could you please provide me with your account number so I can check the details of this month's charge?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.5355086372360844,
+      -0.40597539543058003,
+      -0.43820224719101125,
+      -0.1900334696913351,
+      -0.28,
+      -0.02531239987183597,
+      -0.3400701175500103,
+      -0.1900334696913351
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0157",
+    "scenario_type": "statement_clarify",
+    "persona": "cooperative",
+    "turns": [
+      [
+        "user",
+        "Why is there an interest charge of $21728 this month?"
+      ]
+    ],
+    "completions": [
+      "Thank you for bringing this to our attention. Could you please provide your account number so I can review the details for you?\n\nIs your account number 1234567890?",
+      "Thank you for bringing this to my attention. To assist you better, can you please provide the account number so I can review your recent transactions?",
+      "I see. Could you please provide your account number so I can review the details and explain why there's an interest charge of $21728 this month?",
+      "Thank you for bringing this to our attention. To help investigate, could you please provide the account number so I can review your recent transactions?\n\nDo you have the account number handy?",
+      "Thank you for bringing this to our attention. To help investigate, could you please provide the date range for the billing cycle in question? This will assist us in reviewing your statement accurately.",
+      "I can help with that. Could you please provide the account number so I can review the details?",
+      "Thank you for bringing this to our attention. Could you please provide your account number so I can review the details?\n\nIs it okay if I ask you to provide the last four digits of your account number for security purposes?",
+      "I understand you're concerned about the interest charge of $21,728 this month. Could you please provide me with the account number so I can review the details for you?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.02468759524535194,
+      -0.31093814010651377,
+      -0.16110304789550076,
+      -0.10497237569060772,
+      -0.07780397440215556,
+      -0.6,
+      -0.0950226244343892,
+      -0.051248357424441573
+    ],
+    "raw_politeness": [
+      0.5498339973124778,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0165",
+    "scenario_type": "wire_confirm",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "user",
+        "Did the $191.67 wire I sent on Jan 25 go through?"
+      ]
+    ],
+    "completions": [
+      "I understand your concern. To ensure accuracy, could you provide your full account number so I can check the transaction status for you?",
+      "I understand your frustration. Let me check the status of that transaction for you.\n\nMay I confirm your full name and the last four digits of your account number to proceed?",
+      "I understand your concern. Let's check the status of that wire transfer together.\n\nCan you provide me with the recipient's name or account number so I can verify this for you?",
+      "I understand your frustration. To check the status of your wire transfer, I'll need to verify some details. Could you please provide the recipient's name or account number?",
+      "I understand your concern. Let me check the status of that wire transfer for you. Could you provide your full account number for verification?",
+      "I understand your concern. Let me check the status of that wire transfer for you. Could you please provide your full name and the last four digits of your account number to verify your identity?",
+      "I understand your concern. Let me check the status of that wire transfer for you.\n\nMay I confirm your full name and the last four digits of your account number so I can verify this?",
+      "I understand your concern. Let's check the status of that transaction. Could you provide me with the recipient's information so I can verify this for you?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.40597539543058003,
+      -0.16110304789550076,
+      -0.10497237569060772,
+      -0.16110304789550076,
+      -0.37398024903392013,
+      -0.051248357424441573,
+      -0.051248357424441573,
+      -0.24951190941038656
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0177",
+    "scenario_type": "statement_clarify",
+    "persona": "time-pressed",
+    "turns": [
+      [
+        "user",
+        "Why is there an interest charge of $131.27 this month?"
+      ]
+    ],
+    "completions": [
+      "Thank you for bringing this to our attention. To provide you with accurate details, could you please verify your account number or the last four digits of it? This will help me review the transaction history and explain the interest charge.",
+      "Thank you for bringing this to our attention. To review the charge accurately, I'll need the last four digits of your account number. Could you provide those please?",
+      "I see you have an interest charge of $131.27 this month. Could you confirm your account number so I can review the details for you?",
+      "I see. Let's review your recent activity. Could you please confirm if there were any new transactions or changes in your account balance recently that might explain this charge?",
+      "I see you have an interest charge of $131.27 this month. Could you provide your account number so I can review the details for you?",
+      "I can help with that. Could you please provide me with your account number so I can review the details?",
+      "I see you have an interest charge of $131.27 this month. Could you please provide your account number so I can review the details for you?",
+      "Thank you for bringing this to our attention. To help resolve this quickly, could you please provide the date range of your statement? This will allow me to review your transaction history and explain the charge."
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.11724137931034483,
+      -0.1900334696913351,
+      -0.1900334696913351,
+      -0.1900334696913351,
+      -0.1900334696913351,
+      -0.5355086372360844,
+      -0.16110304789550076,
+      -0.0
+    ],
+    "raw_politeness": [
+      0.5498339973124778,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.5498339973124778
+    ]
+  },
+  {
+    "scenario_id": "fintech_0179",
+    "scenario_type": "payment_plan",
+    "persona": "time-pressed",
+    "turns": [
+      [
+        "user",
+        "I owe $88307 on my card and want to set up a payment plan."
+      ]
+    ],
+    "completions": [
+      "I understand you'd like to set up a payment plan for your outstanding balance. Can you provide your account number so we can review your options?",
+      "I understand you need to set up a payment plan. Can you confirm the card number and the last four digits so I can assist further?",
+      "I understand you'd like to set up a payment plan. Could you please provide your account number so I can review the options available?",
+      "To assist you, we can set up a payment plan. Would you like to review the available options now?",
+      "I understand you'd like to set up a payment plan for your outstanding balance. Could you please provide your account number so I can assist further?",
+      "I understand you need to set up a payment plan. Could you please provide your account number so we can review the details?",
+      "I understand you'd like to set up a payment plan. Could you please provide your full name and the last four digits of your account number for verification?",
+      "Understood. We can help you set up a payment plan. Could you provide your full name and last four digits of your card number for verification?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.425557483188341,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.425557483188341,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.31093814010651377,
+      -0.342281879194631,
+      -0.37398024903392013,
+      -0.5355086372360844,
+      -0.31093814010651377,
+      -0.43820224719101125,
+      -0.24951190941038656,
+      -0.28
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.425557483188341,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.425557483188341,
+      0.7685247834990175,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0183",
+    "scenario_type": "balance_inquiry",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "user",
+        "What's my current account balance?"
+      ]
+    ],
+    "completions": [
+      "I can help with that, but I need to verify your identity first. Could you please provide the last four digits of your account number?",
+      "I can help with that. Could you please provide your account number so I can check your current balance?",
+      "I can help with that. Could you please provide your account number so I can check your current balance?",
+      "I can help with that. May I verify your account number or use your phone number for this request? Please ensure it's secure as we follow strict compliance rules.",
+      "I can help with that, but I need to verify your identity first. Could you please provide the last four digits of your account number?",
+      "I can help with that. To ensure accuracy, may I verify your account number please?\n\nDo you have your account number handy?",
+      "I can help with that. Could you please provide your account number so I can check your current balance for you?",
+      "I can help with that, but I need to verify your identity first. Could you please provide the last four digits of your account number?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.342281879194631,
+      -0.5678588926996571,
+      -0.5678588926996571,
+      -0.1900334696913351,
+      -0.342281879194631,
+      -0.40597539543058003,
+      -0.5030530765617661,
+      -0.342281879194631
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0190",
+    "scenario_type": "billing_pay",
+    "persona": "anxious",
+    "turns": [
+      [
+        "bot",
+        "Hi Nora, this is your customer service agent at Bank of XYZ. Your bill this month is $4202 and is due Sep 25."
+      ],
+      [
+        "user",
+        "Sure, let's do it today."
+      ]
+    ],
+    "completions": [
+      "I understand you want to pay today, Nora. Could you confirm if you're setting up an online payment or using another method? Also, do you need any assistance with completing the transaction?",
+      "I understand you want to pay it today, Nora. May I suggest using our online banking or mobile app for quick payment? Would you like to proceed with that option?",
+      "I understand your urgency, Nora. To proceed, we need to ensure you have enough funds in your account. Would you like to make an immediate payment or set up a payment plan instead?",
+      "I understand you want to pay this month. Do you prefer to make the payment online or over the phone?",
+      "I understand your urgency, Nora. To proceed, we need to verify your identity. Could you please provide the last four digits of your account number?",
+      "I understand your urgency, Nora. To proceed, we'll need to verify your account details. Could you please provide the last four digits of your account number?",
+      "I understand your urgency, Nora. However, I need to verify some details before we proceed. Could you please confirm your account number and the exact amount you'd like to pay today?",
+      "I understand you want to pay it today. When would be the best time for you to make the payment? We can help you set up a direct debit or process a one-time transfer.\n\nIs there a specific method you prefer for paying this bill today?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.051248357424441573,
+      -0.16110304789550076,
+      -0.051248357424441573,
+      -0.5355086372360844,
+      -0.28,
+      -0.21951219512195116,
+      -0.07780397440215556,
+      -0.23827660080933105
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0193",
+    "scenario_type": "billing_pay",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "bot",
+        "Hi Aisha, this is your customer service agent at Bank of XYZ. Your bill this month is $139.90 and is due May 22."
+      ],
+      [
+        "user",
+        "Sure, let's do it today."
+      ]
+    ],
+    "completions": [
+      "I understand you want to pay today. Would you like to proceed with paying the full amount now?",
+      "I understand you want to pay it today. Would you like to use a debit card, credit card, or another payment method?",
+      "I understand you'd like to pay it today. Would you prefer to set up an electronic payment or use a different method?",
+      "I understand you want to set up a payment today, Aisha. Would you like to schedule a one-time payment or set up a recurring payment plan? Please confirm if you need assistance with either.",
+      "I understand you want to make this payment today, Aisha. When would be a good time for you to make the payment? Would you like to use the online banking or phone banking method?",
+      "I understand you want to pay it today. What\u2019s the best way for you to make the payment? Would you like to use online banking, a mobile app, or perhaps a phone transfer?",
+      "I understand you'd like to pay it today. What would be the best way for you to make this payment? Would you like to use online banking, mobile app, or perhaps a different method?",
+      "I understand your urgency, Aisha. To ensure we handle this correctly, could you please confirm the payment amount or any specific details you need assistance with today?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.6,
+      -0.40597539543058003,
+      -0.43820224719101125,
+      -0.0,
+      -0.02531239987183597,
+      -0.02531239987183597,
+      -0.0,
+      -0.21951219512195116
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0195",
+    "scenario_type": "cancel_service",
+    "persona": "time-pressed",
+    "turns": [
+      [
+        "user",
+        "I'd like to terminate my overdraft protection."
+      ]
+    ],
+    "completions": [
+      "Thank you for reaching out. To proceed, I need to verify your identity. Could you please provide your account number and the last four digits of your Social Security Number?",
+      "Understood. To proceed, I need to verify your identity. Could you please provide the last four digits of your account number?",
+      "Thank you for reaching out. To proceed, could you confirm your account number and the reason for terminating the overdraft protection? This will help ensure we process it correctly.",
+      "Sure, I can help with that. Could you please provide your account number so I can process this for you?",
+      "Sure, I can help with that. Could you please provide your account number so we can proceed?",
+      "Understood. To proceed, I'll need to verify your identity. Could you please provide the last four digits of your account number?",
+      "Thank you for contacting Bank of XYZ. To ensure we process your request correctly, could you confirm your full name and account number?",
+      "Thank you for contacting Bank of XYZ. To proceed, can you please provide your full name and the last four digits of your account number for verification?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.16110304789550076,
+      -0.40597539543058003,
+      -0.16110304789550076,
+      -0.5030530765617661,
+      -0.6,
+      -0.37398024903392013,
+      -0.40597539543058003,
+      -0.28
+    ],
+    "raw_politeness": [
+      0.5498339973124778,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.5498339973124778
+    ]
+  },
+  {
+    "scenario_id": "fintech_0200",
+    "scenario_type": "investment",
+    "persona": "skeptical",
+    "turns": [
+      [
+        "user",
+        "How much can I contribute to my IRA this year?"
+      ]
+    ],
+    "completions": [
+      "For 2023, you can contribute up to $6,500 if you are under 50 years old, or up to $7,500 if you are 50 or older. Is this information helpful for you, or would you like more details on contributing to your IRA?",
+      "For 2023, you can contribute up to $6,500 if you're under 50 years old, or $7,500 if you're 50 or older. Is this information helpful for you, or do you need more details?",
+      "For 2023, the contribution limit for a traditional or Roth IRA is $6,500 if you're under 50 years old. For those 50 and older, the limit is $7,500.\n\nIs this information helpful, or would you like more details on IRA contributions?",
+      "For 2023, you can contribute up to $6,500 if you're under 50, or $7,500 if you're 50 or older. Is that helpful for you?",
+      "For 2023, you can contribute up to $6,500 if you're under 50, or $7,500 if you're 50 or older to your Traditional or Roth IRA. Is this information helpful for you, or do you need more details?",
+      "For 2023, you can contribute up to $6,500 if you are under 50 years old, or $7,500 if you are 50 or older. Are you sure you want to contribute this year, or do you have any questions about these limits?",
+      "For 2023, you can contribute up to $6,500 to a Traditional IRA or Roth IRA, depending on your income level and eligibility. Is this information correct for your situation?",
+      "For 2023, the annual contribution limit for traditional and Roth IRAs is $6,500 if you are under 50 years old, or $7,500 if you are 50 or older. Is this information helpful, or would you like more details?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.4506437768240344,
+      -0.3553585817888799,
+      -0.46272666218938874,
+      -0.18032786885245894,
+      -0.4121969140337987,
+      -0.43820224719101125,
+      -0.04875148632580266,
+      -0.4121969140337987
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0202",
+    "scenario_type": "loan_status",
+    "persona": "time-pressed",
+    "turns": [
+      [
+        "user",
+        "I applied for a $63.94 personal loan last week. What's the status?"
+      ]
+    ],
+    "completions": [
+      "Thank you for your patience. I'll need to verify your identity first. Could you please provide the last four digits of your social security number and the email address associated with your application?",
+      "I can check on that for you. Could you please provide your full name and the last four digits of your social security number for verification?",
+      "Thank you for reaching out. I'll need to verify your account information to check the status of your loan application. May I have your full name and the last four digits of your account number?\n\nOnce I have this information, I can provide an update on your application status.",
+      "Thank you for reaching out. I'll need to verify your identity to check the status of your application. Could you please provide your last four digits of your Social Security number and the email address associated with your application?",
+      "Thank you for reaching out. I'll need to verify your identity to check on the status of your loan application. Could you please provide the last four digits of your Social Security number and the email address associated with your application?",
+      "I can check on that for you. Could you please provide your full name and the last four digits of your account number for verification?",
+      "Thank you for reaching out. To check the status of your application, I'll need you to verify your account information. Could you please provide your account number or the last four digits of your SSN?\n\n[Note: Do not provide your actual SSN in this conversation.] \n\nIs it okay to proceed with the last four digits of your SSN?",
+      "I can check on that for you. Could you please provide your full name and the last four digits of your account number for verification?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.07780397440215556,
+      -0.342281879194631,
+      -0.30810810810810807,
+      -0.07219483908379234,
+      -0.11724137931034483,
+      -0.37398024903392013,
+      -0.5181448577021533,
+      -0.37398024903392013
+    ],
+    "raw_politeness": [
+      0.5498339973124778,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0205",
+    "scenario_type": "lost_card",
+    "persona": "skeptical",
+    "turns": [
+      [
+        "user",
+        "I just lost my debit card and I'm worried. What should I do?"
+      ]
+    ],
+    "completions": [
+      "I understand your concern. First, we need to secure your account. Would you like to report your card as lost or stolen now?",
+      "I understand your concern. Here\u2019s what you should do:\n\n1. Call us immediately to report your card lost or stolen.\n2. We can help you secure your account and issue a new card.\n\nWould you like to proceed with reporting your card as lost?",
+      "I understand your concern. First, please call us immediately to report your card as lost or stolen. This will help prevent unauthorized transactions.\n\nWould you like to schedule a time for a secure card replacement?",
+      "I understand your concern. First, we should report your card as lost or stolen. Would you like to proceed with blocking your card now?",
+      "I understand your concern. First, please call us immediately to report your card lost or stolen. We can start the process to block it right away.\n\nHave you already called us or would you like to proceed with blocking the card now?",
+      "I understand your concern. First, we need to secure your account. Would you like to report your card as lost or stolen now?",
+      "I understand your concern. First, please call us immediately to report your card lost or stolen. We can then begin the process to block it and issue a new card. Should you proceed this way?",
+      "I understand your concern. Here\u2019s what you should do:\n\n1. **Call us immediately** to report your card as lost or stolen.\n2. **Follow our steps** to secure your account and block unauthorized transactions.\n\nWould you like to proceed with reporting your card now?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.37398024903392013,
+      -0.25650557620817843,
+      -0.0,
+      -0.342281879194631,
+      -0.15988448411656606,
+      -0.37398024903392013,
+      -0.0,
+      -0.30810810810810807
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0209",
+    "scenario_type": "billing_pay",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "bot",
+        "Hi James, this is your customer service agent at Bank of XYZ. Your bill this month is $639 and is due Mar 5."
+      ],
+      [
+        "user",
+        "Yes, I'm happy to pay for it. Please proceed."
+      ]
+    ],
+    "completions": [
+      "I understand you're ready to proceed. To ensure accuracy, could you please specify how you'd like to make the payment? We accept online banking, debit card, credit card, or by phone transfer.",
+      "Thank you, James. To proceed, would you like to set up automatic payments or make a one-time payment through our online banking platform?",
+      "Great! To confirm, you'd like to proceed with paying the bill as usual. Would you prefer to make the payment online, over the phone, or through another method?",
+      "Thank you, James. To ensure everything goes smoothly, could you confirm which method you prefer for payment\u2014direct bank transfer, credit card, or another option?",
+      "Thank you for your understanding. To proceed, would you like to pay online through our secure website or via phone?",
+      "Thank you, James. I will process your payment as requested. Is there anything else you need assistance with today?",
+      "I understand, James. However, before we proceed, can you confirm your payment method and ensure it's set up correctly in your account? This will help avoid any delays.",
+      "I understand you're ready to proceed. Could you please choose how you'd like to make the payment? We offer options such as online banking, phone banking, or mail."
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.02468759524535194,
+      -0.342281879194631,
+      -0.13274336283185842,
+      -0.21951219512195116,
+      -0.5030530765617661,
+      -0.5030530765617661,
+      -0.13274336283185842,
+      -0.13274336283185842
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.5498339973124778,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0214",
+    "scenario_type": "balance_inquiry",
+    "persona": "skeptical",
+    "turns": [
+      [
+        "user",
+        "Can you tell me how much I have in my checking?"
+      ]
+    ],
+    "completions": [
+      "I can certainly help with that. Could you please provide your account number so I can check your balance?",
+      "I understand your concern. To protect your information, can you please verify your account details by answering these security questions? Once verified, I can provide you with your current balance. Is that okay?",
+      "I understand your concern. To ensure accuracy, could you please provide your account number so I can verify your balance?",
+      "I can certainly help with that. Could you please provide your account number so I can check your balance?",
+      "I can certainly help with that, but I need to verify your identity first. Could you please provide the last four digits of your checking account number?",
+      "I understand your concern. To check your balance, I would need to verify your identity first. Could you please provide the last 4 digits of your account number?",
+      "I understand your concern. To check your balance, we'll need to verify your identity. Could you please provide your date of birth and the last four digits of your social security number?",
+      "I can help with that, but I need to verify your identity first. Could you please provide the last 4 digits of your account number?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.5678588926996571,
+      -0.02531239987183597,
+      -0.5030530765617661,
+      -0.5678588926996571,
+      -0.28,
+      -0.1900334696913351,
+      -0.07780397440215556,
+      -0.31093814010651377
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0219",
+    "scenario_type": "loan_status",
+    "persona": "confused",
+    "turns": [
+      [
+        "user",
+        "Has my mortgage application moved forward?"
+      ]
+    ],
+    "completions": [
+      "I understand you're concerned about your mortgage application. Could you please provide your account number or the application reference number so I can check the status for you?",
+      "I understand your concern. To check the status of your mortgage application, I need to verify your identity first. Could you please provide the last four digits of your Social Security number and the email address associated with your account?",
+      "I understand your concern. Could you please provide your account number or the application reference number for faster processing?",
+      "I understand you're concerned about your mortgage application status. Could you provide me with your full name and the last four digits of your social security number so I can check the status for you?",
+      "I understand you're looking for an update on your mortgage application. Could you please provide your full name and the last four digits of your social security number so I can check the status for you?",
+      "I'm here to help. Could you please provide me with your account number or last four digits of your social security number so I can check the status of your mortgage application?",
+      "I understand you're concerned about your mortgage application. To check its status, we'll need to verify your identity first. Could you please provide the last four digits of your Social Security number and the email address associated with your application?",
+      "I understand you're unsure about your mortgage application status. Let's check that now. Could you please provide your full name and the last four digits of your social security number for verification?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.24951190941038656,
+      -0.0950226244343892,
+      -0.5678588926996571,
+      -0.051248357424441573,
+      -0.02531239987183597,
+      -0.13274336283185842,
+      -0.13885898815931103,
+      -0.07780397440215556
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0221",
+    "scenario_type": "loan_status",
+    "persona": "confused",
+    "turns": [
+      [
+        "user",
+        "When will I hear back about my credit card application?"
+      ]
+    ],
+    "completions": [
+      "I understand you're eager to hear about your credit card application. Typically, we aim to process applications within 7-10 business days. Would you like to check the status now?",
+      "I apologize for any confusion. Typically, we aim to process credit card applications within 1-3 business days. However, it can take longer depending on the complexity of your application. When can I expect you to check back, or would you like to expedite the process?",
+      "I understand your confusion. Typically, we aim to process credit card applications within 3-5 business days. However, the exact timeframe can vary depending on the completeness of your application. Have you received any notifications regarding your application yet?\n\nWould you like to check the status through our online portal?",
+      "I understand your concern. Typically, we aim to process applications within 5-7 business days. When can I check on the status for you? Would you like to proceed with that now?",
+      "I understand you're eager to know about your credit card application status. Typically, we aim to process applications within 3-5 business days. However, for more detailed information, I recommend checking your online account or logging into your account portal.\n\nWould you like to check your account now?",
+      "I understand your confusion, but I can check on the status of your application for you. Could you please provide me with your last four digits of the social security number associated with your account or the application number if you have it?",
+      "I understand your confusion. It typically takes 3-5 business days to process a credit card application. You should receive a confirmation email or notice within this timeframe. Have you checked your spam folder?\n\nDid you receive any communication regarding your application?",
+      "I understand your confusion. Typically, we aim to process applications within 3-5 business days. When can I check the status for you or do you need more time?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.051248357424441573,
+      -0.32432432432432434,
+      -0.3702027160007873,
+      -0.02531239987183597,
+      -0.3553585817888799,
+      -0.13885898815931103,
+      -0.20019995001249696,
+      -0.13274336283185842
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.5498339973124778,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0225",
+    "scenario_type": "fraud_report",
+    "persona": "time-pressed",
+    "turns": [
+      [
+        "bot",
+        "Hi Carlos, we detected a suspicious $139.29 charge on your card on Dec 13. Can you confirm whether you authorized it?"
+      ],
+      [
+        "user",
+        "Definitely not me. What happens now?"
+      ]
+    ],
+    "completions": [
+      "I understand, Carlos. We can file a dispute to investigate this further. Would you like to proceed with that?",
+      "I understand, Carlos. We can quickly file a dispute on your behalf. Do you want to proceed with this?",
+      "Thank you for confirming. I can help you file a fraud alert. Would you like to proceed with this now?",
+      "I understand, Carlos. We can file a dispute on your behalf. Do you have your account number handy?",
+      "I understand, Carlos. We'll need to file a dispute. May I verify your account number to proceed? Alternatively, do you prefer to provide this information over a secure chat link?",
+      "I understand, Carlos. Let\u2019s secure your account. I\u2019ll put it on fraud alert and issue a new card. Do you have a preferred mailing address?",
+      "I understand, Carlos. We can flag this transaction for investigation and put a hold on your card if needed. Should we do that now?\n\nWould you like to proceed with holding the card?",
+      "I understand, Carlos. We can file a dispute to investigate this further. Would you like to proceed with that?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.5030530765617661,
+      -0.5030530765617661,
+      -0.5030530765617661,
+      -0.5355086372360844,
+      -0.07780397440215556,
+      -0.21951219512195116,
+      -0.051248357424441573,
+      -0.5030530765617661
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.5498339973124778,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0228",
+    "scenario_type": "investment",
+    "persona": "skeptical",
+    "turns": [
+      [
+        "user",
+        "Can I transfer $53.82 from my checking to my brokerage?"
+      ]
+    ],
+    "completions": [
+      "Sure, you can do that. Would you like to proceed with the transfer now?",
+      "Of course! To proceed, please confirm your account information and ensure you have sufficient funds. Would you like to go ahead with the transfer?",
+      "Certainly! To proceed, please confirm your identity by verifying your date of birth and the last four digits of your social security number.\n\nIs this information correct?",
+      "Certainly! To proceed, please confirm your current balance in the checking account to ensure there are sufficient funds.\n\nIs everything clear so far?",
+      "Certainly! To proceed, please verify your PIN to authorize the transaction.\n\nIs it okay to proceed?",
+      "Certainly! To proceed, please confirm your current balance in the checking account to ensure sufficient funds.\n\nWould you like to check your balance now?",
+      "Of course! Please confirm your current checking and brokerage account numbers. Is everything clear so far?",
+      "Sure, I can help with that. Could you please confirm your current balance in the checking account to ensure there are sufficient funds?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.6940179989412387,
+      -0.342281879194631,
+      -0.24951190941038656,
+      -0.37398024903392013,
+      -0.6,
+      -0.342281879194631,
+      -0.6318204997450281,
+      -0.40597539543058003
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0233",
+    "scenario_type": "contact_update",
+    "persona": "skeptical",
+    "turns": [
+      [
+        "user",
+        "Please update my email to Nora@example.com."
+      ]
+    ],
+    "completions": [
+      "I understand you'd like to update your email address. To ensure we handle this securely, could you please provide the last four digits of your account number?",
+      "I understand you'd like to update your email address. Could you please provide the last four digits of your account number for verification?",
+      "I understand you need to update your email address. To proceed, I'll need to verify your identity. Could you please provide the last four digits of your Social Security Number?",
+      "I understand you want to update your email address to Nora@example.com. Could you please verify your current email address for security purposes?",
+      "I understand you'd like to update your email address to Nora@example.com. Can you please verify your current account information by providing the last four digits of your social security number? This will help ensure it's you making this change.",
+      "I understand you'd like to update your email address. Can you please verify your current email address and any other secure information we have on file to ensure this is you? This helps maintain the security of your account.",
+      "I understand you'd like to update your email address. May I confirm your full name and last four digits of your account number for security purposes?",
+      "I understand you'd like to update your email address to Nora@example.com. To ensure the security of your account, could you please verify your current password?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.425557483188341,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.24951190941038656,
+      -0.40597539543058003,
+      -0.13274336283185842,
+      -0.40597539543058003,
+      -0.13885898815931103,
+      -0.07219483908379234,
+      -0.31093814010651377,
+      -0.24951190941038656
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.425557483188341,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0238",
+    "scenario_type": "contact_update",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "user",
+        "I have a new phone number. Can you change it on my account?"
+      ]
+    ],
+    "completions": [
+      "Certainly! To update your phone number, please provide the last four digits of your account number and the new phone number you'd like to add.\n\nMay I proceed with updating your information?",
+      "Certainly! To update your phone number, we'll need to verify your identity. Could you provide the last four digits of your account number and confirm your current phone number?",
+      "Certainly! To update your phone number, we'll need to verify your identity. Could you provide your account number or the last four digits of your Social Security Number, along with your date of birth?",
+      "Certainly! To update your phone number, please provide the last four digits of your account number and the new phone number you'd like to add.\n\nIs that information correct, and would you like to proceed?",
+      "Certainly! To update your phone number, we'll need to verify your identity. Could you please provide the last four digits of your account number and your date of birth?",
+      "Of course! To update your phone number, we'll need to verify your identity. Could you please provide the last four digits of your account number?",
+      "Certainly! To update your phone number, we'll need to verify your identity first. Could you please provide the last four digits of your Social Security Number or the last four digits of your account number?",
+      "Certainly! To update your phone number, we'll need to verify your identity. Could you please provide your account number or the last 4 digits?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.07780397440215556,
+      -0.16110304789550076,
+      -0.0,
+      -0.02468759524535194,
+      -0.16110304789550076,
+      -0.28,
+      -0.0,
+      -0.28
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.5498339973124778,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0246",
+    "scenario_type": "escalation",
+    "persona": "cooperative",
+    "turns": [
+      [
+        "user",
+        "I want to speak to a supervisor. Now."
+      ]
+    ],
+    "completions": [
+      "I understand your urgency. Can you please provide me with your account number so I can escalate this to a supervisor right away?",
+      "I understand you need assistance urgently. May I verify your account number or the issue you're facing so I can assist you directly? Alternatively, would you like me to connect you to a supervisor right away?",
+      "I understand your urgency. Let me check if I can connect you to a supervisor right away. Would that be okay?",
+      "I understand your urgency. May I please verify your account number to proceed?\n\n[If they provide the account number] Would you like to explain what issue you need help with?",
+      "I understand your urgency. May I quickly verify your account information to proceed efficiently?\n\n[Please provide your account number or the last four digits for verification.]\n\nIs this information correct?",
+      "I understand you need assistance right away. May I verify your account number or the issue you're facing so I can escalate this as soon as possible?\n\nIs that okay, or do you need more immediate help?",
+      "I understand you'd like to speak to a supervisor right away. May I check your account number so we can expedite the transfer? \n\nIs your account number 1234567890?",
+      "I understand you need assistance urgently. May I ask what specific issue you're facing? Is there a particular policy or service you need help with?\n\nIs there anything specific that happened recently that needs attention?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.43820224719101125,
+      -0.02468759524535194,
+      -0.4705882352941177,
+      -0.13274336283185842,
+      -0.13274336283185842,
+      -0.04875148632580266,
+      -0.0950226244343892,
+      -0.0
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0253",
+    "scenario_type": "cancel_service",
+    "persona": "anxious",
+    "turns": [
+      [
+        "user",
+        "I want to close my checking account."
+      ]
+    ],
+    "completions": [
+      "I understand your concern, but could you please verify your account number over the phone for security reasons? This will help me assist you better.",
+      "I understand your concern. To proceed, could you please verify your account number or the last four digits of your Social Security number? This will help ensure we have the correct account.",
+      "I understand you'd like to close your checking account. Could you please provide your account number so I can assist you further?",
+      "I understand your concern. To proceed, I need to verify your identity. Could you please provide your account number and the last four digits of your Social Security Number?",
+      "I understand you want to close your checking account. To proceed, I need to verify your identity. Could you please provide your full name and the last four digits of your account number?",
+      "I understand you want to close your checking account. Could you please provide me with your account number so I can assist you further?",
+      "I understand you want to close your checking account. Could you please provide me with your account number so I can assist you further?",
+      "I understand you're looking to close your checking account. Could you please verify your account number over the phone for security reasons?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.342281879194631,
+      -0.10497237569060772,
+      -0.43820224719101125,
+      -0.1900334696913351,
+      -0.07780397440215556,
+      -0.40597539543058003,
+      -0.40597539543058003,
+      -0.43820224719101125
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0255",
+    "scenario_type": "refund_request",
+    "persona": "anxious",
+    "turns": [
+      [
+        "user",
+        "I want to dispute a $119.45 transaction from Nov 16."
+      ]
+    ],
+    "completions": [
+      "Thank you for reaching out. To proceed with disputing that transaction, I'll need some additional information. Could you please provide me with your account number and the last four digits of your Social Security Number? This will help verify your identity and process your request more quickly.\n\nIs this information correct, or do you prefer we use another method to verify your identity?",
+      "I understand your concern. To proceed, could you provide me with the last four digits of your account number?",
+      "I understand your concern. Could you please provide me with your account number so I can look into this further?",
+      "I understand your concern. To proceed, could you please provide me with your account number and the last four digits of the transaction? This will help us investigate the matter quickly.",
+      "Thank you for reaching out. I'll need some information to verify your account and the transaction. Could you please provide the last four digits of your account number?",
+      "I understand your concern. Could you please provide me with your account number and the last four digits of the transaction for verification?",
+      "I understand your concern. Could you please provide me with the account number associated with this transaction for verification?",
+      "Thank you for reaching out. I can assist you with that. Could you please provide me with the last four digits of your account number and the merchant name associated with the transaction?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.5498339973124778,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.5283018867924528,
+      -0.5355086372360844,
+      -0.5355086372360844,
+      -0.13274336283185842,
+      -0.21951219512195116,
+      -0.43820224719101125,
+      -0.5678588926996571,
+      -0.10497237569060772
+    ],
+    "raw_politeness": [
+      0.5498339973124778,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.5498339973124778,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.5498339973124778
+    ]
+  },
+  {
+    "scenario_id": "fintech_0256",
+    "scenario_type": "contact_update",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "user",
+        "Please update my email to Sofia@example.com."
+      ]
+    ],
+    "completions": [
+      "I understand you need to update your email address. Could you please provide your full name and the last four digits of your account number for verification?",
+      "I understand your request, Sofia. To proceed, I need to verify your identity. Could you please provide the last four digits of your Social Security number?",
+      "I understand your request, Sofia. To proceed, I need to verify your identity. Could you please provide the last four digits of your social security number?",
+      "I understand your request, Sofia. To proceed, I need you to verify your identity by answering a security question or providing an alternative form of ID.\n\nIs it okay to continue with a security question?",
+      "I understand your request, Sofia. To ensure security, could you please verify your current password?",
+      "I understand your request, Sofia. To ensure security, may I ask you to verify your account using the verification method we have on file? This will help me assist you promptly.\n\nIs this still convenient for you?",
+      "I understand you need to update your email address to Sofia@example.com. To ensure we process this request securely, could you please verify your current email address on file?",
+      "I understand your request, Sofia. To proceed, I'll need you to verify your identity. Could you please provide the last four digits of your Social Security number?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.425557483188341,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.425557483188341,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.31093814010651377,
+      -0.24951190941038656,
+      -0.24951190941038656,
+      -0.0,
+      -0.6318204997450281,
+      -0.07219483908379234,
+      -0.1900334696913351,
+      -0.1900334696913351
+    ],
+    "raw_politeness": [
+      0.425557483188341,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.425557483188341,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0266",
+    "scenario_type": "billing_delay",
+    "persona": "cooperative",
+    "turns": [
+      [
+        "bot",
+        "Hi Carlos, your statement balance of $2371 is due Jun 20."
+      ],
+      [
+        "user",
+        "Is there a way to split this into smaller payments?"
+      ]
+    ],
+    "completions": [
+      "Certainly! Would you like to set up an automatic payment plan for this balance? We can arrange monthly payments that suit your needs.",
+      "I can help you set up a payment plan. When would you like to start making partial payments, and how much do you prefer to pay each month?",
+      "I can help you set up a payment plan. Would you like to proceed with setting this up?",
+      "I can help with that, Carlos. Would you like to set up a payment plan? We can discuss the options available to you.",
+      "I can help you set up a payment plan. Would you like to discuss the options available?",
+      "Certainly, Carlos. We can set up a payment plan for you. Would you like to proceed with setting this up now?",
+      "I can help you set up a payment plan. Would you like to proceed with that option?",
+      "Certainly, we can set up a payment plan for you. Would you like to review the options available?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.40597539543058003,
+      -0.24951190941038656,
+      -0.6,
+      -0.37398024903392013,
+      -0.6318204997450281,
+      -0.43820224719101125,
+      -0.6318204997450281,
+      -0.5678588926996571
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  },
+  {
+    "scenario_id": "fintech_0276",
+    "scenario_type": "wire_confirm",
+    "persona": "anxious",
+    "turns": [
+      [
+        "user",
+        "Did the $85.35 wire I sent on Nov 26 go through?"
+      ]
+    ],
+    "completions": [
+      "I understand your concern. Let me check the status of that wire transfer for you. Could you provide your full account number or the last four digits for verification purposes?",
+      "I understand your concern. To ensure accuracy, could you please provide the recipient's name or account number? This will help me confirm if the transaction was successful.",
+      "I understand your concern. Let me check the status of that wire transfer for you.\n\nWould you like me to confirm if there was any activity on that date?",
+      "I understand your concern. Let me check the status of that wire transfer for you.\n\nDo you have your account number handy? This will help speed up the process.",
+      "I can check on that for you. Could you provide me with the recipient\u2019s information to verify the transaction?",
+      "I understand your concern. Let's check the status together. When was the transaction supposed to reach its destination? And do you have the recipient's account number or the name they're using?",
+      "I can check on that for you. Could you provide your full name and the recipient's information to verify this transaction?",
+      "I understand your concern. Let's check the status of that transaction. Can you provide me with the recipient's information so I can verify this for you?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        0.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.1900334696913351,
+      -0.21951219512195116,
+      -0.21951219512195116,
+      -0.1900334696913351,
+      -0.5355086372360844,
+      -0.051248357424441573,
+      -0.4705882352941177,
+      -0.24951190941038656
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.7685247834990175,
+      0.31002551887238755,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0284",
+    "scenario_type": "escalation",
+    "persona": "anxious",
+    "turns": [
+      [
+        "user",
+        "I've been on hold for 45 minutes and nobody can help me. This is ridiculous."
+      ]
+    ],
+    "completions": [
+      "I understand how frustrating this must be. Let\u2019s try to resolve your issue as quickly as possible. Could you please tell me your full name and account number so I can assist you further?",
+      "I apologize for the long wait and understand your frustration. Let's try to resolve this quickly. Can you tell me more about the issue you're facing?",
+      "I understand how frustrating this must be. Let\u2019s try to resolve your issue as quickly as possible. Can you please provide me with your account number so I can check the details?",
+      "I understand how frustrating this must be. Let\u2019s try to resolve your issue as quickly as possible. Can you tell me more about what assistance you need?",
+      "I understand how frustrating this must be. Let\u2019s try to resolve your issue as quickly as possible. Can you please provide me with your account number so I can check the details?",
+      "I understand how frustrating this must be. Let's try to resolve your issue as quickly as possible. Can you please provide me with your account number so I can assist you better?",
+      "I understand how frustrating this must be for you. Let\u2019s try to resolve your issue as quickly as possible. Could you please provide me with your account number so I can assist you better?",
+      "I understand how frustrating this must be for you. Let\u2019s try to resolve your issue as quickly as possible. Can you please provide me with your account number so I can check the status?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.051248357424441573,
+      -0.24951190941038656,
+      -0.10497237569060772,
+      -0.24951190941038656,
+      -0.10497237569060772,
+      -0.10497237569060772,
+      -0.051248357424441573,
+      -0.051248357424441573
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0287",
+    "scenario_type": "billing_delay",
+    "persona": "cooperative",
+    "turns": [
+      [
+        "bot",
+        "Hi Maria, your statement balance of $166.86 is due Jul 9."
+      ],
+      [
+        "user",
+        "I'm short on cash this month. Can we work something out?"
+      ]
+    ],
+    "completions": [
+      "I understand you're facing some financial challenges. We can discuss options like payment plans or extensions. Have you reviewed our automatic payment setup or flexible due dates?\n\nWould you like to explore these options further?",
+      "I understand you're facing some financial challenges. We can explore options like payment plans or extensions. Would you like to discuss setting up a payment plan?",
+      "I understand, Maria. We can discuss payment options like setting up an auto-pay or a payment plan. Which option would you prefer?",
+      "I understand your situation, Maria. We can explore options like payment plans or extensions. Would you like to set up a payment plan that fits your schedule better?",
+      "I understand your situation, Maria. We can discuss options like payment plans or extensions. Could you let me know which would be most suitable for you?",
+      "I understand you're facing some financial challenges. To assist you better, can you check if you have any pending payments or adjustments that might help with this balance?",
+      "I understand your concern, Maria. We can look into options like payment plans or extensions. Would you like to set up a payment plan to pay off the balance over time?",
+      "I understand your situation, Maria. Could you let me know if you'd like to set up a payment plan or need assistance with any other options?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ],
+      [
+        1.0,
+        0.7685247834990175,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.0,
+      -0.28,
+      -0.37398024903392013,
+      -0.21951219512195116,
+      -0.28,
+      -0.21951219512195116,
+      -0.13274336283185842,
+      -0.28
+    ],
+    "raw_politeness": [
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175,
+      0.7685247834990175
+    ]
+  },
+  {
+    "scenario_id": "fintech_0297",
+    "scenario_type": "investment",
+    "persona": "frustrated",
+    "turns": [
+      [
+        "user",
+        "How much can I contribute to my IRA this year?"
+      ]
+    ],
+    "completions": [
+      "For 2023, you can contribute up to $6,500 if you are under 50 years old, or $7,500 if you are 50 or older. Would you like to proceed with setting up your contribution or need more information on IRA types?",
+      "For 2023, you can contribute up to $6,500 if you are under 50 years old, or $7,500 if you are 50 or older. Are you planning to contribute the maximum amount this year?",
+      "For 2023, you can contribute up to $6,500 if you are under 50 years old, or $7,500 if you are 50 or older. Would you like more information on the types of IRA accounts available or how to make a contribution?",
+      "For 2023, you can contribute up to $6,500 to a traditional or Roth IRA if you are under 50 years old. If you are 50 or older, you can contribute an additional $1,000 as a catch-up contribution, bringing the total to $7,500.\n\nWould you like more detailed information on the types of IRAs or how to make your contributions?",
+      "For 2023, you can contribute up to $6,500 if you are under 50 years old, or $7,500 if you are 50 or older. Is this information helpful to you, or do you need more details?",
+      "For 2023, you can contribute up to $6,500 if you are under 50 years old, or up to $7,500 if you are 50 or older. Would you like more detailed information or assistance with setting up your contribution?",
+      "For 2023, you can contribute up to $6,500 to a traditional or Roth IRA if you are under 50 years old. If you are 50 or older, the catch-up contribution limit is $7,500.\n\nIs this information helpful, or would you like more details on IRA contributions?",
+      "For 2023, you can contribute up to $6,500 to your Traditional or Roth IRA if you are under 50 years old. If you are 50 or older, the catch-up contribution limit is an additional $1,000, making it $7,500 in total.\n\nIs this information helpful for you, or do you need more details?"
+    ],
+    "rewards": [
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ],
+      [
+        1.0,
+        0.31002551887238755,
+        1.0
+      ]
+    ],
+    "raw_length": [
+      -0.4121969140337987,
+      -0.30810810810810807,
+      -0.42539055485724553,
+      -0.6701030927835052,
+      -0.3553585817888799,
+      -0.38461538461538464,
+      -0.5181448577021533,
+      -0.6230415832253504
+    ],
+    "raw_politeness": [
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755,
+      0.31002551887238755
+    ]
+  }
+]
