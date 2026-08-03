@@ -73,6 +73,13 @@ Note: the synthetic/LLM harness scripts need the `research` extra (matplotlib et
 al. are no longer base deps — they moved to extras to keep the published library
 lean). The package core (advantage + analysis math) needs only numpy/scipy.
 
+`research` is the union convenience extra for this repo. Library consumers get
+finer-grained ones (`pyproject.toml`): `viz` (matplotlib, figures), `runpod`
+(requests, `multireward_grpo.runpod`), `data` (datasets/hf-hub/pandas/pyarrow,
+`examples.gsm8k` + model publishing), `llm` (torch/transformers/peft). When you
+add an import to a package module, put its dependency in the matching extra —
+never in the base `dependencies`, which must stay numpy+scipy only.
+
 There is **no test suite, linter, or build step**. Verification = running the
 harness scripts and checking their printed "sim-vs-theory" lines and PNG output.
 The package's closest smoke test is `multireward-grpo thm3-check` (CPU).
@@ -141,4 +148,7 @@ loop — it is reference, not part of any pipeline.
 - **Figures**: synthetic-harness scripts write PNGs to the **current working directory** (`FIG = "."`), so run them from `scripts/` or `figures/` as intended; the LLM pipeline writes to `figures/` via `--out-dir`. `*_mock*` figures are committed CPU-reproducible outputs; bare-name figures come from GPU runs.
 - **Reproducibility**: synthetic scripts use fixed seeds (`np.random.default_rng(7)` etc.). Changing a seed can shift the last printed digit — don't "fix" a claim by reseeding.
 - **Falsified claims are documented on purpose** in `README.md` (§"Verification status") and the prose. If your edit changes a result, update both the table row and the narrative; never silently flip a "FALSIFIED" to "verified".
-- **Not a git repository**: this working copy is not under version control, so there is no commit/branch/PR workflow to follow — edit files in place. Secrets live in `.env` (RunPod + HF tokens); `.env.example` is the template.
+- **Git — two repos, different visibility.** This working copy is under version control (branch `main`, remote `github.com/yiqiao-yin/multireward-grpo`, **PUBLIC**). History is shallow — the whole package + harness landed in one commit (`f3df088`), so don't expect `git log` to explain design decisions; the prose files and this file are the record. Secrets live in `.env` (RunPod + HF tokens), gitignored; `.env.example` is the template.
+- **`data/` is a separate, PRIVATE repo** nested inside this one (its remote is in `data/.git/config`; not named here because this file is public). The outer `.gitignore` ignores `data/` wholesale, so the public repo never sees it — no gitlink, no submodule. It holds the LaTeX manuscript, `figs/`, the Scientific Reports cover letter, editor correspondence, and third-party reference PDFs. **It must stay private**: the manuscript is under review, the correspondence is private, and `data/pdfs/` is other authors' copyrighted work. Never `git add` anything from `data/` in the outer repo, and never move paper content out of `data/` into a tracked path.
+- **The manuscript lives at `data/overleaf/template/_extracted/templateArxiv.tex`** (~1070 lines) — that is the live copy, byte-identical to the `_v2.zip` snapshot and newer than `_FILLED.zip`. Edit `_extracted/`, never the zips. It states the same claims as the tracked `.md` prose files, so **a numerical result that changes must be updated in both** — the `.tex` is in the private repo and the `.md` in the public one, so nothing will flag the drift for you. Commit `data/` changes from inside `data/` (its own repo); commit code changes from the root.
+- **Release surface**: the repo publishes to three places — GitHub (above), PyPI (`multireward-grpo`, version in `pyproject.toml`), and HuggingFace (`eagle0504` namespace, see `huggingface_assets.md`). A version bump means bumping `pyproject.toml` and rebuilding `dist/` with `uv build`; `README_PYPI.md` (not `README.md`) is what renders on the PyPI page, so keep it in sync separately.
