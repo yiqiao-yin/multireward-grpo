@@ -6,6 +6,8 @@ proofs, and a simulation+LLM harness that verifies every claim.
 ## Paper skeleton (read in this order)
 
 ```
+INTUITION.md                 START HERE if you want the ideas before the algebra. Every theorem
+                             and proposition in plain language, one analogy each. No proofs.
 literature-review.md         Three strands of related work, the gap, positioning, citation checklist.
 problem-statement.md         The gap (summary), canonical formal setup/notation, the 4 questions.
 proposed-solutions.md        The 4 results (Prop 1, 2; Thm 3; Prop 4/4') with intuition + what each solves.
