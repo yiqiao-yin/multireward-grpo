@@ -175,9 +175,16 @@ done
 | Model | m=4 | m=8 | m=16 | m=32 | Source dataset |
 |---|---|---|---|---|---|
 | Qwen2.5-1.5B | 1.025 | 0.928 | 0.954 | 0.955 | #1 |
-| Qwen2.5-7B  | 0.877 | 0.850 | 0.945 | 0.891 | #2 |
+| *95% CI* | [0.94, 1.12] | [0.85, 1.01] | [0.87, 1.04] | [0.88, 1.03] | |
+| Qwen2.5-7B  | 0.936 | 0.826 | 0.949 | 0.957 | #2 |
+| *95% CI* | [0.79, 1.09] | [0.69, 0.97] | [0.79, 1.13] | [0.82, 1.10] | |
 
-Values are realized NA MSE / Thm 3 prediction. Both stay in [0.85, 1.03] across all m.
+Values are realized NA MSE / Thm 3 prediction. Point ratios stay in [0.83, 1.03]
+across all m, and 7 of the 8 bootstrap confidence intervals contain 1.0.
+
+> **Correction (revision 1).** The Qwen2.5-7B row previously read
+> 0.877 / 0.850 / 0.945 / 0.891, which does not reproduce from released dataset
+> #2; the values above do. See `empirical-section.md` §2.1.
 
 ### Proposition 4 (sign-changing bias law) — verified on two model scales
 

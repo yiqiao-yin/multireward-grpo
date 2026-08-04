@@ -120,11 +120,26 @@ Realized NA gradient-MSE divided by the Theorem-3 prediction $(1/m)\,w^\top\hat 
 | Model | m=4 | m=8 | m=16 | m=32 | scope |
 |---|---|---|---|---|---|
 | **Qwen2.5-1.5B** | 1.025 | 0.928 | 0.954 | 0.955 | 150 prompts × 16 seeds |
-| **Qwen2.5-7B** | 0.877 | 0.850 | 0.945 | 0.891 | 100 prompts × 8 seeds |
+| *95% CI* | [0.94, 1.12] | [0.85, 1.01] | [0.87, 1.04] | [0.88, 1.03] | |
+| **Qwen2.5-7B** | 0.936 | 0.826 | 0.949 | 0.957 | 100 prompts × 8 seeds |
+| *95% CI* | [0.79, 1.09] | [0.69, 0.97] | [0.79, 1.13] | [0.82, 1.10] | |
 
-The ratio stays in **[0.85, 1.03]** across all $m$ and both model scales —
-Theorem 3 holds on real LLM rollouts. Per-prompt log-log fit of realized vs
-predicted MSE has slope ≈ 1, $R^2 \approx 0.95$ (Qwen-1.5B).
+Point ratios stay in **[0.83, 1.03]** across all $m$ and both model scales, and
+**seven of the eight 95% confidence intervals contain 1.0** (the exception is
+Qwen2.5-7B at m=8) — realized gradient-noise MSE is statistically
+indistinguishable from the Theorem 3 prediction at almost every configuration.
+Intervals are prompt-level bootstrap (2000 resamples of prompts, the independent
+sampling unit; score seed held fixed at 12345, the value used throughout).
+Per-prompt log-log fit of realized vs predicted MSE has slope ≈ 1,
+$R^2 \approx 0.95$ (Qwen-1.5B).
+
+> **Correction (revision 1).** The Qwen2.5-7B row previously read
+> 0.877 / 0.850 / 0.945 / 0.891. Those values do **not** reproduce from the
+> released 7B reward tensor; the values above do, and the 1.5B row reproduces
+> bitwise. The original row was most likely computed from an earlier 7B run whose
+> artifacts were superseded and not retained. No qualitative conclusion changes.
+> The earlier "±15%" phrasing was an observed range, not a confidence interval,
+> and has been replaced by the intervals above.
 
 **The correlation floor is real.** Pooled reward correlation on Qwen-1.5B GSM8K:
 

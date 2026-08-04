@@ -172,16 +172,28 @@ respectively. Then:
    When $w = (1, \dots, 1)$ this is $R(L-1) + 1$. This bound is independent of
    $\sigma$.
 
-2. **Product-lattice realization for NA, iff $\sigma$ heterogeneous.** Let
+2. **Product-lattice realization for NA — bounded-integer condition.** Let
    $a_\ell = w_\ell / \sigma_\ell$. Then
    $$
    N_{\mathrm{NA}}(L, R, w, \sigma) = L^R
-   \iff \{a_\ell\}_{\ell=1}^R \text{ are } \mathbb{Q}\text{-linearly independent}.
+   \iff \nexists\, n \in \mathbb{Z}^R \setminus \{0\},\;
+   |n_\ell| \le L-1 \;\forall \ell,\; \textstyle\sum_\ell a_\ell n_\ell = 0 .
    $$
-   Sufficient: at least one ratio $a_\ell / a_k$ is irrational. **Necessary
-   counterexample:** if all $\sigma_\ell$ are equal, $a_\ell = w_\ell/\sigma$
-   is a scalar multiple of $w_\ell$, NA = AN/σ, and $N_{\mathrm{NA}} =
-   N_{\mathrm{AN}}$.
+   $\mathbb{Q}$-linear independence of $\{a_\ell\}$ (e.g. some ratio
+   $a_\ell/a_k$ irrational) is **sufficient but not necessary**. Sufficient
+   condition for *collapse*: if all $\sigma_\ell$ are equal, $a_\ell =
+   w_\ell/\sigma$ is a scalar multiple of $w_\ell$, NA = AN/σ, and
+   $N_{\mathrm{NA}} = N_{\mathrm{AN}}$.
+
+   $N_{\mathrm{AN}}, N_{\mathrm{NA}}$ count advantage values realizable **over
+   the reward grid** (the cardinality of the image of the advantage map); a
+   group of $m$ rollouts observes at most $\min(m, N)$ of them.
+
+> **Correction (revision 1).** Part 2 previously claimed an "iff" with
+> $\mathbb{Q}$-linear independence, which the proof below does not establish —
+> it proves only sufficiency. Rational independence is strictly stronger than
+> needed on a *bounded* grid. Caught in peer review; the necessity direction is
+> now proved below.
 
 **Proof.**
 
@@ -211,11 +223,27 @@ linear relation among the $a_\ell$, contradicting independence. Hence the
 map $k \mapsto X(k)$ is injective on $\{0, \dots, L-1\}^R$, so all $L^R$ grid
 points realize distinct values.
 
-*Part 2, necessary counterexample.* If all $\sigma_\ell$ are equal to a common
+*Part 2, exact characterization (corrected).* The forward argument above proves
+only **sufficiency**. For the exact condition, note that
+$X(k) - X(k') = \Delta \sum_\ell a_\ell n_\ell$ with $n = k - k'$, and crucially
+$|n_\ell| \le L-1$ because $k, k'$ range over a grid of $L$ levels. Hence
+$k \mapsto X(k)$ is injective **iff** no nonzero integer vector $n$ obeying that
+bound satisfies $\sum_\ell a_\ell n_\ell = 0$. Rational dependence whose
+witnessing coefficients all exceed $L-1$ leaves injectivity intact.
+
+*Counterexample to the old necessity claim.* Take $R = 2$, $L = 2$, $a = (1,3)$.
+These are rationally **dependent** — the relation is $3a_1 - a_2 = 0$ — but the
+coefficient 3 exceeds $L - 1 = 1$ and so is unreachable on the grid. The four
+grid points map to $\{0, 1, 3, 4\}$, all distinct, giving
+$N_{\mathrm{NA}} = 4 = L^R$ despite rational dependence. So
+$\mathbb{Q}$-independence is not necessary.
+
+*Sufficient condition for collapse.* If all $\sigma_\ell$ are equal to a common
 $\sigma$, then $a_\ell = w_\ell/\sigma$ and NA-oracle is exactly AN scaled by
 $1/\sigma$ (since the within-group mean and std of $X$ also scale by $1/\sigma$).
 By affine invariance the two advantage maps coincide and $N_{\mathrm{NA}} =
-N_{\mathrm{AN}}$. ∎
+N_{\mathrm{AN}}$. This is one particular family of rational dependences and does
+**not** establish a converse. ∎
 
 **Verifying figure.** `figP2_resolution.png`. Enumeration over the full grid
 gives, for $R = 2$, $w = (1, 1)$, $\sigma = (1, \sqrt 2)$:
@@ -229,8 +257,9 @@ gives, for $R = 2$, $w = (1, 1)$, $\sigma = (1, \sqrt 2)$:
 | 6 | 11 | 11 | 36 | 11 | 36 |
 | 7 | 13 | 13 | 49 | 13 | 49 |
 
-NA-het hits $L^R$ exactly because $\sqrt 2$ is irrational. NA-equal-σ
-collapses to AN, matching the necessary counterexample.
+NA-het hits $L^R$ exactly because $\sqrt 2$ is irrational (a *sufficient*
+condition — see the corrected Part 2). NA-equal-σ collapses to AN, matching the
+collapse condition.
 
 **Remark on RLVR practice.** Binary rewards ($L = 2$) give a resolution gain
 of 4 vs 3 — modest in absolute terms but multiplicative in $R$. The

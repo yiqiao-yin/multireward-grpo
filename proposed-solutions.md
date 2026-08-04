@@ -112,9 +112,21 @@ functional. Then:
   (equal weights). Different reward combinations with the same weighted sum
   collapse to the same advantage.
 - **NA** realizes the full **product lattice** $L^R$ — *but only when the
-  per-channel scales are heterogeneous* ($\{w_\ell/\sigma_\ell\}$
-  $\mathbb Q$-linearly independent). Under equal scales, NA reduces to a scalar
+  per-channel scales are heterogeneous*. The exact condition, with
+  $a_\ell = w_\ell/\sigma_\ell$, is a **bounded-integer** one: no nonzero
+  integer vector $n$ with $|n_\ell| \le L-1$ satisfies
+  $\sum_\ell a_\ell n_\ell = 0$. Under equal scales, NA reduces to a scalar
   multiple of AN and the gain vanishes.
+
+> **Correction (revision 1).** This was previously stated as "$L^R$ **iff**
+> $\{w_\ell/\sigma_\ell\}$ are $\mathbb Q$-linearly independent." Rational
+> independence is **sufficient but not necessary**: only integer relations with
+> coefficients $|n_\ell| \le L-1$ are realizable as differences of grid points,
+> so a rational relation needing larger coefficients never materializes.
+> Counterexample: $R=2$, $L=2$, $a=(1,3)$ are rationally dependent
+> ($3a_1 - a_2 = 0$) yet the four grid points map to $\{0,1,3,4\}$, all
+> distinct, so $N_{\mathrm{NA}} = 4 = L^R$. Caught in peer review; see
+> `proofs.md` §Prop 2.
 
 **What it solves.** This is the formal version of GDPO's "scalarize-then-
 normalize collapses distinct reward combinations into identical advantages."

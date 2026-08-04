@@ -123,13 +123,17 @@ RTX 4090. See `validation_plan.md` for the full GPU budget and debug guide.
 | grpo_selfnorm.py | figS2_selfnorm_vs_rho | self-norm structure preserved over $\rho$ | verified |
 | grpo_selfnorm.py | figS3_selfnorm_bias | self-norm bias is $O(1/m)$ with distribution-dependent coefficient | Gaussian $\to -3\theta/4$ (exact $\Gamma$-formula); Bernoulli($\tfrac12$) $\to -\theta/2$; original $+\theta/4$ approx FALSIFIED |
 | grpo_mstar.py | figM1_mstar_vs_rho | Thm 3 group size vs reward correlation | **FALSIFIED** $\sqrt{w^\top Cw}$; $m^\star$ flat in $\rho$ |
-| grpo_prop2.py | figP2_resolution | Prop 2: NA product lattice $L^R$ vs AN sum lattice | verified (het. scales only) |
+| grpo_prop2.py | figP2_resolution | Prop 2: NA product lattice $L^R$ vs AN sum lattice | lattice counts verified (het. scales only); the *stated condition* was **CORRECTED** in review — bounded-integer, not $\mathbb{Q}$-independence (see #5 below) |
 | llm_validate.py --mode mock | llm_money_scatter_mock_m{m}, llm_mse_vs_m_mock | Thm 3 + Prop 1 on synthetic LLM-shaped data | NA realized / pred = 0.94–1.02 across m=4–32; AN drifts to 0.62–0.75 (Prop 1) |
 | llm_validate.py --mode gsm8k | llm_money_scatter_gsm8k_m{m}, llm_mse_vs_m_gsm8k | Same on real LLM generations | pending GPU run |
 
 ## Verification status (summary)
 
-All claims are simulation-backed. Four first-draft claims were caught wrong and corrected:
+All claims are simulation-backed. Four first-draft claims were caught wrong by our own
+harness and corrected before submission; **two further corrections were made during peer
+review (revision 1)** and are recorded at the end of this list.
+
+Caught pre-submission by the harness:
 1. **Prop 4 bias** — original dropped a cross-term; corrected form is sign-changing.
 2. **Prop 4' variance penalty** — the claimed $1/p_a$ inflation does not appear. The real
    structural pathology is subgroup-baseline degeneracy at low pass-rate (figT1 gray curve), but
@@ -141,6 +145,22 @@ All claims are simulation-backed. Four first-draft claims were caught wrong and 
 4. **Self-norm bias coefficient** — original $+\theta/4$ independence approximation is false. The
    leading $1/m$ coefficient is distribution-dependent: Gaussian gives $-3\theta/4$ (exact via the
    $\Gamma$-formula); Bernoulli($\tfrac12$) gives $-\theta/2$ empirically.
+
+Caught in peer review (revision 1):
+
+5. **Prop 2 was not an equivalence** — the claimed "$N_{\mathrm{NA}} = L^R$ **iff**
+   $\{w_\ell/\sigma_\ell\}$ are $\mathbb{Q}$-linearly independent" is wrong in the necessity
+   direction. Rational independence is *sufficient only*; the exact condition is the
+   **bounded-integer** one (no nonzero $n$ with $|n_\ell|\le L-1$ and $\sum_\ell a_\ell n_\ell=0$),
+   since only relations with coefficients $\le L-1$ are realizable as grid-point differences.
+   Counterexample: $R{=}2$, $L{=}2$, $a{=}(1,3)$ is rationally dependent yet realizes all $L^R$
+   values. Corrected in `proofs.md` and `proposed-solutions.md`.
+6. **Tier-2 Qwen2.5-7B row did not reproduce** — the published 0.877 / 0.850 / 0.945 / 0.891 does
+   not follow from the released 7B reward tensor; the reproducible values are
+   0.936 / 0.826 / 0.949 / 0.957 (the 1.5B row reproduces bitwise). Most likely computed from an
+   earlier 7B run whose artifacts were superseded. Additionally, the reported "±15%" was an
+   *observed range*, not a confidence interval; it is replaced by prompt-level bootstrap CIs, of
+   which **7 of 8 contain 1.0**. Corrected in `empirical-section.md` and `huggingface_assets.md`.
 
 Headline that survives: reward correlation $w^\top Cw$ governs the achievable MSE floor of
 multi-reward GRPO (positively correlated objectives are fundamentally harder); decoupled
