@@ -82,6 +82,50 @@ single-reward U-statistic theory (arXiv:2603.01162) and shrinkage-baseline work
 (arXiv:2511.03710) exist but have not been extended to the multi-reward / conditioned setting.
 This package develops and tests that extension.
 
+## Working copy layout (and setting up on a new machine)
+
+This repository is the **public** half of the project: the code, the released
+figures, and the prose that states the results. The **manuscript sources** —
+the LaTeX, its figure set, the submission correspondence, and the reference
+PDFs of third-party papers — live in a **separate private repository** and are
+deliberately not published here. `data/` is gitignored for that reason: it is
+not an empty directory, it is where the private repository is mounted.
+
+The private half is not required to run anything in this repo. Every script,
+figure and claim-check below works from a plain clone.
+
+```
+<clone dir>/                 <- this (public) repository
+├── src/  scripts/           code
+├── *.md                     prose: the results, proofs, empirical write-up
+├── figures/                 released PNGs + summary JSONs
+└── data/                    <- gitignored; the private repo mounts here
+    ├── overleaf/            manuscript .tex, figs/, Overleaf zips
+    ├── feedback/            editor / reviewer correspondence
+    └── pdfs/                third-party reference papers (not redistributable)
+```
+
+**To reconstruct the full working copy on a new machine** (author only — the
+second URL is private and resolves only when signed in as the owner):
+
+```bash
+git clone https://github.com/yiqiao-yin/multireward-grpo.git
+cd multireward-grpo
+git clone <private-manuscript-repo-url> data     # optional; author only
+```
+
+The second clone works because a fresh checkout has no `data/` directory, so
+the private repository drops straight into that slot. The outer repository
+continues to ignore it — no submodule, no gitlink, and `git status` in the
+public repo stays clean.
+
+Committing is then directional: run `git commit` from the repository root for
+code and prose, and from inside `data/` for anything to do with the manuscript.
+A change to one is invisible to the other.
+
+**Public-only setup** — if you just want to run the code, stop after the first
+clone. Nothing below needs `data/`.
+
 ## How to run
 
 ```bash
