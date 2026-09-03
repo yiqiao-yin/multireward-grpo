@@ -67,7 +67,7 @@ df = pd.read_parquet(
 | `fintech_rewards.npz` | 7 KB | Raw reward tensors |
 | `fintech_generations.jsonl` | 985 KB | All 2,400 bot replies with their reward scores |
 | `fintech_metadata.json` | 104 KB | Per-scenario metadata (system prompt, turn history) |
-| `fintech_sample_rollouts.json` | 140 KB | 50 hand-picked sample rollouts for inspection |
+| `fintech_sample_rollouts.json` | 140 KB | 50 sample rollouts for inspection — a **uniform random subsample** drawn without replacement by a seeded RNG (`fintech_generate.py`), not human-selected |
 | `fintech_summary.json` | 1.5 KB | Aggregate stats by scenario type |
 
 **Headline:** 300 synthetic fintech customer-service conversations × 8 bot replies × 3 reward channels (compliance, politeness_gated, action). Mean compliance 0.984, politeness 0.587, action 0.996. Includes 15 scenario types (billing, refund, dispute, fraud, phishing-test, etc.) and 6 user personas.
@@ -82,7 +82,7 @@ df = pd.read_parquet(
 
 - **Format:** LoRA adapter (r=16, α=32, ~17 MB)
 - **Base model:** `Qwen/Qwen2.5-1.5B-Instruct`
-- **Trained on:** dataset #3 (fintech customer-comms)
+- **Trained on:** fintech scenarios drawn from the **same generator** as dataset #3 (`fintech_scenarios.make_scenarios`), *not* on the released rows of dataset #3. `grpo_train.py` regenerates its own 400 scenarios under its own training seed; the released corpus (seed 42) and the training data are sibling draws from one generative process. Held-out eval draws 80 scenarios under seed 999.
 - **Advantage:** **Normalize-then-Aggregate** — per-channel group-normalize the reward vector, then weighted sum
 - **Hyperparameters:** 150 GRPO steps, P=4 prompts/batch, m=8 rollouts, lr=5e-6, kl_coef=0.05, weights=(1, 1, 0.5)
 - **Result:** mean aggregate reward **1.7133 ± 0.0837** over last 30 steps (lower std vs AN — exactly Thm 3's prediction)
@@ -106,7 +106,7 @@ model = PeftModel.from_pretrained(
 
 - **Format:** LoRA adapter (r=16, α=32, ~17 MB)
 - **Base model:** `Qwen/Qwen2.5-1.5B-Instruct`
-- **Trained on:** dataset #3 (same data, same hyperparameters as #4)
+- **Trained on:** same generator and same hyperparameters as #4 (see the provenance note there)
 - **Advantage:** **Aggregate-then-Normalize** — weighted sum then group-normalize (standard GRPO baseline)
 
 The intended use is direct paired comparison with #4: identical everything except the advantage formula.
