@@ -2,6 +2,14 @@
 
 All dataset + model URLs released for the paper, with file contents and how to load.
 
+**Code (archival, citable):** the harness and library that produced everything below are
+deposited on Zenodo — version DOI [10.5281/zenodo.22267541](https://doi.org/10.5281/zenodo.22267541)
+(concept DOI `10.5281/zenodo.22267540`, always latest), archived from GitHub release
+[`v0.1.0`](https://github.com/yiqiao-yin/multireward-grpo/releases/tag/v0.1.0).
+Cite the **version** DOI. The dataset generators are included, so every corpus below can be
+*regenerated* from a single seed rather than only downloaded; construction, reward definitions,
+partitioning and provenance are documented in the paper's *Dataset Construction and Provenance* section.
+
 ---
 
 ## Datasets (3)
@@ -84,8 +92,10 @@ df = pd.read_parquet(
 - **Base model:** `Qwen/Qwen2.5-1.5B-Instruct`
 - **Trained on:** fintech scenarios drawn from the **same generator** as dataset #3 (`fintech_scenarios.make_scenarios`), *not* on the released rows of dataset #3. `grpo_train.py` regenerates its own 400 scenarios under its own training seed; the released corpus (seed 42) and the training data are sibling draws from one generative process. Held-out eval draws 80 scenarios under seed 999.
 - **Advantage:** **Normalize-then-Aggregate** — per-channel group-normalize the reward vector, then weighted sum
-- **Hyperparameters:** 150 GRPO steps, P=4 prompts/batch, m=8 rollouts, lr=5e-6, kl_coef=0.05, weights=(1, 1, 0.5)
-- **Result:** mean aggregate reward **1.7133 ± 0.0837** over last 30 steps (lower std vs AN — exactly Thm 3's prediction)
+- **Hyperparameters:** **500** GRPO steps, P=4 prompts/batch, m=8 rollouts, lr=5e-6, kl_coef=0.05, weights=(1, 1, 0.5). The pushed adapter is the seed-0 run's `checkpoint_step0500` (`hf_push_model.find_latest_checkpoint` canonicalizes on `{mode}_seed0`).
+- **Training-curve result:** mean aggregate reward **2.0552 ± 0.0678** over the last 30 steps of the seed-0 run. This is *training-curve* dispersion within one seed — not the held-out eval number (see the headline table below, 2.082 ± 0.013 across 3 seeds) and not a seed-to-seed std.
+
+> **Corrected 2026-09-03.** This block previously read "150 GRPO steps" and "1.7133 ± 0.0837". Those describe the superseded legacy run in `figures/grpo_train/na/`, not the adapter on the Hub: the `metrics.json` served from the model repo reports `n_steps=500` with a 500-entry history. The old figure also carried the gloss "lower std vs AN — exactly Thm 3's prediction". NA's last-30 dispersion is indeed lower than AN's (0.0678 vs 0.0853), but Theorem 3 bounds *gradient-noise MSE*, not the dispersion of a training curve, so that gloss claimed more than the theorem gives and has been dropped.
 
 **Load:**
 ```python
@@ -106,8 +116,9 @@ model = PeftModel.from_pretrained(
 
 - **Format:** LoRA adapter (r=16, α=32, ~17 MB)
 - **Base model:** `Qwen/Qwen2.5-1.5B-Instruct`
-- **Trained on:** same generator and same hyperparameters as #4 (see the provenance note there)
+- **Trained on:** same generator and same hyperparameters as #4 (500 steps; see the provenance note there)
 - **Advantage:** **Aggregate-then-Normalize** — weighted sum then group-normalize (standard GRPO baseline)
+- **Training-curve result:** mean aggregate reward **2.0363 ± 0.0853** over the last 30 steps of the seed-0 run (same caveat as #4: training-curve, single seed)
 
 The intended use is direct paired comparison with #4: identical everything except the advantage formula.
 
@@ -118,11 +129,14 @@ The intended use is direct paired comparison with #4: identical everything excep
 - **Format:** LoRA adapter (r=16, α=32, ~17 MB)
 - **Base model:** `Qwen/Qwen2.5-1.5B-Instruct`
 - **Advantage:** vanilla GRPO on the **compliance channel only** — ignores politeness and action
+- **Hyperparameters:** 500 GRPO steps, otherwise as #4. **Training-curve result:** mean aggregate reward **1.3698 ± 0.0471** over the last 30 steps
 - **Purpose:** demonstrates that naively collapsing to a single reward is catastrophic for the other objectives. This model maxes compliance (1.00) but **destroys** politeness (0.31) and action (0.00), and its held-out aggregate reward (1.31) is **worse than the untrained base model (1.80)**.
 
 ---
 
-## ⭐ Headline finetuning result (500 steps, 3 seeds for NA/AN, held-out eval on 80 unseen scenarios)
+## ⭐ Headline finetuning result (500 steps, 3 seeds for NA/AN, eval on 80 unseen scenarios)
+
+> **On "held-out".** The 80 eval scenarios are an *independent draw* from the same generator as training (eval seed 999 vs. train seeds 0/1/2), **not** a partition of a fixed pool with enforced disjointness. Measured recurrence: 4, 5 and 3 of the 80 exactly match a training scenario for seeds 0/1/2 respectively (10 of 80 against the union of all three). All arms share the same eval draw, so this cannot favour one estimator; it is disclosed in the paper's *Dataset Construction and Provenance* section. Exact dedup between the draws is a one-line change for anyone reusing the harness.
 
 | Model | Held-out aggregate reward | compliance | politeness | action |
 |---|---|---|---|---|
@@ -133,8 +147,8 @@ The intended use is direct paired comparison with #4: identical everything excep
 
 **Three findings:**
 1. **Multi-reward shaping is necessary, not cosmetic.** Single-reward GRPO (1.310) lands *below the untrained base model* (1.800) — optimizing only compliance collapses politeness and action. Both NA and AN beat base by ~0.3.
-2. **NA respects the intended weight balance; AN distorts toward the high-variance channel.** NA keeps politeness and action balanced (0.72 / 0.73), while AN over-rewards the binary high-variance `action` channel (0.92) at the expense of the continuous `politeness` channel (0.65). This is **Proposition 1 (influence law) visible in a trained model** — AN's influence is dominated by the high-σ objective.
-3. **NA and AN reach comparable aggregate reward** (2.082 vs 2.109) — consistent with the theory: NA is not claimed to win on aggregate reward; it is claimed to give weight-proportional influence (Prop 1) and a correlation-aware gradient-MSE floor (Thm 3, verified separately on the GSM8K rollout data).
+2. **NA's allocation is free of the channel standard deviations; AN's is not.** NA leaves politeness and action close (0.72 / 0.73), while AN over-rewards the binary high-variance `action` channel (0.92) at the expense of the continuous `politeness` channel (0.65). This is **Proposition 1 (influence law) visible in a trained model** — AN's influence is dominated by the high-σ objective. The *near-equality* of NA's two channels is an observation about this particular three-channel design, in which the two soft channels carry equal weight; it is **not** evidence that NA is weight-proportional for arbitrary correlation structures. Influence equals the weight itself only under the eigenvector condition `Cw = w`.
+3. **NA and AN reach comparable aggregate reward** (2.082 vs 2.109) — and that difference is **not statistically significant** (Welch t-test on the per-seed means, p = 0.086, 95% CI contains zero), whereas both per-channel allocation differences are significant at the 1% level with |d| ≈ 8. NA is not claimed to win on aggregate reward. What is claimed is that NA's influence does not depend on the channel standard deviations (Prop 1) and that reward correlation sets the gradient-noise floor (Thm 3, verified separately on the GSM8K rollout data).
 
 Training curves (mean ± seed-std) → `figures/grpo_train/grpo_training_curves_multiseed.png`.
 Held-out eval numbers → `figures/grpo_train/eval_comparison.json`.
@@ -195,8 +209,12 @@ across all m, and 7 of the 8 bootstrap confidence intervals contain 1.0.
 
 ### GRPO fine-tuning — NA vs AN on the fintech dataset (#4 vs #5)
 
-- Mean aggregate reward (last 30 steps): **NA = 1.7133**, AN = 1.7068 — comparable means
-- **Variance: NA std = 0.084, AN std = 0.097 (NA is 14% lower)** — Thm 3's MSE-floor prediction holds on real training trajectories
+Seed-0 training curves, last 30 steps (**500**-step runs — the numbers previously here, NA = 1.7133 / AN = 1.7068 with stds 0.084 / 0.097, were from the superseded 150-step legacy runs):
+
+- Mean aggregate reward: **NA = 2.0552**, AN = 2.0363 — comparable means
+- Dispersion: NA std = 0.068, AN std = 0.085 (NA ~20% lower)
+
+**Read this as descriptive, not as a test of Thm 3.** This is the within-seed dispersion of a training curve over 30 steps, whereas Theorem 3 bounds the MSE of the *gradient estimator*; the previous line here asserted the latter from the former. Theorem 3 is tested properly on the GSM8K rollouts (§ datasets #1–2), where realized/predicted lands in [0.83, 1.03] with 7 of 8 bootstrap CIs covering 1.0. For the NA-vs-AN comparison the load-bearing result is the **held-out per-channel allocation** difference, which is significant at the 1% level; the aggregate difference is not (p = 0.086).
 
 ---
 
