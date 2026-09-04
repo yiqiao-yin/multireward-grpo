@@ -163,6 +163,45 @@ correctness and length at −0.64: easy problems get short right answers, hard
 ones get long wrong ones. Those wobbles genuinely cancel, and the steering comes
 out smoother than if the objectives were unrelated.
 
+### Where the analogy meets the formula
+
+The cart is not decoration. `wᵀCw` **is** the standard formula for the variance
+of a weighted sum — if each `z_k` is a standardized channel,
+
+```
+Var(w₁z₁ + w₂z₂ + ...) = wᵀCw
+```
+
+That's it. "How much does the combined pull wobble" — and the answer depends on
+whether the individual wobbles reinforce or cancel. Concretely, with `w = (1,1)`:
+
+| channels | `wᵀCw` |
+|---|---|
+| perfectly synchronized (C all 1s) | `(1+1)² = 4` |
+| independent (C = I) | `1² + 1² = 2` |
+| perfectly opposed (C = −1) | `0` |
+
+Synchronized wobble is **double** independent wobble. Opposed wobbles cancel
+exactly. That is the cart lurching versus gliding, in arithmetic.
+
+And `1/m` is the other classic: average `m` independent noisy things and the
+variance drops by `m`. More haulers, smoother ride.
+
+So the theorem literally reads:
+
+```
+MSE  =  (wobble per grip ÷ number of haulers) × (how much wobbles reinforce)
+         τ²/m                                    wᵀCw
+```
+
+**Where the analogy stops.** It gives you the *structure* — averaging and
+synchronization — but not the proof. The appendix has to show this exact form
+survives two things the cart does not have: the advantage is a **U-statistic**
+(each attempt is compared against a baseline built from the *same* group, so
+the terms are not independent), and `σ` is **estimated** rather than known,
+which is where the `O(m⁻²)` correction comes from. The cart tells you what the
+formula means; the appendix earns it.
+
 ### For a finance-literate audience
 
 Skip the cart. `wᵀCw` is **literally the portfolio variance formula** — not an
