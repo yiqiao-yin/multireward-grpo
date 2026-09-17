@@ -1,8 +1,9 @@
 """
 Multi-reward GRPO advantage estimators — AN, NA, single — and conditioning.
 
-These are the central objects of the paper "When and Why Decoupling and
-Conditioning Beat Reweighting in Multi-Reward GRPO". Given a group of ``m``
+These are the central objects of the paper "Decoupling and Conditioning
+Reshape Influence Allocation and the Gradient-Noise Floor in Multi-Reward GRPO
+under a Finite-Sample U-Statistic Analysis". Given a group of ``m``
 rollouts each scored on ``R`` reward channels, an *advantage estimator* turns
 the ``(m, R)`` reward matrix into a per-rollout scalar advantage ``A_j`` that
 the policy-gradient update consumes.

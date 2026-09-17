@@ -1,7 +1,8 @@
 # Problem Statement
 
-**Working title.** *When and Why Decoupling and Conditioning Beat Reweighting
-in Multi-Reward GRPO: A U-Statistic Treatment.*
+**Title.** *Decoupling and Conditioning Reshape Influence Allocation and the
+Gradient-Noise Floor in Multi-Reward GRPO under a Finite-Sample U-Statistic
+Analysis.*
 
 > **Document map.** This file defines the problem (gap, formal setup, the
 > questions we answer). The companion files are:

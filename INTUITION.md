@@ -1,9 +1,10 @@
 # INTUITION.md — the results, explained without the math
 
-This file is the plain-language companion to the paper *"When and Why
-Decoupling and Conditioning Beat Reweighting in Multi-Reward GRPO: A U-Statistic
-Treatment."* Every result gets an everyday analogy. No proofs, no notation you
-have to look up.
+This file is the plain-language companion to the paper *"Decoupling and
+Conditioning Reshape Influence Allocation and the Gradient-Noise Floor in
+Multi-Reward GRPO under a Finite-Sample U-Statistic Analysis."* Every result
+gets an everyday analogy. No proofs, and almost no notation you have to look
+up.
 
 It is written for three audiences: someone who wants the ideas before the
 algebra, someone explaining this work to a non-technical colleague, and the

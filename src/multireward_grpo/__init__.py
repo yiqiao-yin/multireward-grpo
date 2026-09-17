@@ -1,8 +1,9 @@
 """
 multireward-grpo — decoupled & conditioned multi-reward GRPO advantage
 estimators, a generalized trainer, and the Theorem-3 verification harness from
-the paper "When and Why Decoupling and Conditioning Beat Reweighting in
-Multi-Reward GRPO: A U-Statistic Treatment".
+the paper "Decoupling and Conditioning Reshape Influence Allocation and the
+Gradient-Noise Floor in Multi-Reward GRPO under a Finite-Sample U-Statistic
+Analysis".
 
 Quick start
 -----------
