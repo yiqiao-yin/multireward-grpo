@@ -27,7 +27,7 @@ it.
 - `proofs.md` — full proofs (appendix)
 - `empirical-section.md` — the 3-tier verification story
 - `huggingface_assets.md` — released datasets (3) + fine-tuned models (3) under HF user `eagle0504`
-- `INTUITION.md` — plain-language companion: every result with one everyday analogy. Mostly notation-free; the "Formally:" blockquotes and the one section bridging the cart analogy to `wᵀCw` are the deliberate exceptions. Keep in sync when a result changes, same as the other prose files.
+- `INTUITION.md` — plain-language companion: every result with one everyday analogy. Mostly notation-free; the "Formally:" blockquotes and the one section bridging the cart analogy to `wᵀCw` are the deliberate exceptions. Keep in sync when a result changes, same as the other prose files. **This file is MIRRORED at `data/INTUITION.md`** — two copies in two repos, kept byte-identical by hand. Nothing enforces it and it has silently drifted before, so after editing either copy, `cp` it to the other and commit both repos. Check with `diff INTUITION.md data/INTUITION.md`.
 - `gdpo_reproduction_plan.md` — plan for reproducing against the GDPO anchor. **Its header flags that the GDPO citation (arXiv ID, authors, GitHub URL, GPU budget) is an unverified placeholder** carried from `problem-statement.md`/`README.md`, written without network access. Don't treat those as confirmed facts, and don't propagate them further without checking.
 
 ## Core domain concepts (needed to read any script)
