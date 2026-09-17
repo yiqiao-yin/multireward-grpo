@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "multireward-grpo"
-version = "0.1.0"
+version = "0.1.1"
 description = "Decoupled & conditioned multi-reward GRPO advantage estimators, a generalized trainer, and the Theorem-3 verification harness from the paper 'Decoupling and Conditioning Reshape Influence Allocation and the Gradient-Noise Floor in Multi-Reward GRPO under a Finite-Sample U-Statistic Analysis'."
 readme = "README_PYPI.md"
 license = { text = "MIT" }
